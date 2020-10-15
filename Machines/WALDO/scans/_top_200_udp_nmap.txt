@@ -1,0 +1,30 @@
+# Nmap 7.80 scan initiated Fri Aug 28 00:02:32 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=200 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.87/scans/_top_200_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.87/scans/xml/_top_200_udp_nmap.xml 10.10.10.87
+Nmap scan report for 10.10.10.87
+Host is up, received user-set (0.048s latency).
+All 200 scanned ports on 10.10.10.87 are closed because of 200 port-unreaches
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (89%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/28%OT=%CT=%CU=7%PV=Y%DS=1%DC=T%G=N%TM=5F482046%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD%II=I)
+SEQ(CI=I)
+T5(R=Y%DF=N%T=78%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=78%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=78%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=78%IPL=164%UN=0%RIPL=G%RID=E89B%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=78%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE (using port 1645/udp)
+HOP RTT      ADDRESS
+1   63.12 ms 10.10.10.87
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 28 00:06:14 2020 -- 1 IP address (1 host up) scanned in 223.43 seconds

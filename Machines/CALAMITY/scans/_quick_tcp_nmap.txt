@@ -1,0 +1,25 @@
+# Nmap 7.80 scan initiated Wed Aug 19 13:31:18 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /media/psf/Home/Downloads/results/10.10.10.27/scans/_quick_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.27/scans/xml/_quick_tcp_nmap.xml 10.10.10.27
+Nmap scan report for 10.10.10.27
+Host is up, received user-set (0.065s latency).
+Scanned at 2020-08-19 13:31:27 MSK for 12s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE SERVICE REASON          VERSION
+22/tcp open  ssh     syn-ack ttl 128 OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b6:46:31:9c:b5:71:c5:96:91:7d:e4:63:16:f9:59:a2 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/EHs5E7iBHRQa5Wl/Ej8hem8p92Hw+T02W23+Svvfs48XfSdIQwcH7VVWlaGNyqjfWp+oE7LeUUdje2XlW2dkaVBqQqC+jsXhi54A4c7UHtYp2jYE1Z1HmBWU66DtDJlBFadfjNLnl9LksJxlXkMXx+pwQr+8BbHQV19SlEGHUFlgo1VxXICJFVYp73clV3c5vJXLE7PeVGgOO8aRCguVdLfaYMgZ69v9qYEn2TxeKIHC+JLEO+TsZruI4Ar0A5ogIWrBHXyM+dzq7ILY8OpPeb5Ihd2OYZMDvTDQrW7Pk/sq8Qm+jWCEV/uf/qYpWFGCDt3M2v2cPDmMdbJbdM3/
+|   256 10:c4:09:b9:48:f1:8c:45:26:ca:f6:e1:c2:dc:36:b9 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHBxaByQ9wnw51uAv+3FjlBgdt0sFCdSZwxmiqBKJJcyq/8es1W64FQM35Zgv3qyLMEux8BrKjU0k6wa9VWC3BE=
+|   256 a8:bf:dd:c0:71:36:a8:2a:1b:ea:3f:ef:66:99:39:75 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDNrIvf/rPJoBCeT2tquAQtXfGaFvuPBWCkTbQHDIH9B
+80/tcp open  http    syn-ack ttl 128 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Brotherhood Software
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 19 13:31:39 2020 -- 1 IP address (1 host up) scanned in 20.92 seconds

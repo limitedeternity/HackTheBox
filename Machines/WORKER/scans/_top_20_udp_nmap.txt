@@ -1,0 +1,48 @@
+# Nmap 7.80 scan initiated Tue Aug 18 17:38:37 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.203/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.203/scans/xml/_top_20_udp_nmap.xml 10.10.10.203
+Nmap scan report for 10.10.10.203
+Host is up, received user-set (0.046s latency).
+Scanned at 2020-08-18 17:38:40 MSK for 535s
+
+PORT      STATE         SERVICE      REASON      VERSION
+53/udp    open|filtered domain       no-response
+67/udp    open|filtered dhcps        no-response
+68/udp    open|filtered dhcpc        no-response
+69/udp    open|filtered tftp         no-response
+123/udp   open|filtered ntp          no-response
+135/udp   open|filtered msrpc        no-response
+137/udp   open|filtered netbios-ns   no-response
+138/udp   open|filtered netbios-dgm  no-response
+139/udp   open|filtered netbios-ssn  no-response
+161/udp   open|filtered snmp         no-response
+162/udp   open|filtered snmptrap     no-response
+445/udp   open|filtered microsoft-ds no-response
+500/udp   open|filtered isakmp       no-response
+|_ike-version: ERROR: Script execution failed (use -d to debug)
+514/udp   open|filtered syslog       no-response
+520/udp   open|filtered route        no-response
+631/udp   open|filtered ipp          no-response
+1434/udp  open|filtered ms-sql-m     no-response
+1900/udp  open|filtered upnp         no-response
+4500/udp  open|filtered nat-t-ike    no-response
+49152/udp open|filtered unknown      no-response
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+Aggressive OS guesses: Palmmicro AR1688 VoIP module (89%), VMware Player virtual NAT device (89%), Fortinet FortiGate 200B firewall (88%), Aethra Starvoice 1042 ADSL router (86%), AKCP sensorProbe2 remote sensor device (86%), APC AOS 5 (86%), Bluebird SuperDOS (86%), Brother NC-130h print server (86%), Brother HL-1870N printer (86%), Brother HL-2070N or MFC-5460CN printer (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/18%OT=%CT=%CU=%PV=Y%DS=1%DC=T%G=N%TM=5F3BEA07%P=x86_64-pc-linux-gnu)
+SEQ(CI=I%II=I)
+T6(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Network Distance: 1 hop
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   50.20 ms 10.10.10.203
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 18 17:47:36 2020 -- 1 IP address (1 host up) scanned in 540.88 seconds

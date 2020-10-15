@@ -1,0 +1,29 @@
+FQDN Cache Statistics:
+FQDNcache Entries In Use: 21
+FQDNcache Entries Cached: 19
+FQDNcache Requests: 1416112
+FQDNcache Hits: 2
+FQDNcache Negative Hits: 786958
+FQDNcache Misses: 629152
+FQDN Cache Contents:
+
+Address                                       Flg TTL Cnt Hostnames
+10.10.14.83                                    N  -8464   0
+10.10.14.85                                    N  -463   0
+10.10.14.155                                   N  -588   0
+127.0.1.1                                       H -001   2 unbalanced.htb unbalanced
+10.10.14.38                                    N  -12413   0
+10.10.14.210                                   N  -12483   0
+10.10.14.214                                   N  -798   0
+::1                                             H -001   3 localhost ip6-localhost ip6-loopback
+172.31.179.2                                    H -001   1 intranet-host2.unbalanced.htb
+172.31.179.3                                    H -001   1 intranet-host3.unbalanced.htb
+10.10.10.200                                   N  -2441   0
+127.0.0.1                                       H -001   1 localhost
+172.17.0.1                                      H -001   1 intranet.unbalanced.htb
+ff02::1                                         H -001   1 ip6-allnodes
+ff02::2                                         H -001   1 ip6-allrouters
+10.10.16.206                                   N  -13448   0
+10.10.14.196                                   N  -12996   0
+10.10.14.245                                   N  -9818   0
+10.10.16.110                                   N  -108   0

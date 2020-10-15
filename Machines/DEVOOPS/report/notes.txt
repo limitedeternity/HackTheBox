@@ -1,0 +1,16 @@
+
+[+] XXE at /upload.
+
+[+] Got /etc/passwd. Username: roosa.
+
+[+] Got /home/roosa/.ssh/id_rsa. Ready to SSH.
+
+[+] Got user.txt
+
+[+] Extracted id_rsa from git logs.
+
+[+] Got root.txt
+
+
+
+

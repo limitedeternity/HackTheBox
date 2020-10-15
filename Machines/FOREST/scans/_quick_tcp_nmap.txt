@@ -1,0 +1,52 @@
+# Nmap 7.80 scan initiated Fri Aug 14 23:48:51 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /media/psf/Home/Downloads/results/10.10.10.161/scans/_quick_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.161/scans/xml/_quick_tcp_nmap.xml 10.10.10.161
+Nmap scan report for 10.10.10.161
+Host is up, received user-set (0.057s latency).
+Scanned at 2020-08-14 23:48:53 MSK for 618s
+Not shown: 989 closed ports
+Reason: 989 resets
+PORT     STATE SERVICE      REASON          VERSION
+53/tcp   open  domain?      syn-ack ttl 128
+88/tcp   open  kerberos-sec syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2020-08-14 20:55:50Z)
+135/tcp  open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack ttl 128 Microsoft Windows netbios-ssn
+389/tcp  open  ldap         syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds syn-ack ttl 128 Windows Server 2016 Standard 14393 microsoft-ds (workgroup: HTB)
+464/tcp  open  kpasswd5?    syn-ack ttl 128
+593/tcp  open  ncacn_http   syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped   syn-ack ttl 128
+3268/tcp open  ldap         syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped   syn-ack ttl 128
+Service Info: Host: FOREST; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h26m49s, deviation: 4h02m30s, median: 6m48s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 62316/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 32753/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 13233/udp): CLEAN (Timeout)
+|   Check 4 (port 44587/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: FOREST
+|   NetBIOS computer name: FOREST\x00
+|   Domain name: htb.local
+|   Forest name: htb.local
+|   FQDN: FOREST.htb.local
+|_  System time: 2020-08-14T14:03:47-07:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-08-14T21:03:49
+|_  start_date: 2020-08-14T20:47:28
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 23:59:11 2020 -- 1 IP address (1 host up) scanned in 620.16 seconds

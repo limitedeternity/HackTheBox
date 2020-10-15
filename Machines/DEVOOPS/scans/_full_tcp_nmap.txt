@@ -1,0 +1,68 @@
+# Nmap 7.80 scan initiated Tue Aug 18 14:10:28 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.91/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.91/scans/xml/_full_tcp_nmap.xml 10.10.10.91
+adjust_timeouts2: packet supposedly had rtt of -216091 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -216091 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -270745 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -270745 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -262743 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -262743 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -621643 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -621643 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -741079 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -741079 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1080573 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1080573 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.91
+Host is up, received user-set (0.052s latency).
+Scanned at 2020-08-18 14:10:34 MSK for 128s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT     STATE SERVICE REASON          VERSION
+22/tcp   open  ssh     syn-ack ttl 128 OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 42:90:e3:35:31:8d:8b:86:17:2a:fb:38:90:da:c4:95 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhnygpNZx4gdup8MisoZInL7I8UYHXjDzYzj8wISuATvYEQRGckobDZXz5xrdYuLX/X7RQrASXGODJBtOuViqdBQKKdTOwz2x+Sr/gZl3tauZsibsP0wx2DPcHJcY5WekLDcjes+WVpis+4YXb1TL5qKg5R88cGHH63lgkisidTUDp55lRuu9ocE0ZdS0fNrN4RJCATerQ9pCmKo4ZnFD83gAkEg0DNdlLAdxzB7BPE/k//ZJiRr06TfibO3S9Vsh/d+PenuWDKJPsA7CrCW3hfVUsJxsH8WDNrFTLko27jleSP1gmpPm/m/KeYmY17VGWrpCjN2WuStW+RV78h1xD
+|   256 b7:b6:dc:c4:4c:87:9b:75:2a:00:89:83:ed:b2:80:31 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOEYP1w+H8Uuvfh0fzjA15tqYhqxIhiT8ODPLI4qTBvrM8pZIGErdFlMYGV3rhJAYqGJD05LsvJxC8zozRFmZuw=
+|   256 d5:2f:19:53:b2:8e:3a:4b:b3:dd:3c:1f:c0:37:0d:00 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOKHzgVfUX3pUOQ+WBd7PUmFYowgwBWRHpz6EEAsWVEy
+5000/tcp open  http    syn-ack ttl 128 Gunicorn 19.7.1
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS GET
+|_http-server-header: gunicorn/19.7.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (93%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Host distance (-2 network hops) appears to be negative
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (93%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/18%OT=22%CT=1%CU=39927%PV=Y%DS=1%DC=T%G=N%TM=5F3BB7AA%P=x86_64-pc-linux-gnu)
+SEQ(SP=DD%GCD=1%ISR=F6%TS=U)
+SEQ(SP=D8%GCD=1%ISR=F7%II=I%TS=U)
+OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)
+WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)
+ECN(R=Y%DF=N%T=7D%W=8000%O=M5B4W1N%CC=N%Q=)
+T1(R=Y%DF=N%T=7D%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=7D%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=7D%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)
+T4(R=Y%DF=N%T=7D%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T5(R=N)
+T5(R=Y%DF=N%T=7D%W=2000%S=O%A=O%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=7D%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=7D%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=7D%IPL=164%UN=0%RIPL=G%RID=7E1B%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=7D%CD=S)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=216 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 1025/tcp)
+HOP RTT      ADDRESS
+1   48.99 ms 10.10.10.91
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 18 14:12:42 2020 -- 1 IP address (1 host up) scanned in 135.95 seconds

@@ -1,0 +1,42 @@
+# Nmap 7.80 scan initiated Tue Aug 25 14:01:39 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=200 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.186/scans/_top_200_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.186/scans/xml/_top_200_udp_nmap.xml 10.10.10.186
+Increasing send delay for 10.10.10.186 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of -215142 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -215142 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -366231 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -366231 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -468300 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -468300 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -471657 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -471657 microseconds.  Ignoring time.
+Nmap scan report for quick.htb (10.10.10.186)
+Host is up, received user-set (0.046s latency).
+Scanned at 2020-08-25 14:01:41 MSK for 494s
+Not shown: 199 closed ports
+Reason: 199 port-unreaches
+PORT    STATE         SERVICE REASON      VERSION
+443/udp open|filtered https   no-response
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (90%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/25%OT=%CT=%CU=7%PV=Y%DS=1%DC=T%G=N%TM=5F44F183%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD)
+T5(R=Y%DF=N%T=80%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=7F8E%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE (using port 1419/udp)
+HOP RTT      ADDRESS
+1   44.68 ms quick.htb (10.10.10.186)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 25 14:09:55 2020 -- 1 IP address (1 host up) scanned in 497.72 seconds

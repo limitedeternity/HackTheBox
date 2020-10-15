@@ -1,0 +1,2 @@
+[*] Task tcp/5985/wkhtmltoimage returned non-zero exit code: 1. Command: if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png http://10.10.10.134:5985/ /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_5985_http_screenshot.png; fi
+[*] Task tcp/47001/wkhtmltoimage returned non-zero exit code: 1. Command: if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png http://10.10.10.134:47001/ /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_47001_http_screenshot.png; fi

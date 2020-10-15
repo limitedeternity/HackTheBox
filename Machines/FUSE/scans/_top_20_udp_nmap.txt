@@ -1,0 +1,72 @@
+# Nmap 7.80 scan initiated Sat Aug 22 17:45:49 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.193/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.193/scans/xml/_top_20_udp_nmap.xml 10.10.10.193
+Nmap scan report for 10.10.10.193
+Host is up, received user-set (0.035s latency).
+Scanned at 2020-08-22 17:45:51 MSK for 507s
+
+PORT      STATE         SERVICE      REASON               VERSION
+53/udp    open          domain       udp-response ttl 128 (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   DNS-SD: 
+|     _services
+|     _dns-sd
+|     _udp
+|     local
+|   NBTStat: 
+|     CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+|   sybaseanywhere: 
+|_    CONNECTIONLESS_TDS
+67/udp    open|filtered dhcps        no-response
+68/udp    open|filtered dhcpc        no-response
+69/udp    open|filtered tftp         no-response
+123/udp   open          ntp          udp-response ttl 128 NTP v3
+| ntp-info: 
+|_  receive time stamp: 2020-08-22T15:03:19
+135/udp   open|filtered msrpc        no-response
+137/udp   open|filtered netbios-ns   no-response
+138/udp   open|filtered netbios-dgm  no-response
+139/udp   open|filtered netbios-ssn  no-response
+161/udp   open|filtered snmp         no-response
+162/udp   open|filtered snmptrap     no-response
+445/udp   open|filtered microsoft-ds no-response
+500/udp   open|filtered isakmp       no-response
+|_ike-version: ERROR: Script execution failed (use -d to debug)
+514/udp   open|filtered syslog       no-response
+520/udp   open|filtered route        no-response
+631/udp   open|filtered ipp          no-response
+1434/udp  open|filtered ms-sql-m     no-response
+1900/udp  open|filtered upnp         no-response
+4500/udp  open|filtered nat-t-ike    no-response
+49152/udp open|filtered unknown      no-response
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-UDP:V=7.80%I=9%D=8/22%Time=5F412FB7%P=x86_64-pc-linux-gnu%r(NBTS
+SF:tat,32,"\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAA
+SF:AAAAAAA\0\0!\0\x01")%r(xdmcp,7,"\0\x01\x80\x01\0\x01\0")%r(DNS-SD,2E,"\
+SF:0\0\x80\x82\0\x01\0\0\0\0\0\0\t_services\x07_dns-sd\x04_udp\x05local\0\
+SF:0\x0c\0\x01")%r(sybaseanywhere,3D,"\x1b\0\x80\x01\0\0\0\0\x12CONNECTION
+SF:LESS_TDS\0\0\0\x01\0\0\x04\0\x05\0\x05\0\0\x01\x02\0\0\x03\x01\x01\x04\
+SF:x08\0\0\0\0\0\0\0\0\x07\x02\x04\xb1")%r(AndroMouse,7,"AM\xd3\x04IFF");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+Aggressive OS guesses: Palmmicro AR1688 VoIP module (89%), VMware Player virtual NAT device (89%), Fortinet FortiGate 200B firewall (88%), Aethra Starvoice 1042 ADSL router (86%), AKCP sensorProbe2 remote sensor device (86%), APC AOS 5 (86%), Bluebird SuperDOS (86%), Brother NC-130h print server (86%), Brother HL-1870N printer (86%), Brother HL-2070N or MFC-5460CN printer (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/22%OT=%CT=%CU=%PV=Y%DS=10%DC=T%G=N%TM=5F41319A%P=x86_64-pc-linux-gnu)
+SEQ(CI=I%II=I)
+T6(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Network Distance: 10 hops
+
+Host script results:
+|_clock-skew: 13m13s
+
+TRACEROUTE (using port 53/udp)
+HOP RTT      ADDRESS
+1   ... 9
+10  55.60 ms 10.10.10.193
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 22 17:54:18 2020 -- 1 IP address (1 host up) scanned in 510.22 seconds

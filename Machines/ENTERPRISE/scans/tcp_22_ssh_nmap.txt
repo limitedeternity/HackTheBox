@@ -1,0 +1,63 @@
+# Nmap 7.80 scan initiated Sat Aug 15 21:02:49 2020 as: nmap -vv --reason -Pn -sV -p 22 --script=banner,ssh2-enum-algos,ssh-hostkey,ssh-auth-methods -oN /media/psf/Home/Downloads/results/10.10.10.61/scans/tcp_22_ssh_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.61/scans/xml/tcp_22_ssh_nmap.xml 10.10.10.61
+Nmap scan report for 10.10.10.61
+Host is up, received user-set (0.062s latency).
+Scanned at 2020-08-15 21:02:55 MSK for 4s
+
+PORT   STATE SERVICE REASON          VERSION
+22/tcp open  ssh     syn-ack ttl 128 OpenSSH 7.4p1 Ubuntu 10 (Ubuntu Linux; protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_7.4p1 Ubuntu-10
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+| ssh-hostkey: 
+|   2048 c4:e9:8c:c5:b5:52:23:f4:b8:ce:d1:96:4a:c0:fa:ac (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCu2/t9seUy0ond4RQg5wTTh7hd75wtx9Vn3QiZzFbYqbjCl2vYRrvCT+YdSGuloj428RFb8cYkIsEP9NpnVlX5euU0Op2z1LXaklR7C/tglf2CLMhuwtz7w1GJF1150rYCbN8OkIEaSz2SUfoVv3/5jgyiahF9Xvge8ZKe5Ai+2U4fD4q4W1a5dtMnHwT/1ypdo+1EivLX6WH9vXI4hyOO5cWYqEZ1W79rRR8dk2C1X6WCqL1Glt1a2QDc0dxylm+OWNgGO9fpx/Y95vevi/dk9wdA6RGJx8v5HBPewMJvux7b6dS5aTv6wSvO0uDU9ehsa7CKYUtzIMhpVrt92b8V
+|   256 f3:9a:85:58:aa:d9:81:38:2d:ea:15:18:f7:8e:dd:42 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAk0fP0Hv9M+6wbmll4/DTvBMGVuA8jRd3ff365qkwQR8dqwtLqFUR8J7DBbCh23H6HlGhg4G6GmQb1AGDpjQ/M=
+|   256 de:bf:11:6d:c0:27:e3:fc:1b:34:c0:4f:4f:6c:76:8b (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICPpbG/mqrCTcxD4DnUIhOEktHDfpjEDbvm5/ia/jtjV
+| ssh2-enum-algos: 
+|   kex_algorithms: (10)
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group18-sha512
+|       diffie-hellman-group14-sha256
+|       diffie-hellman-group14-sha1
+|   server_host_key_algorithms: (5)
+|       ssh-rsa
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (6)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 21:03:00 2020 -- 1 IP address (1 host up) scanned in 11.42 seconds

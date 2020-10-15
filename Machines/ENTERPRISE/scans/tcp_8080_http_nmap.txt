@@ -1,0 +1,275 @@
+# Nmap 7.80 scan initiated Sat Aug 15 21:03:22 2020 as: nmap -vv --reason -Pn -sV -p 8080 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /media/psf/Home/Downloads/results/10.10.10.61/scans/tcp_8080_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.61/scans/xml/tcp_8080_http_nmap.xml 10.10.10.61
+Nmap scan report for 10.10.10.61
+Host is up, received user-set (0.068s latency).
+Scanned at 2020-08-15 21:03:25 MSK for 551s
+
+PORT     STATE SERVICE REASON          VERSION
+8080/tcp open  http    syn-ack ttl 128 Apache httpd 2.4.10 ((Debian))
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.61
+|   url                                                                            method
+|   http://10.10.10.61:8080/                                                       FORM
+|   http://10.10.10.61:8080/index.php/2-uncategorised/1-romulan-ale                FORM
+|   http://10.10.10.61:8080/index.php/component/users/?view=remind&amp;Itemid=101  FORM
+|   http://10.10.10.61:8080/index.php/component/users/?view=reset&amp;Itemid=101   FORM
+|   http://10.10.10.61:8080/index.php                                              FORM
+|_  http://10.10.10.61:8080/index.php/about                                        FORM
+| http-backup-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.61
+|   http://10.10.10.61:8080/index.php/2-uncategorised/index.bak
+|   http://10.10.10.61:8080/index.php/2-uncategorised/index copy.php/2-uncategorised/1-romulan-ale
+|   http://10.10.10.61:8080/index.php/2-uncategorised/Copy of index.php/2-uncategorised/1-romulan-ale
+|   http://10.10.10.61:8080/index.php/2-uncategorised/Copy (2) of index.php/2-uncategorised/1-romulan-ale
+|   http://10.10.10.61:8080/index.php/2-uncategorised/index.php/2-uncategorised/1-romulan-ale.1
+|_  http://10.10.10.61:8080/index.php/2-uncategorised/index.php/2-uncategorised/1-romulan-ale.~1~
+|_http-chrono: Request times for /; avg: 8979.24ms; min: 8309.33ms; max: 10103.16ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.61
+|     
+|     Path: http://10.10.10.61:8080/media/system/js/caption.js?7560a124c50fb901523cab4948889dd5
+|     Line number: 1
+|     Comment: 
+|         /*
+|                 GNU General Public License version 2 or later; see LICENSE.txt
+|         */
+|     
+|     Path: http://10.10.10.61:8080/media/jui/js/html5.js?7560a124c50fb901523cab4948889dd5
+|     Line number: 1
+|     Comment: 
+|         /**
+|         * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+|         */
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 135
+|     Comment: 
+|         <!-- End Content -->
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 29
+|     Comment: 
+|         <!--[if lt IE 9]><script src="/media/system/js/polyfill.event.js?7560a124c50fb901523cab4948889dd5"></script><![endif]-->
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 42
+|     Comment: 
+|         <!-- Header -->
+|     
+|     Path: http://10.10.10.61:8080/templates/protostar/js/template.js?7560a124c50fb901523cab4948889dd5
+|     Line number: 1
+|     Comment: 
+|         /**
+|          * @package     Joomla.Site
+|          * @subpackage  Templates.protostar
+|          * @copyright   Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.
+|          * @license     GNU General Public License version 2 or later; see LICENSE.txt
+|          * @since       3.2
+|          */
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 79
+|     Comment: 
+|         <!-- Begin Content -->
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 27
+|     Comment: 
+|         <!--[if lt IE 9]><script src="/media/jui/js/html5.js?7560a124c50fb901523cab4948889dd5"></script><![endif]-->
+|     
+|     Path: http://10.10.10.61:8080/index.php?format=feed&amp;type=atom
+|     Line number: 2
+|     Comment: 
+|         <!-- generator="Joomla! - Open Source Content Management" -->
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 195
+|     Comment: 
+|         <!-- Footer -->
+|     
+|     Path: http://10.10.10.61:8080/media/jui/js/bootstrap.min.js?7560a124c50fb901523cab4948889dd5
+|     Line number: 1
+|     Comment: 
+|         /*!
+|          * Bootstrap.js by @fat & @mdo
+|          * Copyright 2012 Twitter, Inc.
+|          * http://www.apache.org/licenses/LICENSE-2.0.txt
+|          *
+|          * Custom version for Joomla!
+|          */
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 39
+|     Comment: 
+|         <!-- Body -->
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 138
+|     Comment: 
+|         <!-- Begin Right Sidebar -->
+|     
+|     Path: http://10.10.10.61:8080/media/jui/js/jquery.min.js?7560a124c50fb901523cab4948889dd5
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license */
+|     
+|     Path: http://10.10.10.61:8080/media/jui/js/jquery-migrate.min.js?7560a124c50fb901523cab4948889dd5
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery Migrate v1.4.1 | (c) jQuery Foundation and other contributors | jquery.org/license */
+|     
+|     Path: http://10.10.10.61:8080/index.php/about
+|     Line number: 190
+|     Comment: 
+|_        <!-- End Right Sidebar -->
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.61
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.10.61:8080/
+|     Form id: login-form
+|     Form action: /index.php
+|     
+|     Path: http://10.10.10.61:8080/index.php/2-uncategorised/1-romulan-ale
+|     Form id: login-form
+|     Form action: /index.php
+|     
+|     Path: http://10.10.10.61:8080/index.php/component/users/?view=remind&amp;Itemid=101
+|     Form id: user-registration
+|     Form action: /index.php/component/users/?task=remind.remind&Itemid=101
+|     
+|     Path: http://10.10.10.61:8080/index.php/component/users/?view=remind&amp;Itemid=101
+|     Form id: login-form
+|     Form action: /index.php/component/users/?Itemid=101
+|     
+|     Path: http://10.10.10.61:8080/index.php/component/users/?view=reset&amp;Itemid=101
+|     Form id: user-registration
+|     Form action: /index.php/component/users/?task=reset.request&Itemid=101
+|     
+|     Path: http://10.10.10.61:8080/index.php/component/users/?view=reset&amp;Itemid=101
+|     Form id: login-form
+|     Form action: /index.php/component/users/?Itemid=101
+|     
+|     Path: http://10.10.10.61:8080/index.php
+|     Form id: login-form
+|_    Form action: /index.php
+|_http-date: Sat, 15 Aug 2020 18:04:15 GMT; -7s from local time.
+|_http-devframework: Joomla detected. Found common traces on /
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-errors: Couldn't find any error pages.
+|_http-exif-spider: ERROR: Script execution failed (use -d to debug)
+| http-feed: 
+| Spidering limited to: maxpagecount=40; withinhost=10.10.10.61
+|   Found the following feeds: 
+|     RSS (version 2.0): http://10.10.10.61:8080/index.php?format=feed&amp;type=atom
+|     RSS (version 2.0): http://10.10.10.61:8080/index.php/2-uncategorised?format=feed&amp;type=rss
+|     RSS (version 2.0): http://10.10.10.61:8080/index.php?format=feed&amp;type=rss
+|_    Atom: http://10.10.10.61:8080/index.php/2-uncategorised?format=feed&amp;type=atom
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-generator: Joomla! - Open Source Content Management
+| http-grep: 
+|   (1) http://10.10.10.61:8080/: 
+|     (1) ip: 
+|_      + 10.10.10.61
+| http-headers: 
+|   Date: Sat, 15 Aug 2020 18:04:11 GMT
+|   Server: Apache/2.4.10 (Debian)
+|   X-Powered-By: PHP/7.0.23
+|   Set-Cookie: 14cd8f365a67fad648754407628a1809=d20aaa26033dbee80a12b25f0ccdea6c; path=/; HttpOnly
+|   Expires: Wed, 17 Aug 2005 00:00:00 GMT
+|   Last-Modified: Sat, 15 Aug 2020 18:04:14 GMT
+|   Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Pragma: no-cache
+|   Connection: close
+|   Content-Type: text/html; charset=utf-8
+|   
+|_  (Request type: HEAD)
+| http-internal-ip-disclosure: 
+|_  Internal IP Leaked: 172.17.0.3
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: HEAD POST OPTIONS
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash f26bd826f3abb2ab716d0bc9a6666679
+| Credits query returned unknown hash 8cf2efaadf4fff5bb366ad3ba7fd8d5d
+|_Version from header x-powered-by: PHP/7.0.23
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-robots.txt: 15 disallowed entries 
+| /joomla/administrator/ /administrator/ /bin/ /cache/ 
+| /cli/ /components/ /includes/ /installation/ /language/ 
+|_/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
+| http-security-headers: 
+|   Cache_Control: 
+|     Header: Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Pragma: 
+|     Header: Pragma: no-cache
+|   Expires: 
+|_    Header: Expires: Wed, 17 Aug 2005 00:00:00 GMT
+|_http-server-header: Apache/2.4.10 (Debian)
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; php: 1
+|     /images/
+|       jpg: 1
+|     /images/banners/
+|       jpg: 1
+|     /index.php/
+|       Other: 1
+|     /index.php/2-uncategorised/
+|       Other: 1
+|     /index.php/component/users/
+|       Other: 1
+|     /media/jui/js/
+|       js: 4
+|     /media/system/js/
+|       js: 3
+|     /templates/protostar/
+|       ico: 1
+|     /templates/protostar/css/
+|       css: 1
+|     /templates/protostar/js/
+|       js: 1
+|   Longest directory structure:
+|     Depth: 3
+|     Dir: /templates/protostar/js/
+|   Total files found (by extension):
+|_    Other: 4; css: 1; ico: 1; jpg: 2; js: 8; php: 1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Home
+| http-traceroute: 
+|   last-modified
+|     Hop #1: Sat, 15 Aug 2020 18:04:40 GMT
+|     Hop #2: Sat, 15 Aug 2020 18:04:43 GMT
+|_    Hop #3: Sat, 15 Aug 2020 18:04:49 GMT
+| http-useragent-tester: 
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     http client
+|     PECL::HTTP
+|     WWW-Mechanize/1.34
+|   Change in Status Code: 
+|     PHPCrawl: 200
+|     URI::Fetch: 200
+|     Snoopy: 200
+|     GT::WWW: 200
+|     Wget/1.13.4 (linux-gnu): 200
+|_    Zend_Http_Client: 200
+| http-vhosts: 
+| 100 names had status 200
+|_27 names had status ERROR
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 21:12:36 2020 -- 1 IP address (1 host up) scanned in 554.47 seconds

@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Tue Aug 18 17:38:36 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /media/psf/Home/Downloads/results/10.10.10.203/scans/_quick_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.203/scans/xml/_quick_tcp_nmap.xml 10.10.10.203
+Nmap scan report for 10.10.10.203
+Host is up, received user-set (0.056s latency).
+Scanned at 2020-08-18 17:38:39 MSK for 13s
+Not shown: 998 filtered ports
+Reason: 998 no-responses
+PORT     STATE SERVICE  REASON          VERSION
+80/tcp   open  http     syn-ack ttl 128 Microsoft IIS httpd 10.0
+3690/tcp open  svnserve syn-ack ttl 128 Subversion
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 18 17:38:52 2020 -- 1 IP address (1 host up) scanned in 17.01 seconds

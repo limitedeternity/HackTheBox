@@ -1,0 +1,30 @@
+# Nmap 7.80 scan initiated Sun Aug 23 22:37:37 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /media/psf/Home/Downloads/results/10.10.10.192/scans/_quick_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.192/scans/xml/_quick_tcp_nmap.xml 10.10.10.192
+Nmap scan report for 10.10.10.192
+Host is up, received user-set (0.092s latency).
+Scanned at 2020-08-23 22:37:40 MSK for 51s
+Not shown: 993 filtered ports
+Reason: 993 no-responses
+PORT     STATE SERVICE       REASON          VERSION
+53/tcp   open  domain?       syn-ack ttl 128
+88/tcp   open  kerberos-sec  syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2020-08-24 02:37:58Z)
+135/tcp  open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+389/tcp  open  ldap          syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: BLACKFIELD.local0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds? syn-ack ttl 128
+593/tcp  open  ncacn_http    syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+3268/tcp open  ldap          syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: BLACKFIELD.local0., Site: Default-First-Site-Name)
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 48702/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 44107/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 10914/udp): CLEAN (Timeout)
+|   Check 4 (port 53637/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 23 22:38:31 2020 -- 1 IP address (1 host up) scanned in 54.84 seconds

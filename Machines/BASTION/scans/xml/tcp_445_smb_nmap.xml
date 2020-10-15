@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 14 15:02:42 2020 as: nmap -vv -&#45;reason -Pn -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_445_smb_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/tcp_445_smb_nmap.xml 10.10.10.134 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_445_smb_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/tcp_445_smb_nmap.xml 10.10.10.134" start="1597406562" startstr="Fri Aug 14 15:02:42 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597406567"/>
+<taskend task="NSE" time="1597406567"/>
+<taskbegin task="NSE" time="1597406567"/>
+<taskend task="NSE" time="1597406567"/>
+<taskbegin task="NSE" time="1597406567"/>
+<taskend task="NSE" time="1597406567"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597406567"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597406567"/>
+<taskbegin task="SYN Stealth Scan" time="1597406567"/>
+<taskend task="SYN Stealth Scan" time="1597406568" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1597406569"/>
+<taskend task="Service scan" time="1597406575" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1597406575"/>
+<taskprogress task="NSE" time="1597406606" percent="90.00" remaining="4" etc="1597406609"/>
+<taskprogress task="NSE" time="1597406636" percent="97.14" remaining="2" etc="1597406638"/>
+<taskend task="NSE" time="1597406655"/>
+<taskbegin task="NSE" time="1597406655"/>
+<taskend task="NSE" time="1597406658"/>
+<taskbegin task="NSE" time="1597406658"/>
+<taskend task="NSE" time="1597406658"/>
+<host starttime="1597406567" endtime="1597406658"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.134" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" product="Windows Server 2016 Standard 14393 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb-enum-sessions" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-enum-users" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-mbenum" output="&#xa;  ERROR: Call to Browser Service failed with status = 2184"/><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)&#xa;  Computer name: Bastion&#xa;  NetBIOS computer name: BASTION\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2020-08-14T14:03:11+02:00&#xa;"><elem key="os">Windows Server 2016 Standard 14393</elem>
+<elem key="lanmanager">Windows Server 2016 Standard 6.3</elem>
+<elem key="server">BASTION\x00</elem>
+<elem key="date">2020-08-14T14:03:11+02:00</elem>
+<elem key="fqdn">Bastion</elem>
+<elem key="domain_dns">Bastion</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-print-text" output="false">false</script><script id="smb-protocols" output="&#xa;  dialects: &#xa;    NT LM 0.12 (SMBv1) [dangerous, but default]&#xa;    2.02&#xa;    2.10&#xa;    3.00&#xa;    3.02&#xa;    3.11"><table key="dialects">
+<elem>NT LM 0.12 (SMBv1) [dangerous, but default]</elem>
+<elem>2.02</elem>
+<elem>2.10</elem>
+<elem>3.00</elem>
+<elem>3.02</elem>
+<elem>3.11</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-system-info" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms10-061" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb2-capabilities" output="&#xa;  2.02: &#xa;    Distributed File System&#xa;  2.10: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.00: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.02: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.11: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations"><table key="2.02">
+<elem>Distributed File System</elem>
+</table>
+<table key="2.10">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.00">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.02">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.11">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-08-14T12:02:56&#xa;  start_date: 2020-08-14T12:00:06"><elem key="date">2020-08-14T12:02:56</elem>
+<elem key="start_date">2020-08-14T12:00:06</elem>
+</script></hostscript><times srtt="63324" rttvar="63324" to="316620"/>
+</host>
+<taskbegin task="NSE" time="1597406658"/>
+<taskend task="NSE" time="1597406658"/>
+<taskbegin task="NSE" time="1597406658"/>
+<taskend task="NSE" time="1597406658"/>
+<taskbegin task="NSE" time="1597406658"/>
+<taskend task="NSE" time="1597406658"/>
+<runstats><finished time="1597406658" timestr="Fri Aug 14 15:04:18 2020" elapsed="98.07" summary="Nmap done at Fri Aug 14 15:04:18 2020; 1 IP address (1 host up) scanned in 98.07 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

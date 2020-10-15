@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 26 13:22:29 2020 as: nmap -vv -&#45;reason -Pn -sU -sV -p 161 &quot;-&#45;script=banner,(snmp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp-nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.195/scans/xml/udp_161_snmp_nmap.xml 10.10.10.195 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sU -sV -p 161 &quot;-&#45;script=banner,(snmp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp-nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.195/scans/xml/udp_161_snmp_nmap.xml 10.10.10.195" start="1598437349" startstr="Wed Aug 26 13:22:29 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="1" services="161"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1598437350"/>
+<taskend task="NSE" time="1598437350"/>
+<taskbegin task="NSE" time="1598437350"/>
+<taskend task="NSE" time="1598437350"/>
+<taskbegin task="NSE" time="1598437350"/>
+<taskend task="NSE" time="1598437350"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598437350"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598437351"/>
+<taskbegin task="UDP Scan" time="1598437351"/>
+<taskend task="UDP Scan" time="1598437351" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1598437351"/>
+<taskend task="Service scan" time="1598437351" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1598437351"/>
+<taskend task="NSE" time="1598437366"/>
+<taskbegin task="NSE" time="1598437366"/>
+<taskend task="NSE" time="1598437366"/>
+<taskbegin task="NSE" time="1598437366"/>
+<taskend task="NSE" time="1598437366"/>
+<host starttime="1598437351" endtime="1598437366"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.195" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="128"/><service name="snmp" product="SNMPv1 server; net-snmp SNMPv3 server" extrainfo="public" hostname="intense" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: net-snmp&#xa;  engineIDFormat: unknown&#xa;  engineIDData: f20383648c26d05d00000000&#xa;  snmpEngineBoots: 603&#xa;  snmpEngineTime: 38m06s"><elem key="enterprise">net-snmp</elem>
+<elem key="engineIDFormat">unknown</elem>
+<elem key="engineIDData">f20383648c26d05d00000000</elem>
+<elem key="snmpEngineBoots">603</elem>
+<elem key="snmpEngineTime">38m06s</elem>
+</script><script id="snmp-sysdescr" output="Linux intense 4.15.0-55-generic #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019 x86_64&#xa;  System uptime: 38m6.25s (228625 timeticks)"/></port>
+</ports>
+<times srtt="40663" rttvar="40663" to="203315"/>
+</host>
+<taskbegin task="NSE" time="1598437366"/>
+<taskend task="NSE" time="1598437366"/>
+<taskbegin task="NSE" time="1598437366"/>
+<taskend task="NSE" time="1598437366"/>
+<taskbegin task="NSE" time="1598437366"/>
+<taskend task="NSE" time="1598437366"/>
+<runstats><finished time="1598437366" timestr="Wed Aug 26 13:22:46 2020" elapsed="16.94" summary="Nmap done at Wed Aug 26 13:22:46 2020; 1 IP address (1 host up) scanned in 16.94 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Aug 18 14:57:58 2020 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.110/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.110/scans/xml/_full_tcp_nmap.xml 10.10.10.110 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.110/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.110/scans/xml/_full_tcp_nmap.xml 10.10.10.110" start="1597751878" startstr="Tue Aug 18 14:57:58 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597751880"/>
+<taskend task="NSE" time="1597751880"/>
+<taskbegin task="NSE" time="1597751880"/>
+<taskend task="NSE" time="1597751880"/>
+<taskbegin task="NSE" time="1597751880"/>
+<taskend task="NSE" time="1597751880"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597751881"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597751881"/>
+<taskbegin task="SYN Stealth Scan" time="1597751881"/>
+<taskprogress task="SYN Stealth Scan" time="1597751912" percent="48.23" remaining="34" etc="1597751945"/>
+<taskprogress task="SYN Stealth Scan" time="1597751948" percent="58.39" remaining="48" etc="1597751996"/>
+<taskprogress task="SYN Stealth Scan" time="1597751987" percent="62.46" remaining="64" etc="1597752051"/>
+<taskprogress task="SYN Stealth Scan" time="1597752053" percent="69.77" remaining="75" etc="1597752128"/>
+<taskprogress task="SYN Stealth Scan" time="1597752131" percent="79.50" remaining="65" etc="1597752195"/>
+<taskprogress task="SYN Stealth Scan" time="1597752182" percent="86.25" remaining="48" etc="1597752230"/>
+<taskprogress task="SYN Stealth Scan" time="1597752224" percent="91.86" remaining="31" etc="1597752254"/>
+<taskend task="SYN Stealth Scan" time="1597752300" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1597752301"/>
+<taskend task="Service scan" time="1597752718" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1597752726"/>
+<taskend task="Traceroute" time="1597752726"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597752726"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597752726"/>
+<taskbegin task="NSE" time="1597752726"/>
+<taskprogress task="NSE" time="1597752757" percent="99.75" remaining="1" etc="1597752757"/>
+<taskend task="NSE" time="1597752758"/>
+<taskbegin task="NSE" time="1597752758"/>
+<taskend task="NSE" time="1597752758"/>
+<taskbegin task="NSE" time="1597752758"/>
+<taskend task="NSE" time="1597752758"/>
+<host starttime="1597751881" endtime="1597752758"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.110" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u5" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 bd:e7:6c:22:81:7a:db:3e:c0:f0:73:1d:f3:af:77:65 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCscULO5kzW5659eWy5BdBJWCHxBSvqKIn6TZwEdp4NG3cLJc6aVQxEUknoSoMa2RAy2CFv/IWKbFIEY33XM2PRhKTuSJd/aNrMKs0jX40q/0zpmRv4/HzLdWE33t9on739xRWgsnNI0JOaGAwa4ryubOeKo53ykP9fTgLeHvT37GthWJIzfXNA7UFXJen3T4+4xmbxA2Low8D8xAGjqVLoEgKGVy05oL+zGucd0C5LyclT0Gkxm3NCk3MLdFdPOuaVX5jlX32yKUA//Go9fN9OlGffcHkLfgTA7s+PLememC14H/r8ZLYJYByeBj2MqR6ndkQ3+OkmSjeOBPEamkqz&#xa;  256 82:b5:f9:d1:95:3b:6d:80:0f:35:91:86:2d:b3:d7:66 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJAzk0wAfmy1zhnnnQOEoqLN0OK0zF9VwqqwIRkG58ARwaVlwSARRf3BS7Ywo2AfjZS9EWZycsXxy3/7MwEQS1U=&#xa;  256 28:3b:26:18:ec:df:b3:36:85:9c:27:54:8d:8c:e1:33 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJsBTHLrhy1IfI4AeEWxjJBm9z6wm/F9mMPMUbpRt2+K"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCscULO5kzW5659eWy5BdBJWCHxBSvqKIn6TZwEdp4NG3cLJc6aVQxEUknoSoMa2RAy2CFv/IWKbFIEY33XM2PRhKTuSJd/aNrMKs0jX40q/0zpmRv4/HzLdWE33t9on739xRWgsnNI0JOaGAwa4ryubOeKo53ykP9fTgLeHvT37GthWJIzfXNA7UFXJen3T4+4xmbxA2Low8D8xAGjqVLoEgKGVy05oL+zGucd0C5LyclT0Gkxm3NCk3MLdFdPOuaVX5jlX32yKUA//Go9fN9OlGffcHkLfgTA7s+PLememC14H/r8ZLYJYByeBj2MqR6ndkQ3+OkmSjeOBPEamkqz</elem>
+<elem key="fingerprint">bde76c22817adb3ec0f0731df3af7765</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJAzk0wAfmy1zhnnnQOEoqLN0OK0zF9VwqqwIRkG58ARwaVlwSARRf3BS7Ywo2AfjZS9EWZycsXxy3/7MwEQS1U=</elem>
+<elem key="fingerprint">82b5f9d1953b6d800f3591862db3d766</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJsBTHLrhy1IfI4AeEWxjJBm9z6wm/F9mMPMUbpRt2+K</elem>
+<elem key="fingerprint">283b2618ecdfb336859c27548d8ce133</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="nginx" version="1.15.8" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.15.8</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: HEAD OPTIONS GET"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.15.8"><elem>nginx/1.15.8</elem>
+</script><script id="http-title" output="About"><elem key="title">About</elem>
+</script><script id="ssl-cert" output="Subject: commonName=craft.htb/organizationName=Craft/stateOrProvinceName=NY/countryName=US&#xa;Issuer: commonName=Craft CA/organizationName=Craft/stateOrProvinceName=New York/countryName=US/localityName=Buffalo/organizationalUnitName=Craft/emailAddress=admin@craft.htb&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-02-06T02:25:47&#xa;Not valid after:  2020-06-20T02:25:47&#xa;MD5:   0111 76e2 83c8 0f26 50e7 56e4 ce16 4766&#xa;SHA-1: 2e11 62ef 4d2e 366f 196a 51f0 c5ca b8ce 8592 3730&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEQDCCAigCCQC6e7PJjcRLnzANBgkqhkiG9w0BAQsFADCBhTELMAkGA1UEBhMC&#xa;VVMxETAPBgNVBAgMCE5ldyBZb3JrMRAwDgYDVQQHDAdCdWZmYWxvMQ4wDAYDVQQK&#xa;DAVDcmFmdDEOMAwGA1UECwwFQ3JhZnQxETAPBgNVBAMMCENyYWZ0IENBMR4wHAYJ&#xa;KoZIhvcNAQkBFg9hZG1pbkBjcmFmdC5odGIwHhcNMTkwMjA2MDIyNTQ3WhcNMjAw&#xa;NjIwMDIyNTQ3WjA+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCTlkxDjAMBgNVBAoM&#xa;BUNyYWZ0MRIwEAYDVQQDDAljcmFmdC5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDV6vf1Ki4fZhJeMOQBAUFx98hM70l6Hpu+4MlB4++i/u2fKRvV&#xa;woGYPpz3KGuNKv+BvjR0+yGFM2HflIgZcc5yE//MGnb9F1fcjJ66rT3qBHjIfwls&#xa;6MRygl9NRVSa09PvrXUbULBr95V624TTPewiEy1yZgMP+ByQzm9Td0jdTQ8HDugq&#xa;kmOmUDX34kDtZc5u7iFBicTXYBpnYVZNEVsUoT6QVZiez07E5L9d0XZ9+iLeVvaB&#xa;XmeimEdbaR2iKKDTmmWaduH/YLUAEP+gS0STM2lKiXL3euL13f9z6i0KjI8Tymby&#xa;Sb6zeznqWCYuJRHfEZnYj+B26jcXU2ZE0GwrAgMBAAEwDQYJKoZIhvcNAQELBQAD&#xa;ggIBACEEpKD0fivZFNx7Q8/q81SNE8TbAQKyfOP98SXU6LAMPOIfAf27tG8C8xGF&#xa;NCmQcggUwpuz2PB+t8vN91oRHdehkpDsVa7ZOKPQm+RQYH7WlMyO65bz5M2zxkbq&#xa;m7Eesaeakdj2XR4ah7TbCeSU7Mu2ePdOLgHme8qI60XjvTrNJ7sB7i5vc5cs7Q9j&#xa;AgOQhQFJddhFsViOcuICei+m8WDg2w4/Kmbu1lSHCCAm4HPA+H8+dZcHN3v3EtqQ&#xa;IRwoph/Jl5h9yxZXDDrFyGMburGjWtIwvrDJmC3m5eDigliUM1OZEWOmDEzBKfUG&#xa;dpNln6Mku8EI2qrVITepg9Szb/7lbd8OJsWo1g4s9BPi2NA/ZGk3z3no6AvGPo6d&#xa;74uNAzGaIBaPH9v2pyUsKbeNm/TY2GikZuOUVdSt/dXCEQ5I5TVxLBJYB9RmzA2+&#xa;u5qS2hN6KOBNBWvYsvLTsAyq5VTzi6seRUk887S5oMoVzD4AxchcrwmBOKPaeyTS&#xa;sUpN2F4Ea7TRPyQWN1IjVnIjkpRzN5mUwnKyyKovKyQaYE9HPM59PC8uTri59mIv&#xa;Rtz++eBxJu/2FFDhI7AiOctOhzKTa7AN0JmTO1pp4OFY5uDl4yFk3t+1lMKhggMa&#xa;UOpGWGGlST3o/VI2ebJq4nDewBf/LY3ZtJbNIKcXNpQQzB7/&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="stateOrProvinceName">NY</elem>
+<elem key="organizationName">Craft</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">craft.htb</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">New York</elem>
+<elem key="organizationName">Craft</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Buffalo</elem>
+<elem key="commonName">Craft CA</elem>
+<elem key="organizationalUnitName">Craft</elem>
+<elem key="emailAddress">admin@craft.htb</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">userdata: 0x56327a160018</elem>
+<elem key="exponent">userdata: 0x563279526f68</elem>
+<elem key="bits">2048</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-02-06T02:25:47</elem>
+<elem key="notAfter">2020-06-20T02:25:47</elem>
+</table>
+<elem key="md5">011176e283c80f2650e756e4ce164766</elem>
+<elem key="sha1">2e1162ef4d2e366f196a51f0c5cab8ce85923730</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEQDCCAigCCQC6e7PJjcRLnzANBgkqhkiG9w0BAQsFADCBhTELMAkGA1UEBhMC&#xa;VVMxETAPBgNVBAgMCE5ldyBZb3JrMRAwDgYDVQQHDAdCdWZmYWxvMQ4wDAYDVQQK&#xa;DAVDcmFmdDEOMAwGA1UECwwFQ3JhZnQxETAPBgNVBAMMCENyYWZ0IENBMR4wHAYJ&#xa;KoZIhvcNAQkBFg9hZG1pbkBjcmFmdC5odGIwHhcNMTkwMjA2MDIyNTQ3WhcNMjAw&#xa;NjIwMDIyNTQ3WjA+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCTlkxDjAMBgNVBAoM&#xa;BUNyYWZ0MRIwEAYDVQQDDAljcmFmdC5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDV6vf1Ki4fZhJeMOQBAUFx98hM70l6Hpu+4MlB4++i/u2fKRvV&#xa;woGYPpz3KGuNKv+BvjR0+yGFM2HflIgZcc5yE//MGnb9F1fcjJ66rT3qBHjIfwls&#xa;6MRygl9NRVSa09PvrXUbULBr95V624TTPewiEy1yZgMP+ByQzm9Td0jdTQ8HDugq&#xa;kmOmUDX34kDtZc5u7iFBicTXYBpnYVZNEVsUoT6QVZiez07E5L9d0XZ9+iLeVvaB&#xa;XmeimEdbaR2iKKDTmmWaduH/YLUAEP+gS0STM2lKiXL3euL13f9z6i0KjI8Tymby&#xa;Sb6zeznqWCYuJRHfEZnYj+B26jcXU2ZE0GwrAgMBAAEwDQYJKoZIhvcNAQELBQAD&#xa;ggIBACEEpKD0fivZFNx7Q8/q81SNE8TbAQKyfOP98SXU6LAMPOIfAf27tG8C8xGF&#xa;NCmQcggUwpuz2PB+t8vN91oRHdehkpDsVa7ZOKPQm+RQYH7WlMyO65bz5M2zxkbq&#xa;m7Eesaeakdj2XR4ah7TbCeSU7Mu2ePdOLgHme8qI60XjvTrNJ7sB7i5vc5cs7Q9j&#xa;AgOQhQFJddhFsViOcuICei+m8WDg2w4/Kmbu1lSHCCAm4HPA+H8+dZcHN3v3EtqQ&#xa;IRwoph/Jl5h9yxZXDDrFyGMburGjWtIwvrDJmC3m5eDigliUM1OZEWOmDEzBKfUG&#xa;dpNln6Mku8EI2qrVITepg9Szb/7lbd8OJsWo1g4s9BPi2NA/ZGk3z3no6AvGPo6d&#xa;74uNAzGaIBaPH9v2pyUsKbeNm/TY2GikZuOUVdSt/dXCEQ5I5TVxLBJYB9RmzA2+&#xa;u5qS2hN6KOBNBWvYsvLTsAyq5VTzi6seRUk887S5oMoVzD4AxchcrwmBOKPaeyTS&#xa;sUpN2F4Ea7TRPyQWN1IjVnIjkpRzN5mUwnKyyKovKyQaYE9HPM59PC8uTri59mIv&#xa;Rtz++eBxJu/2FFDhI7AiOctOhzKTa7AN0JmTO1pp4OFY5uDl4yFk3t+1lMKhggMa&#xa;UOpGWGGlST3o/VI2ebJq4nDewBf/LY3ZtJbNIKcXNpQQzB7/&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="6022"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port6022-TCP:V=7.80%I=9%D=8/18%Time=5F3BC3F3%P=x86_64-pc-linux-gnu%r(NULL,C,&quot;SSH-2\.0-Go\r\n&quot;)%r(GenericLines,20C,&quot;SSH-2\.0-Go\r\n\0\0\x01\xfc\x04\x14P0\x15\xdd\x81v\xd6c\x89d\\buvQ\$\0\0\0\x8ccurve25519-sha256@libssh\.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1\0\0\0\x07ssh-rsa\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\0\0\0\0\0\0\0\xfe\xb6B\\&quot;)%r(GetRequest,20C,&quot;SSH-2\.0-Go\r\n\0\0\x01\xfc\x04\x142\x08\xdbk`DU\x84\x7f\x0f\x06\xfd\xbfR\x04\xab\0\0\0\x8ccurve25519-sha256@libssh\.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1\0\0\0\x07ssh-rsa\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\0\0\0\0\0\0\0p\xd8\x0f\x88&quot;)%r(HTTPOptions,20C,&quot;SSH-2\.0-Go\r\n\0\0\x01\xfc\x04\x143zC\x11\$2u\xc9\xa1\xdbP\[\x94\x01\x9e@\0\0\0\x8ccurve25519-sha256@libssh\.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1\0\0\0\x07ssh-rsa\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\0\0\0\0\0\0\0i\xec\xb5\xd4&quot;)%r(RTSPRequest,20C,&quot;SSH-2\.0-Go\r\n\0\0\x01\xfc\x04\x14\x85\x8e\xadZ;\x8ce\x19\xe3\x03\x9a\x7f\x80\xed\*\x99\0\0\0\x8ccurve25519-sha256@libssh\.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1\0\0\0\x07ssh-rsa\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\0\0\0\0\0\0\x009\[A\]&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    SSH-2.0-Go&#xa;    dbuvQ$&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none&#xa;  GetRequest: &#xa;    SSH-2.0-Go&#xa;    k`DU&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none&#xa;  HTTPOptions: &#xa;    SSH-2.0-Go&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none&#xa;  NULL: &#xa;    SSH-2.0-Go&#xa;  RTSPRequest: &#xa;    SSH-2.0-Go&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none&#xa;    9[A]"><elem key="GenericLines">&#xa;    SSH-2.0-Go&#xa;    dbuvQ$&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none</elem>
+<elem key="GetRequest">&#xa;    SSH-2.0-Go&#xa;    k`DU&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none</elem>
+<elem key="HTTPOptions">&#xa;    SSH-2.0-Go&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none</elem>
+<elem key="NULL">&#xa;    SSH-2.0-Go</elem>
+<elem key="RTSPRequest">&#xa;    SSH-2.0-Go&#xa;    curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1&#xa;    ssh-rsa&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96&#xa;    none&#xa;    none&#xa;    9[A]</elem>
+</script><script id="ssh-hostkey" output="&#xa;  2048 5b:cc:bf:f1:a1:8f:72:b0:c0:fb:df:a3:01:dc:a6:fb (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDU+fEcb0HbuFvUiMce89AuwclFwGQAJ/FSk+X/uPL+08lP9AzNCivAovV8Py3XEGfUhSDQeJ6Xw5aZCIZB7z/40IViSC1S1fe49lmv7TlDSFKEOZIDQIAuDP3giwyrdX0MnM5qrFtqs9lIH0D8MnGVCh3kcjG5Mh+Jb4/fcGkIpLSAyVc2Fm5PFFV0XIay5vv/SffCO1141JHFZj+Sal4t4MmlZiY1RTaAgGLsn1SshS2EYFv91rZqHmmNCk+GNVSU9txRQm3OrB+06QTsOWnYN71p6+hTe/TQjhaE53zM+/xZi7sPIq6l6evvNSMOOt9fgVQkvM2NuVutLiq6od2h"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDU+fEcb0HbuFvUiMce89AuwclFwGQAJ/FSk+X/uPL+08lP9AzNCivAovV8Py3XEGfUhSDQeJ6Xw5aZCIZB7z/40IViSC1S1fe49lmv7TlDSFKEOZIDQIAuDP3giwyrdX0MnM5qrFtqs9lIH0D8MnGVCh3kcjG5Mh+Jb4/fcGkIpLSAyVc2Fm5PFFV0XIay5vv/SffCO1141JHFZj+Sal4t4MmlZiY1RTaAgGLsn1SshS2EYFv91rZqHmmNCk+GNVSU9txRQm3OrB+06QTsOWnYN71p6+hTe/TQjhaE53zM+/xZi7sPIq6l6evvNSMOOt9fgVQkvM2NuVutLiq6od2h</elem>
+<elem key="fingerprint">5bccbff1a18f72b0c0fbdfa301dca6fb</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42731"/>
+<osmatch name="Fortinet FortiGate 200B firewall" accuracy="89" line="25631">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="89"><cpe>cpe:/h:fortinet:fortigate_200b</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.80%E=4%D=8/18%OT=22%CT=1%CU=42731%PV=Y%DS=1%DC=T%G=N%TM=5F3BC5B6%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=E2%GCD=1%ISR=F4%CI=RD%TS=U)&#xa;OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)&#xa;WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)&#xa;ECN(R=Y%DF=N%T=76%W=8000%O=M5B4W1N%CC=N%Q=)&#xa;T1(R=Y%DF=N%T=76%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)&#xa;T3(R=Y%DF=N%T=76%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)&#xa;T4(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)&#xa;T5(R=Y%DF=N%T=76%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)&#xa;T7(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=76%IPL=164%UN=0%RIPL=G%RID=E42B%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=76%CD=S)&#xa;"/>
+</os>
+<distance value="1"/>
+<tcpsequence index="232" difficulty="Good luck!" values="F5B8E20D,FF1F0B0E,1D8AA08,E43D6F4,1836BA36,1FB5D34A"/>
+<ipidsequence class="Busy server or unknown class" values="2F1,2F4,30D,324,343,354"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="10.10.10.110" rtt="128.43" host="api.craft.htb"/>
+</trace>
+<times srtt="75916" rttvar="30367" to="197384"/>
+</host>
+<taskbegin task="NSE" time="1597752758"/>
+<taskend task="NSE" time="1597752758"/>
+<taskbegin task="NSE" time="1597752758"/>
+<taskend task="NSE" time="1597752758"/>
+<taskbegin task="NSE" time="1597752758"/>
+<taskend task="NSE" time="1597752758"/>
+<runstats><finished time="1597752758" timestr="Tue Aug 18 15:12:38 2020" elapsed="881.80" summary="Nmap done at Tue Aug 18 15:12:38 2020; 1 IP address (1 host up) scanned in 881.80 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

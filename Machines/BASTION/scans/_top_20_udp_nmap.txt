@@ -1,0 +1,48 @@
+# Nmap 7.80 scan initiated Fri Aug 14 15:02:12 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/_top_20_udp_nmap.xml 10.10.10.134
+Nmap scan report for 10.10.10.134
+Host is up, received user-set (0.061s latency).
+Scanned at 2020-08-14 15:02:15 MSK for 360s
+
+PORT      STATE         SERVICE      REASON               VERSION
+53/udp    closed        domain       port-unreach ttl 128
+67/udp    closed        dhcps        port-unreach ttl 128
+68/udp    closed        dhcpc        port-unreach ttl 128
+69/udp    open|filtered tftp         no-response
+123/udp   open|filtered ntp          no-response
+135/udp   closed        msrpc        port-unreach ttl 128
+137/udp   open|filtered netbios-ns   no-response
+138/udp   open|filtered netbios-dgm  no-response
+139/udp   open|filtered netbios-ssn  no-response
+161/udp   open|filtered snmp         no-response
+162/udp   closed        snmptrap     port-unreach ttl 128
+445/udp   closed        microsoft-ds port-unreach ttl 128
+500/udp   open|filtered isakmp       no-response
+|_ike-version: ERROR: Script execution failed (use -d to debug)
+514/udp   closed        syslog       port-unreach ttl 128
+520/udp   closed        route        port-unreach ttl 128
+631/udp   closed        ipp          port-unreach ttl 128
+1434/udp  closed        ms-sql-m     port-unreach ttl 128
+1900/udp  closed        upnp         port-unreach ttl 128
+4500/udp  open|filtered nat-t-ike    no-response
+49152/udp closed        unknown      port-unreach ttl 128
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+No OS matches for host
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/14%OT=%CT=%CU=53%PV=Y%DS=1%DC=T%G=N%TM=5F367EAF%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD%II=I)
+T5(R=Y%DF=N%T=76%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=76%IPL=164%UN=0%RIPL=G%RID=CBF%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=76%CD=Z)
+
+Network Distance: 1 hop
+
+TRACEROUTE (using port 67/udp)
+HOP RTT       ADDRESS
+1   133.42 ms 10.10.10.134
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 15:08:16 2020 -- 1 IP address (1 host up) scanned in 365.28 seconds

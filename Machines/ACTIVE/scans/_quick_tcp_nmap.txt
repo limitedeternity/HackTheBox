@@ -1,0 +1,47 @@
+# Nmap 7.80 scan initiated Sat Aug 15 19:07:40 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /media/psf/Home/Downloads/results/10.10.10.100/scans/_quick_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.100/scans/xml/_quick_tcp_nmap.xml 10.10.10.100
+Nmap scan report for 10.10.10.100
+Host is up, received user-set (0.066s latency).
+Scanned at 2020-08-15 19:07:43 MSK for 199s
+Not shown: 983 closed ports
+Reason: 983 resets
+PORT      STATE SERVICE       REASON          VERSION
+53/tcp    open  domain        syn-ack ttl 128 Microsoft DNS 6.1.7601 (1DB15D39) (Windows Server 2008 R2 SP1)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)
+88/tcp    open  kerberos-sec  syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2020-08-15 16:07:51Z)
+135/tcp   open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 128 Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: active.htb, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack ttl 128
+464/tcp   open  kpasswd5?     syn-ack ttl 128
+593/tcp   open  ncacn_http    syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack ttl 128
+3268/tcp  open  ldap          syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: active.htb, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack ttl 128
+49152/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49153/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49154/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49155/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49157/tcp open  ncacn_http    syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008:r2:sp1, cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: -1s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 50096/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 40109/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 32199/udp): CLEAN (Timeout)
+|   Check 4 (port 38631/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-08-15T16:08:56
+|_  start_date: 2020-08-15T08:54:55
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 19:11:02 2020 -- 1 IP address (1 host up) scanned in 201.96 seconds

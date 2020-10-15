@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Fri Aug 14 15:10:47 2020 as: nmap -vv --reason -Pn -sV -p 445 --script=smb-vuln-ms07-029 --script-args=unsafe=1 -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_445_smb_ms07-029.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/tcp_445_smb_ms07-029.xml 10.10.10.134
+Nmap scan report for 10.10.10.134
+Host is up, received user-set (0.21s latency).
+Scanned at 2020-08-14 15:10:49 MSK for 9s
+
+PORT    STATE SERVICE      REASON  VERSION
+445/tcp open  microsoft-ds syn-ack Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+Service Info: OS: Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 15:10:58 2020 -- 1 IP address (1 host up) scanned in 11.17 seconds

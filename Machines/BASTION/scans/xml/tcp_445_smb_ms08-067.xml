@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 14 15:11:11 2020 as: nmap -vv -&#45;reason -Pn -sV -p 445 -&#45;script=smb-vuln-ms08-067 -&#45;script-args=unsafe=1 -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_445_smb_ms08-067.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/tcp_445_smb_ms08-067.xml 10.10.10.134 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 445 -&#45;script=smb-vuln-ms08-067 -&#45;script-args=unsafe=1 -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_445_smb_ms08-067.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/tcp_445_smb_ms08-067.xml 10.10.10.134" start="1597407071" startstr="Fri Aug 14 15:11:11 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597407073"/>
+<taskend task="NSE" time="1597407073"/>
+<taskbegin task="NSE" time="1597407073"/>
+<taskend task="NSE" time="1597407073"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597407073"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597407073"/>
+<taskbegin task="Connect Scan" time="1597407073"/>
+<taskend task="Connect Scan" time="1597407073" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1597407074"/>
+<taskend task="Service scan" time="1597407080" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1597407080"/>
+<taskend task="NSE" time="1597407081"/>
+<taskbegin task="NSE" time="1597407081"/>
+<taskend task="NSE" time="1597407081"/>
+<host starttime="1597407073" endtime="1597407081"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.134" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Microsoft Windows Server 2008 R2 - 2012 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="69856" rttvar="69856" to="349280"/>
+</host>
+<taskbegin task="NSE" time="1597407082"/>
+<taskend task="NSE" time="1597407082"/>
+<taskbegin task="NSE" time="1597407082"/>
+<taskend task="NSE" time="1597407082"/>
+<runstats><finished time="1597407082" timestr="Fri Aug 14 15:11:22 2020" elapsed="10.84" summary="Nmap done at Fri Aug 14 15:11:22 2020; 1 IP address (1 host up) scanned in 10.84 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

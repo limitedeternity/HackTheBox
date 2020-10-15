@@ -1,0 +1,93 @@
+# Nmap 7.80 scan initiated Fri Aug 14 23:48:52 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.161/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.161/scans/xml/_full_tcp_nmap.xml 10.10.10.161
+Nmap scan report for 10.10.10.161
+Host is up, received user-set (0.045s latency).
+Scanned at 2020-08-14 23:48:54 MSK for 620s
+Not shown: 65512 closed ports
+Reason: 65512 resets
+PORT      STATE SERVICE      REASON          VERSION
+53/tcp    open  domain?      syn-ack ttl 128
+88/tcp    open  kerberos-sec syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2020-08-14 20:56:37Z)
+135/tcp   open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+139/tcp   open  netbios-ssn  syn-ack ttl 128 Microsoft Windows netbios-ssn
+389/tcp   open  ldap         syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds syn-ack ttl 128 Windows Server 2016 Standard 14393 microsoft-ds (workgroup: HTB)
+464/tcp   open  kpasswd5?    syn-ack ttl 128
+593/tcp   open  ncacn_http   syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+3268/tcp  open  ldap         syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped   syn-ack ttl 128
+5985/tcp  open  http         syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf       syn-ack ttl 128 .NET Message Framing
+47001/tcp open  http         syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49665/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49666/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49667/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49671/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49678/tcp open  ncacn_http   syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+49679/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49686/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49708/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+49907/tcp open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (92%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (92%)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=8/14%OT=53%CT=1%CU=39194%PV=Y%DS=1%DC=T%G=Y%TM=5F36FB2
+OS:2%P=x86_64-pc-linux-gnu)SEQ(SP=AD%GCD=1%ISR=F9%TI=I%CI=RD%II=I%SS=S%TS=U
+OS:)SEQ(SP=BB%GCD=1%ISR=F9%TI=I%CI=RD%TS=U)OPS(O1=M5B4W1N%O2=M578W1N%O3=M28
+OS:0W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)WIN(W1=8000%W2=8000%W3=8000%W4=800
+OS:0%W5=8000%W6=8000)ECN(R=Y%DF=N%T=80%W=8000%O=M5B4W1N%CC=N%Q=)T1(R=Y%DF=N
+OS:%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=80%W=2000%S=A%A=S%F=AR%O=%RD=0
+OS:%Q=)T3(R=Y%DF=N%T=80%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)T4(R=Y%DF=N%
+OS:T=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=80%W=2000%S=O%A=S+%F=AR
+OS:%O=%RD=0%Q=)T6(R=Y%DF=N%T=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T
+OS:=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%
+OS:RID=4009%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=179 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: FOREST; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h26m49s, deviation: 4h02m30s, median: 6m48s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 62316/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 32753/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 13233/udp): CLEAN (Timeout)
+|   Check 4 (port 44587/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: FOREST
+|   NetBIOS computer name: FOREST\x00
+|   Domain name: htb.local
+|   Forest name: htb.local
+|   FQDN: FOREST.htb.local
+|_  System time: 2020-08-14T14:04:49-07:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-08-14T21:04:50
+|_  start_date: 2020-08-14T20:47:28
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   52.96 ms 10.10.10.161
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 23:59:15 2020 -- 1 IP address (1 host up) scanned in 623.95 seconds

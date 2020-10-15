@@ -1,0 +1,130 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.4
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[+] URL: http://10.10.10.61/ [10.10.10.61]
+[+] Started: Sat Aug 15 22:34:31 2020
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.10 (Debian)
+ |  - X-Powered-By: PHP/5.6.31
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://10.10.10.61/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[+] http://10.10.10.61/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] The external WP-Cron seems to be enabled: http://10.10.10.61/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 4.8.1 identified (Insecure, released on 2017-08-02).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://10.10.10.61/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.1'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://10.10.10.61/, Match: 'WordPress 4.8.1'
+
+[i] The main theme could not be detected.
+
+[+] Enumerating Vulnerable Plugins (via Aggressive Methods)
+
+ Checking Known Locations -: |=================================================|
+[+] Checking Plugin Versions (via Aggressive Methods)
+
+[i] No plugins Found.
+
+[+] Enumerating Vulnerable Themes (via Passive and Aggressive Methods)
+
+ Checking Known Locations -: |=================================================|
+[+] Checking Theme Versions (via Passive and Aggressive Methods)
+
+[i] No themes Found.
+
+[+] Enumerating Timthumbs (via Passive and Aggressive Methods)
+
+ Checking Known Locations -: |=================================================|
+
+[i] No Timthumbs Found.
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+
+ Checking Config Backups -: |==================================================|
+
+[i] No Config Backups Found.
+
+[+] Enumerating DB Exports (via Passive and Aggressive Methods)
+
+ Checking DB Exports -: |======================================================|
+
+[i] No DB Exports Found.
+
+[+] Enumerating Medias (via Passive and Aggressive Methods) (Permalink setting must be set to "Plain" for those to be detected)
+
+ Brute Forcing Attachment IDs -: |=============================================|
+
+[i] Medias(s) Identified:
+
+[+] http://10.10.10.61/?attachment_id=13
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[+] http://10.10.10.61/?attachment_id=14
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[+] http://10.10.10.61/?attachment_id=15
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[+] http://10.10.10.61/?attachment_id=16
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[+] http://10.10.10.61/?attachment_id=23
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[+] http://10.10.10.61/?attachment_id=24
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[+] Enumerating Users (via Passive and Aggressive Methods)
+
+ Brute Forcing Author IDs -: |=================================================|
+
+[i] User(s) Identified:
+
+[+] william-riker
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+
+[!] No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[!] You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[+] Finished: Sat Aug 15 22:36:12 2020
+[+] Requests Done: 5402
+[+] Cached Requests: 50
+[+] Data Sent: 1.304 MB
+[+] Data Received: 764.281 KB
+[+] Memory used: 247.594 MB
+[+] Elapsed time: 00:01:40

@@ -1,0 +1,51 @@
+# Nmap 7.80 scan initiated Mon Sep 28 12:31:49 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.209/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.209/scans/xml/_full_tcp_nmap.xml 10.10.10.209
+adjust_timeouts2: packet supposedly had rtt of -778054 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -778054 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.209
+Host is up, received user-set (0.028s latency).
+Scanned at 2020-09-28 12:31:53 MSK for 49s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON          VERSION
+22/tcp open  ssh     syn-ack ttl 128 OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 128 Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Doctor
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (96%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (96%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=9/28%OT=22%CT=1%CU=%PV=Y%DS=1%DC=T%G=N%TM=5F71ADBA%P=x86_64-pc-linux-gnu)
+SEQ(SP=B4%GCD=1%ISR=F9%TI=I%CI=I%II=I%SS=S%TS=U)
+SEQ(SP=CB%GCD=1%ISR=F9%CI=I%TS=U)
+OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)
+WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)
+ECN(R=Y%DF=N%TG=80%W=8000%O=M5B4W1N%CC=N%Q=)
+T1(R=Y%DF=N%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%TG=80%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)
+T4(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T5(R=N)
+T5(R=Y%DF=N%TG=80%W=2000%S=A%A=Z%F=R%O=%RD=0%Q=)
+T6(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=S)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=203 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 10318/tcp)
+HOP RTT     ADDRESS
+1   0.38 ms 10.10.10.209
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 28 12:32:42 2020 -- 1 IP address (1 host up) scanned in 54.35 seconds

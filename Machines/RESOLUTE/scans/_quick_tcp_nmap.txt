@@ -1,0 +1,52 @@
+# Nmap 7.80 scan initiated Fri Aug 21 20:52:25 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /media/psf/Home/Downloads/results/10.10.10.169/scans/_quick_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.169/scans/xml/_quick_tcp_nmap.xml 10.10.10.169
+Nmap scan report for 10.10.10.169
+Host is up, received user-set (0.078s latency).
+Scanned at 2020-08-21 20:52:35 MSK for 114s
+Not shown: 989 closed ports
+Reason: 989 resets
+PORT     STATE SERVICE      REASON          VERSION
+53/tcp   open  domain?      syn-ack ttl 128
+88/tcp   open  kerberos-sec syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2020-08-21 17:59:45Z)
+135/tcp  open  msrpc        syn-ack ttl 128 Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack ttl 128 Microsoft Windows netbios-ssn
+389/tcp  open  ldap         syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: megabank.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds syn-ack ttl 128 Windows Server 2016 Standard 14393 microsoft-ds (workgroup: MEGABANK)
+464/tcp  open  kpasswd5?    syn-ack ttl 128
+593/tcp  open  ncacn_http   syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped   syn-ack ttl 128
+3268/tcp open  ldap         syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: megabank.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped   syn-ack ttl 128
+Service Info: Host: RESOLUTE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h26m59s, deviation: 4h02m30s, median: 6m59s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 53067/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 52471/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 55070/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 15620/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: Resolute
+|   NetBIOS computer name: RESOLUTE\x00
+|   Domain name: megabank.local
+|   Forest name: megabank.local
+|   FQDN: Resolute.megabank.local
+|_  System time: 2020-08-21T11:00:05-07:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-08-21T18:00:09
+|_  start_date: 2020-08-21T17:58:35
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 21 20:54:29 2020 -- 1 IP address (1 host up) scanned in 125.69 seconds

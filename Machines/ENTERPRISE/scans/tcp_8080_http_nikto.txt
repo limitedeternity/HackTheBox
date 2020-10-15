@@ -1,0 +1,35 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.10.61
++ Target Hostname:    10.10.10.61
++ Target Port:        8080
++ Start Time:         2020-08-15 21:04:16 (GMT3)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.10 (Debian)
++ Retrieved x-powered-by header: PHP/7.0.23
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Entry '/administrator/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/bin/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/cache/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/cli/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/components/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/includes/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/language/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/layouts/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/libraries/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/modules/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/plugins/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/tmp/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ "robots.txt" contains 14 entries which should be manually viewed.
++ RFC-1918 IP address found in the 'location' header. The IP is "172.17.0.3".
++ OSVDB-630: The web server may reveal its internal or real IP in the Location header via a request to /images over HTTP/1.0. The value is "172.17.0.3".
++ Apache/2.4.10 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.
++ ERROR: Error limit (20) reached for host, giving up. Last error: opening stream: can't connect (connect error): Network is unreachable
++ Scan terminated:  17 error(s) and 22 item(s) reported on remote host
++ End Time:           2020-08-15 21:32:44 (GMT3) (1708 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

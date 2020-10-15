@@ -1,0 +1,32 @@
+[*] Hostname: craft.htb
+
+[*] Usernames: dinesh, ebachman, gilfoyle.
+
+[+] Vulnerable "abv" field (makes use of `eval`): https://gogs.craft.htb/Craft/craft-api/commit/c414b160578943acfe2e158e89409623f41da4c6
+
+[+] Credentials (dinesh:4aUh0A8PbVJxgd): https://gogs.craft.htb/Craft/craft-api/commit/10e3ba4f0a09c778d7cec673f28d410b73455a86
+
+[*] https://stackoverflow.com/questions/17136772/eval-to-import-a-module
+
+[+] The application uses Python3. Crafting an exploit.
+
+[+] Got a reverse TCP shell.
+
+[+] Retrieved settings.py:
+
+- JWT signing key (hz66OCkDtv8G6D).
+- MySQL credentials (craft:qLGockJ6G2J75O).
+
+[*] Nothing inside the container. Enumerating the database (by substituting dbtest.py).
+
+[+] Extracted credentials (to mysql_db_creds.json).
+
+[+] Logged in to gogs.craft.htb as gilfoyle.
+
+[+] Extracted id_rsa from private repository (passphrase – ZEU3N8WNM2rh4T).
+
+[+] Got user.txt.
+
+[+] `$ vault ssh root@127.0.0.1`
+
+[+] Got root.txt.

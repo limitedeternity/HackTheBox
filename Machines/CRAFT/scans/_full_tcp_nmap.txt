@@ -1,0 +1,192 @@
+# Nmap 7.80 scan initiated Tue Aug 18 14:57:58 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.110/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.110/scans/xml/_full_tcp_nmap.xml 10.10.10.110
+adjust_timeouts2: packet supposedly had rtt of -229100 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -229100 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -361922 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -361922 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -737036 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -737036 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1149122 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1149122 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1409763 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1409763 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.110
+Host is up, received user-set (0.076s latency).
+Scanned at 2020-08-18 14:58:01 MSK for 877s
+Not shown: 65532 closed ports
+Reason: 65532 resets
+PORT     STATE SERVICE  REASON          VERSION
+22/tcp   open  ssh      syn-ack ttl 128 OpenSSH 7.4p1 Debian 10+deb9u5 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 bd:e7:6c:22:81:7a:db:3e:c0:f0:73:1d:f3:af:77:65 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCscULO5kzW5659eWy5BdBJWCHxBSvqKIn6TZwEdp4NG3cLJc6aVQxEUknoSoMa2RAy2CFv/IWKbFIEY33XM2PRhKTuSJd/aNrMKs0jX40q/0zpmRv4/HzLdWE33t9on739xRWgsnNI0JOaGAwa4ryubOeKo53ykP9fTgLeHvT37GthWJIzfXNA7UFXJen3T4+4xmbxA2Low8D8xAGjqVLoEgKGVy05oL+zGucd0C5LyclT0Gkxm3NCk3MLdFdPOuaVX5jlX32yKUA//Go9fN9OlGffcHkLfgTA7s+PLememC14H/r8ZLYJYByeBj2MqR6ndkQ3+OkmSjeOBPEamkqz
+|   256 82:b5:f9:d1:95:3b:6d:80:0f:35:91:86:2d:b3:d7:66 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJAzk0wAfmy1zhnnnQOEoqLN0OK0zF9VwqqwIRkG58ARwaVlwSARRf3BS7Ywo2AfjZS9EWZycsXxy3/7MwEQS1U=
+|   256 28:3b:26:18:ec:df:b3:36:85:9c:27:54:8d:8c:e1:33 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJsBTHLrhy1IfI4AeEWxjJBm9z6wm/F9mMPMUbpRt2+K
+443/tcp  open  ssl/http syn-ack ttl 128 nginx 1.15.8
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS GET
+|_http-server-header: nginx/1.15.8
+|_http-title: About
+| ssl-cert: Subject: commonName=craft.htb/organizationName=Craft/stateOrProvinceName=NY/countryName=US
+| Issuer: commonName=Craft CA/organizationName=Craft/stateOrProvinceName=New York/countryName=US/localityName=Buffalo/organizationalUnitName=Craft/emailAddress=admin@craft.htb
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-02-06T02:25:47
+| Not valid after:  2020-06-20T02:25:47
+| MD5:   0111 76e2 83c8 0f26 50e7 56e4 ce16 4766
+| SHA-1: 2e11 62ef 4d2e 366f 196a 51f0 c5ca b8ce 8592 3730
+| -----BEGIN CERTIFICATE-----
+| MIIEQDCCAigCCQC6e7PJjcRLnzANBgkqhkiG9w0BAQsFADCBhTELMAkGA1UEBhMC
+| VVMxETAPBgNVBAgMCE5ldyBZb3JrMRAwDgYDVQQHDAdCdWZmYWxvMQ4wDAYDVQQK
+| DAVDcmFmdDEOMAwGA1UECwwFQ3JhZnQxETAPBgNVBAMMCENyYWZ0IENBMR4wHAYJ
+| KoZIhvcNAQkBFg9hZG1pbkBjcmFmdC5odGIwHhcNMTkwMjA2MDIyNTQ3WhcNMjAw
+| NjIwMDIyNTQ3WjA+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCTlkxDjAMBgNVBAoM
+| BUNyYWZ0MRIwEAYDVQQDDAljcmFmdC5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+| DwAwggEKAoIBAQDV6vf1Ki4fZhJeMOQBAUFx98hM70l6Hpu+4MlB4++i/u2fKRvV
+| woGYPpz3KGuNKv+BvjR0+yGFM2HflIgZcc5yE//MGnb9F1fcjJ66rT3qBHjIfwls
+| 6MRygl9NRVSa09PvrXUbULBr95V624TTPewiEy1yZgMP+ByQzm9Td0jdTQ8HDugq
+| kmOmUDX34kDtZc5u7iFBicTXYBpnYVZNEVsUoT6QVZiez07E5L9d0XZ9+iLeVvaB
+| XmeimEdbaR2iKKDTmmWaduH/YLUAEP+gS0STM2lKiXL3euL13f9z6i0KjI8Tymby
+| Sb6zeznqWCYuJRHfEZnYj+B26jcXU2ZE0GwrAgMBAAEwDQYJKoZIhvcNAQELBQAD
+| ggIBACEEpKD0fivZFNx7Q8/q81SNE8TbAQKyfOP98SXU6LAMPOIfAf27tG8C8xGF
+| NCmQcggUwpuz2PB+t8vN91oRHdehkpDsVa7ZOKPQm+RQYH7WlMyO65bz5M2zxkbq
+| m7Eesaeakdj2XR4ah7TbCeSU7Mu2ePdOLgHme8qI60XjvTrNJ7sB7i5vc5cs7Q9j
+| AgOQhQFJddhFsViOcuICei+m8WDg2w4/Kmbu1lSHCCAm4HPA+H8+dZcHN3v3EtqQ
+| IRwoph/Jl5h9yxZXDDrFyGMburGjWtIwvrDJmC3m5eDigliUM1OZEWOmDEzBKfUG
+| dpNln6Mku8EI2qrVITepg9Szb/7lbd8OJsWo1g4s9BPi2NA/ZGk3z3no6AvGPo6d
+| 74uNAzGaIBaPH9v2pyUsKbeNm/TY2GikZuOUVdSt/dXCEQ5I5TVxLBJYB9RmzA2+
+| u5qS2hN6KOBNBWvYsvLTsAyq5VTzi6seRUk887S5oMoVzD4AxchcrwmBOKPaeyTS
+| sUpN2F4Ea7TRPyQWN1IjVnIjkpRzN5mUwnKyyKovKyQaYE9HPM59PC8uTri59mIv
+| Rtz++eBxJu/2FFDhI7AiOctOhzKTa7AN0JmTO1pp4OFY5uDl4yFk3t+1lMKhggMa
+| UOpGWGGlST3o/VI2ebJq4nDewBf/LY3ZtJbNIKcXNpQQzB7/
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+6022/tcp open  ssh      syn-ack ttl 128 (protocol 2.0)
+| fingerprint-strings: 
+|   GenericLines: 
+|     SSH-2.0-Go
+|     dbuvQ$
+|     curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+|     ssh-rsa
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     none
+|     none
+|   GetRequest: 
+|     SSH-2.0-Go
+|     k`DU
+|     curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+|     ssh-rsa
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     none
+|     none
+|   HTTPOptions: 
+|     SSH-2.0-Go
+|     curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+|     ssh-rsa
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     none
+|     none
+|   NULL: 
+|     SSH-2.0-Go
+|   RTSPRequest: 
+|     SSH-2.0-Go
+|     curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+|     ssh-rsa
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96
+|     none
+|     none
+|_    9[A]
+| ssh-hostkey: 
+|   2048 5b:cc:bf:f1:a1:8f:72:b0:c0:fb:df:a3:01:dc:a6:fb (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDU+fEcb0HbuFvUiMce89AuwclFwGQAJ/FSk+X/uPL+08lP9AzNCivAovV8Py3XEGfUhSDQeJ6Xw5aZCIZB7z/40IViSC1S1fe49lmv7TlDSFKEOZIDQIAuDP3giwyrdX0MnM5qrFtqs9lIH0D8MnGVCh3kcjG5Mh+Jb4/fcGkIpLSAyVc2Fm5PFFV0XIay5vv/SffCO1141JHFZj+Sal4t4MmlZiY1RTaAgGLsn1SshS2EYFv91rZqHmmNCk+GNVSU9txRQm3OrB+06QTsOWnYN71p6+hTe/TQjhaE53zM+/xZi7sPIq6l6evvNSMOOt9fgVQkvM2NuVutLiq6od2h
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port6022-TCP:V=7.80%I=9%D=8/18%Time=5F3BC3F3%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,C,"SSH-2\.0-Go\r\n")%r(GenericLines,20C,"SSH-2\.0-Go\r\n\0\0\x01\xfc
+SF:\x04\x14P0\x15\xdd\x81v\xd6c\x89d\\buvQ\$\0\0\0\x8ccurve25519-sha256@li
+SF:bssh\.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diff
+SF:ie-hellman-group14-sha1,diffie-hellman-group1-sha1\0\0\0\x07ssh-rsa\0\0
+SF:\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,
+SF:arcfour128\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.c
+SF:om,arcfour256,arcfour128\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2
+SF:-256,hmac-sha1,hmac-sha1-96\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-s
+SF:ha2-256,hmac-sha1,hmac-sha1-96\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\xfe\xb6B\\")%r(GetRequest,20C,"SSH-2\.0-Go\r\n\0\0\x01\xf
+SF:c\x04\x142\x08\xdbk`DU\x84\x7f\x0f\x06\xfd\xbfR\x04\xab\0\0\0\x8ccurve2
+SF:5519-sha256@libssh\.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2
+SF:-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1\0\0\0\
+SF:x07ssh-rsa\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.c
+SF:om,arcfour256,arcfour128\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-
+SF:gcm@openssh\.com,arcfour256,arcfour128\0\0\0Bhmac-sha2-256-etm@openssh\
+SF:.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0Bhmac-sha2-256-etm@opens
+SF:sh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0\x04none\0\0\0\x04non
+SF:e\0\0\0\0\0\0\0\0\0\0\0\0\0p\xd8\x0f\x88")%r(HTTPOptions,20C,"SSH-2\.0-
+SF:Go\r\n\0\0\x01\xfc\x04\x143zC\x11\$2u\xc9\xa1\xdbP\[\x94\x01\x9e@\0\0\0
+SF:\x8ccurve25519-sha256@libssh\.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384
+SF:,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-s
+SF:ha1\0\0\0\x07ssh-rsa\0\0\0Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@
+SF:openssh\.com,arcfour256,arcfour128\0\0\0Maes128-ctr,aes192-ctr,aes256-c
+SF:tr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Bhmac-sha2-256-et
+SF:m@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0Bhmac-sha2-256
+SF:-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96\0\0\0\x04none\0\
+SF:0\0\x04none\0\0\0\0\0\0\0\0\0\0\0\0\0i\xec\xb5\xd4")%r(RTSPRequest,20C,
+SF:"SSH-2\.0-Go\r\n\0\0\x01\xfc\x04\x14\x85\x8e\xadZ;\x8ce\x19\xe3\x03\x9a
+SF:\x7f\x80\xed\*\x99\0\0\0\x8ccurve25519-sha256@libssh\.org,ecdh-sha2-nis
+SF:tp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1
+SF:,diffie-hellman-group1-sha1\0\0\0\x07ssh-rsa\0\0\0Maes128-ctr,aes192-ct
+SF:r,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour128\0\0\0Maes128
+SF:-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh\.com,arcfour256,arcfour12
+SF:8\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-sha
+SF:1-96\0\0\0Bhmac-sha2-256-etm@openssh\.com,hmac-sha2-256,hmac-sha1,hmac-
+SF:sha1-96\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\0\0\0\0\0\0\x009\[A\]");
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (89%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Host distance (-9 network hops) appears to be negative
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/18%OT=22%CT=1%CU=42731%PV=Y%DS=1%DC=T%G=N%TM=5F3BC5B6%P=x86_64-pc-linux-gnu)
+SEQ(SP=E2%GCD=1%ISR=F4%CI=RD%TS=U)
+OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)
+WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)
+ECN(R=Y%DF=N%T=76%W=8000%O=M5B4W1N%CC=N%Q=)
+T1(R=Y%DF=N%T=76%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=76%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)
+T4(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=76%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=76%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=76%IPL=164%UN=0%RIPL=G%RID=E42B%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=76%CD=S)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=232 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 1025/tcp)
+HOP RTT       ADDRESS
+1   128.43 ms api.craft.htb (10.10.10.110)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 18 15:12:38 2020 -- 1 IP address (1 host up) scanned in 881.80 seconds

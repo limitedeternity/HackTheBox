@@ -1,0 +1,71 @@
+# Nmap 7.80 scan initiated Wed Aug 19 13:31:20 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.27/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.27/scans/xml/_full_tcp_nmap.xml 10.10.10.27
+adjust_timeouts2: packet supposedly had rtt of -141899 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -141899 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -169597 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -169597 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -194972 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -194972 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -359203 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -359203 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -423457 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -423457 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -482176 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -482176 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -421812 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -421812 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -2111964 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -2111964 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.27
+Host is up, received user-set (0.068s latency).
+Scanned at 2020-08-19 13:31:29 MSK for 327s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON          VERSION
+22/tcp open  ssh     syn-ack ttl 128 OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b6:46:31:9c:b5:71:c5:96:91:7d:e4:63:16:f9:59:a2 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/EHs5E7iBHRQa5Wl/Ej8hem8p92Hw+T02W23+Svvfs48XfSdIQwcH7VVWlaGNyqjfWp+oE7LeUUdje2XlW2dkaVBqQqC+jsXhi54A4c7UHtYp2jYE1Z1HmBWU66DtDJlBFadfjNLnl9LksJxlXkMXx+pwQr+8BbHQV19SlEGHUFlgo1VxXICJFVYp73clV3c5vJXLE7PeVGgOO8aRCguVdLfaYMgZ69v9qYEn2TxeKIHC+JLEO+TsZruI4Ar0A5ogIWrBHXyM+dzq7ILY8OpPeb5Ihd2OYZMDvTDQrW7Pk/sq8Qm+jWCEV/uf/qYpWFGCDt3M2v2cPDmMdbJbdM3/
+|   256 10:c4:09:b9:48:f1:8c:45:26:ca:f6:e1:c2:dc:36:b9 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHBxaByQ9wnw51uAv+3FjlBgdt0sFCdSZwxmiqBKJJcyq/8es1W64FQM35Zgv3qyLMEux8BrKjU0k6wa9VWC3BE=
+|   256 a8:bf:dd:c0:71:36:a8:2a:1b:ea:3f:ef:66:99:39:75 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDNrIvf/rPJoBCeT2tquAQtXfGaFvuPBWCkTbQHDIH9B
+80/tcp open  http    syn-ack ttl 128 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Brotherhood Software
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (90%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Host distance (-5 network hops) appears to be negative
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/19%OT=22%CT=1%CU=43524%PV=Y%DS=1%DC=T%G=N%TM=5F3D00C9%P=x86_64-pc-linux-gnu)
+SEQ(SP=D0%GCD=1%ISR=F8%CI=RD%TS=U)
+SEQ(SP=D8%GCD=1%ISR=F9%TS=U)
+OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)
+WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)
+ECN(R=Y%DF=N%T=7A%W=8000%O=M5B4W1N%CC=N%Q=)
+T1(R=Y%DF=N%T=7A%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=7A%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)
+T4(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=7A%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=7A%IPL=164%UN=0%RIPL=G%RID=2F08%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=7A%CD=S)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=216 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 199/tcp)
+HOP RTT      ADDRESS
+1   63.83 ms 10.10.10.27
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 19 13:36:57 2020 -- 1 IP address (1 host up) scanned in 338.71 seconds

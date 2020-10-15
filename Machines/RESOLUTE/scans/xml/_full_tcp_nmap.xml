@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 21 20:52:28 2020 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.169/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.169/scans/xml/_full_tcp_nmap.xml 10.10.10.169 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.169/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.169/scans/xml/_full_tcp_nmap.xml 10.10.10.169" start="1598032348" startstr="Fri Aug 21 20:52:28 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1598032356"/>
+<taskend task="NSE" time="1598032356"/>
+<taskbegin task="NSE" time="1598032356"/>
+<taskend task="NSE" time="1598032356"/>
+<taskbegin task="NSE" time="1598032356"/>
+<taskend task="NSE" time="1598032356"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598032356"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598032356"/>
+<taskbegin task="SYN Stealth Scan" time="1598032356"/>
+<taskprogress task="SYN Stealth Scan" time="1598032387" percent="21.80" remaining="112" etc="1598032498"/>
+<taskprogress task="SYN Stealth Scan" time="1598032417" percent="27.28" remaining="163" etc="1598032580"/>
+<taskprogress task="SYN Stealth Scan" time="1598032447" percent="30.93" remaining="204" etc="1598032650"/>
+<taskprogress task="SYN Stealth Scan" time="1598032480" percent="36.10" remaining="220" etc="1598032700"/>
+<taskprogress task="SYN Stealth Scan" time="1598032513" percent="39.74" remaining="239" etc="1598032751"/>
+<taskprogress task="SYN Stealth Scan" time="1598032548" percent="41.74" remaining="269" etc="1598032816"/>
+<taskprogress task="SYN Stealth Scan" time="1598032626" percent="52.54" remaining="244" etc="1598032870"/>
+<taskprogress task="SYN Stealth Scan" time="1598032665" percent="58.85" remaining="217" etc="1598032881"/>
+<taskprogress task="SYN Stealth Scan" time="1598032698" percent="64.62" remaining="188" etc="1598032885"/>
+<taskprogress task="SYN Stealth Scan" time="1598032734" percent="70.55" remaining="158" etc="1598032892"/>
+<taskprogress task="SYN Stealth Scan" time="1598032764" percent="76.69" remaining="125" etc="1598032888"/>
+<taskprogress task="SYN Stealth Scan" time="1598032794" percent="82.95" remaining="91" etc="1598032884"/>
+<taskprogress task="SYN Stealth Scan" time="1598032824" percent="89.54" remaining="55" etc="1598032879"/>
+<taskend task="SYN Stealth Scan" time="1598032878" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1598032879"/>
+<taskend task="Service scan" time="1598032942" extrainfo="24 services on 1 host"/>
+<taskbegin task="Traceroute" time="1598032946"/>
+<taskend task="Traceroute" time="1598032947"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598032947"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598032947"/>
+<taskbegin task="NSE" time="1598032947"/>
+<taskprogress task="NSE" time="1598032978" percent="99.97" remaining="1" etc="1598032978"/>
+<taskend task="NSE" time="1598032985"/>
+<taskbegin task="NSE" time="1598032985"/>
+<taskprogress task="NSE" time="1598033016" percent="97.40" remaining="1" etc="1598033017"/>
+<taskprogress task="NSE" time="1598033046" percent="97.92" remaining="2" etc="1598033047"/>
+<taskprogress task="NSE" time="1598033076" percent="98.44" remaining="2" etc="1598033077"/>

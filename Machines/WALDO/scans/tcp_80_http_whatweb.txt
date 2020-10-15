@@ -1,0 +1,94 @@
+WhatWeb report for http://10.10.10.87:80
+Status    : 302 Found
+Title     : <None>
+IP        : 10.10.10.87
+Country   : RESERVED, ZZ
+
+Summary   : HTTPServer[nginx/1.12.2], nginx[1.12.2], PHP[7.1.16], RedirectLocation[/list.html], X-Powered-By[PHP/7.1.16]
+
+Detected Plugins:
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : nginx/1.12.2 (from server string)
+
+[ PHP ]
+	PHP is a widely-used general-purpose scripting language 
+	that is especially suited for Web development and can be 
+	embedded into HTML. This plugin identifies PHP errors, 
+	modules and versions and extracts the local file path and 
+	username if present. 
+
+	Version      : 7.1.16
+	Google Dorks: (2)
+	Website     : http://www.php.net/
+
+[ RedirectLocation ]
+	HTTP Server string location. used with http-status 301 and 
+	302 
+
+	String       : /list.html (from location)
+
+[ X-Powered-By ]
+	X-Powered-By HTTP header 
+
+	String       : PHP/7.1.16 (from x-powered-by string)
+
+[ nginx ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : 1.12.2
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 302 Found
+	Server: nginx/1.12.2
+	Date: Thu, 27 Aug 2020 21:03:08 GMT
+	Content-Type: text/html; charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: close
+	X-Powered-By: PHP/7.1.16
+	Location: /list.html
+	
+WhatWeb report for http://10.10.10.87/list.html
+Status    : 200 OK
+Title     : List Manager
+IP        : 10.10.10.87
+Country   : RESERVED, ZZ
+
+Summary   : HTTPServer[nginx/1.12.2], nginx[1.12.2], Script
+
+Detected Plugins:
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : nginx/1.12.2 (from server string)
+
+[ Script ]
+	This plugin detects instances of script HTML elements and 
+	returns the script language/type. 
+
+
+[ nginx ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : 1.12.2
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Server: nginx/1.12.2
+	Date: Thu, 27 Aug 2020 21:03:10 GMT
+	Content-Type: text/html
+	Content-Length: 1656
+	Last-Modified: Thu, 03 May 2018 20:48:36 GMT
+	Connection: close
+	ETag: "5aeb75a4-678"
+	Accept-Ranges: bytes
+	

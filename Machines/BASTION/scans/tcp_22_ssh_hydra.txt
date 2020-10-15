@@ -1,0 +1,1 @@
+# Hydra v9.0 run at 2020-08-14 15:07:24 on 10.10.10.134 ssh (hydra -L /usr/share/seclists/Usernames/top-usernames-shortlist.txt -P /usr/share/seclists/Passwords/darkweb2017-top100.txt -e nsr -s 22 -o /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_22_ssh_hydra.txt ssh://10.10.10.134)

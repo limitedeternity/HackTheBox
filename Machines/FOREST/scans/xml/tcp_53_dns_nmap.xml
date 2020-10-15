@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 14 23:59:12 2020 as: nmap -vv -&#45;reason -Pn -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.161/scans/tcp_53_dns_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.161/scans/xml/tcp_53_dns_nmap.xml 10.10.10.161 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.161/scans/tcp_53_dns_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.161/scans/xml/tcp_53_dns_nmap.xml 10.10.10.161" start="1597438752" startstr="Fri Aug 14 23:59:12 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="53"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597438757"/>
+<taskend task="NSE" time="1597438757"/>
+<taskbegin task="NSE" time="1597438757"/>
+<taskend task="NSE" time="1597438757"/>
+<taskbegin task="NSE" time="1597438757"/>
+<taskend task="NSE" time="1597438757"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597438757"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597438757"/>
+<taskbegin task="SYN Stealth Scan" time="1597438757"/>
+<taskend task="SYN Stealth Scan" time="1597438757" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1597438758"/>
+<taskend task="Service scan" time="1597438902" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1597438902"/>
+<taskend task="NSE" time="1597438917"/>
+<taskbegin task="NSE" time="1597438917"/>
+<taskend task="NSE" time="1597438918"/>
+<taskbegin task="NSE" time="1597438918"/>
+<taskend task="NSE" time="1597438918"/>
+<host starttime="1597438757" endtime="1597438918"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.161" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="domain" servicefp="SF-Port53-TCP:V=7.80%I=7%D=8/14%Time=5F36FB31%P=x86_64-pc-linux-gnu%r(DNSVersionBindReqTCP,20,&quot;\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03&quot;);" method="table" conf="3"/><script id="dns-nsec-enum" output="Can&apos;t determine domain for host 10.10.10.161; use dns-nsec-enum.domains script arg."/><script id="dns-nsec3-enum" output="Can&apos;t determine domain for host 10.10.10.161; use dns-nsec3-enum.domains script arg."/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP: &#xa;    version&#xa;    bind"><elem key="DNSVersionBindReqTCP">&#xa;    version&#xa;    bind</elem>
+</script></port>
+</ports>
+<hostscript><script id="dns-brute" output="Can&apos;t guess domain of &quot;10.10.10.161&quot;; use dns-brute.domain script argument."/></hostscript><times srtt="52556" rttvar="52556" to="262780"/>
+</host>
+<taskbegin task="NSE" time="1597438918"/>
+<taskend task="NSE" time="1597438918"/>
+<taskbegin task="NSE" time="1597438918"/>
+<taskend task="NSE" time="1597438918"/>
+<taskbegin task="NSE" time="1597438918"/>
+<taskend task="NSE" time="1597438918"/>
+<runstats><finished time="1597438918" timestr="Sat Aug 15 00:01:58 2020" elapsed="167.25" summary="Nmap done at Sat Aug 15 00:01:58 2020; 1 IP address (1 host up) scanned in 167.25 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

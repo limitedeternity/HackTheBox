@@ -1,0 +1,5 @@
+bryan $ su root
+
+bUbBl3gUm$43v3Ry0n3! # the password found in config file
+
+root # 

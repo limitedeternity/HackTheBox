@@ -1,0 +1,252 @@
+Debug level 2
+Target ip read from command line: 10.10.10.195
+Using community file /usr/share/seclists/Discovery/SNMP/common-snmp-community-strings-onesixtyone.txt
+121 communities: public private 0 0392a0 1234 2read 4changes ANYCOM Admin C0de CISCO CR52401 IBM ILMI Intermec NoGaH$@! OrigEquipMfr PRIVATE PUBLIC Private Public SECRET SECURITY SNMP SNMP_trap SUN SWITCH SYSTEM Secret Security Switch System TENmanUFactOryP TEST access adm admin agent agent_steal all all private all public apc bintec blue c cable-d canon_admin cc cisco community core debug default dilbert enable field field-service freekevin fubar guest hello hp_admin ibm ilmi intermec internal l2 l3 manager mngt monitor netman network none openview pass password pr1v4t3 proxy publ1c read read-only read-write readwrite red regional rmon rmon_admin ro root router rw rwa san-fran sanfran scotty secret security seri snmp snmpd snmptrap solaris sun superuser switch system tech test test2 tiv0li tivoli trap world write xyzzy yellow 
+Waiting for 10 milliseconds between packets
+Scanning 1 hosts, 121 communities
+Trying community public
+Sending to ip 10.10.10.195
+Trying community private
+Sending to ip 10.10.10.195
+Trying community 0
+Sending to ip 10.10.10.195
+Trying community 0392a0
+Sending to ip 10.10.10.195
+Trying community 1234
+Sending to ip 10.10.10.195
+10.10.10.195 [public] Linux intense 4.15.0-55-generic #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019 x86_64
+Trying community 2read
+Sending to ip 10.10.10.195
+Trying community 4changes
+Sending to ip 10.10.10.195
+Trying community ANYCOM
+Sending to ip 10.10.10.195
+Trying community Admin
+Sending to ip 10.10.10.195
+Trying community C0de
+Sending to ip 10.10.10.195
+Trying community CISCO
+Sending to ip 10.10.10.195
+Trying community CR52401
+Sending to ip 10.10.10.195
+Trying community IBM
+Sending to ip 10.10.10.195
+Trying community ILMI
+Sending to ip 10.10.10.195
+Trying community Intermec
+Sending to ip 10.10.10.195
+Trying community NoGaH$@!
+Sending to ip 10.10.10.195
+Trying community OrigEquipMfr
+Sending to ip 10.10.10.195
+Trying community PRIVATE
+Sending to ip 10.10.10.195
+Trying community PUBLIC
+Sending to ip 10.10.10.195
+Trying community Private
+Sending to ip 10.10.10.195
+Trying community Public
+Sending to ip 10.10.10.195
+Trying community SECRET
+Sending to ip 10.10.10.195
+Trying community SECURITY
+Sending to ip 10.10.10.195
+Trying community SNMP
+Sending to ip 10.10.10.195
+Trying community SNMP_trap
+Sending to ip 10.10.10.195
+Trying community SUN
+Sending to ip 10.10.10.195
+Trying community SWITCH
+Sending to ip 10.10.10.195
+Trying community SYSTEM
+Sending to ip 10.10.10.195
+Trying community Secret
+Sending to ip 10.10.10.195
+Trying community Security
+Sending to ip 10.10.10.195
+Trying community Switch
+Sending to ip 10.10.10.195
+Trying community System
+Sending to ip 10.10.10.195
+Trying community TENmanUFactOryP
+Sending to ip 10.10.10.195
+Trying community TEST
+Sending to ip 10.10.10.195
+Trying community access
+Sending to ip 10.10.10.195
+Trying community adm
+Sending to ip 10.10.10.195
+Trying community admin
+Sending to ip 10.10.10.195
+Trying community agent
+Sending to ip 10.10.10.195
+Trying community agent_steal
+Sending to ip 10.10.10.195
+Trying community all
+Sending to ip 10.10.10.195
+Trying community all
+Sending to ip 10.10.10.195
+Trying community private
+Sending to ip 10.10.10.195
+Trying community all
+Sending to ip 10.10.10.195
+Trying community public
+Sending to ip 10.10.10.195
+Trying community apc
+Sending to ip 10.10.10.195
+Trying community bintec
+Sending to ip 10.10.10.195
+Trying community blue
+Sending to ip 10.10.10.195
+Trying community c
+Sending to ip 10.10.10.195
+Trying community cable-d
+Sending to ip 10.10.10.195
+Trying community canon_admin
+Sending to ip 10.10.10.195
+Trying community cc
+Sending to ip 10.10.10.195
+Trying community cisco
+Sending to ip 10.10.10.195
+Trying community community
+Sending to ip 10.10.10.195
+Trying community core
+Sending to ip 10.10.10.195
+Trying community debug
+Sending to ip 10.10.10.195
+Trying community default
+Sending to ip 10.10.10.195
+Trying community dilbert
+Sending to ip 10.10.10.195
+Trying community enable
+Sending to ip 10.10.10.195
+Trying community field
+Sending to ip 10.10.10.195
+Trying community field-service
+Sending to ip 10.10.10.195
+Trying community freekevin
+Sending to ip 10.10.10.195
+Trying community fubar
+Sending to ip 10.10.10.195
+Trying community guest
+Sending to ip 10.10.10.195
+Trying community hello
+Sending to ip 10.10.10.195
+Trying community hp_admin
+Sending to ip 10.10.10.195
+Trying community ibm
+Sending to ip 10.10.10.195
+Trying community ilmi
+Sending to ip 10.10.10.195
+Trying community intermec
+Sending to ip 10.10.10.195
+Trying community internal
+Sending to ip 10.10.10.195
+10.10.10.195 [public] Linux intense 4.15.0-55-generic #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019 x86_64
+Trying community l2
+Sending to ip 10.10.10.195
+Trying community l3
+Sending to ip 10.10.10.195
+Trying community manager
+Sending to ip 10.10.10.195
+Trying community mngt
+Sending to ip 10.10.10.195
+Trying community monitor
+Sending to ip 10.10.10.195
+Trying community netman
+Sending to ip 10.10.10.195
+Trying community network
+Sending to ip 10.10.10.195
+Trying community none
+Sending to ip 10.10.10.195
+Trying community openview
+Sending to ip 10.10.10.195
+Trying community pass
+Sending to ip 10.10.10.195
+Trying community password
+Sending to ip 10.10.10.195
+Trying community pr1v4t3
+Sending to ip 10.10.10.195
+Trying community proxy
+Sending to ip 10.10.10.195
+Trying community publ1c
+Sending to ip 10.10.10.195
+Trying community read
+Sending to ip 10.10.10.195
+Trying community read-only
+Sending to ip 10.10.10.195
+Trying community read-write
+Sending to ip 10.10.10.195
+Trying community readwrite
+Sending to ip 10.10.10.195
+Trying community red
+Sending to ip 10.10.10.195
+Trying community regional
+Sending to ip 10.10.10.195
+Trying community rmon
+Sending to ip 10.10.10.195
+Trying community rmon_admin
+Sending to ip 10.10.10.195
+Trying community ro
+Sending to ip 10.10.10.195
+Trying community root
+Sending to ip 10.10.10.195
+Trying community router
+Sending to ip 10.10.10.195
+Trying community rw
+Sending to ip 10.10.10.195
+Trying community rwa
+Sending to ip 10.10.10.195
+Trying community san-fran
+Sending to ip 10.10.10.195
+Trying community sanfran
+Sending to ip 10.10.10.195
+Trying community scotty
+Sending to ip 10.10.10.195
+Trying community secret
+Sending to ip 10.10.10.195
+Trying community security
+Sending to ip 10.10.10.195
+Trying community seri
+Sending to ip 10.10.10.195
+Trying community snmp
+Sending to ip 10.10.10.195
+Trying community snmpd
+Sending to ip 10.10.10.195
+Trying community snmptrap
+Sending to ip 10.10.10.195
+Trying community solaris
+Sending to ip 10.10.10.195
+Trying community sun
+Sending to ip 10.10.10.195
+Trying community superuser
+Sending to ip 10.10.10.195
+Trying community switch
+Sending to ip 10.10.10.195
+Trying community system
+Sending to ip 10.10.10.195
+Trying community tech
+Sending to ip 10.10.10.195
+Trying community test
+Sending to ip 10.10.10.195
+Trying community test2
+Sending to ip 10.10.10.195
+Trying community tiv0li
+Sending to ip 10.10.10.195
+Trying community tivoli
+Sending to ip 10.10.10.195
+Trying community trap
+Sending to ip 10.10.10.195
+Trying community world
+Sending to ip 10.10.10.195
+Trying community write
+Sending to ip 10.10.10.195
+Trying community xyzzy
+Sending to ip 10.10.10.195
+Trying community yellow
+Sending to ip 10.10.10.195
+Trying community 
+Sending to ip 10.10.10.195
+All packets sent, waiting for responses.
+done.

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 26 12:57:27 2020 as: nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.195/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.195/scans/xml/tcp_80_http_nmap.xml 10.10.10.195 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.195/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.195/scans/xml/tcp_80_http_nmap.xml 10.10.10.195" start="1598435847" startstr="Wed Aug 26 12:57:27 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1598435850"/>
+<taskend task="NSE" time="1598435850"/>
+<taskbegin task="NSE" time="1598435850"/>
+<taskend task="NSE" time="1598435850"/>
+<taskbegin task="NSE" time="1598435850"/>
+<taskend task="NSE" time="1598435850"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598435851"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598435851"/>
+<taskbegin task="SYN Stealth Scan" time="1598435851"/>
+<taskend task="SYN Stealth Scan" time="1598435851" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1598435851"/>
+<taskend task="Service scan" time="1598435857" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1598435857"/>
+<taskprogress task="NSE" time="1598435888" percent="99.35" remaining="1" etc="1598435888"/>
+<taskprogress task="NSE" time="1598435918" percent="99.67" remaining="1" etc="1598435918"/>
+<taskprogress task="NSE" time="1598435948" percent="99.67" remaining="1" etc="1598435948"/>
+<taskprogress task="NSE" time="1598435978" percent="99.67" remaining="1" etc="1598435978"/>
+<taskend task="NSE" time="1598436002"/>
+<taskbegin task="NSE" time="1598436002"/>
+<taskend task="NSE" time="1598436002"/>
+<taskbegin task="NSE" time="1598436002"/>
+<taskend task="NSE" time="1598436002"/>
+<host starttime="1598435851" endtime="1598436002"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.195" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="nginx" version="1.14.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.195&#xa;  url                           method&#xa;  http://10.10.10.195:80/login  FORM&#xa;"/><script id="http-chrono" output="Request times for /; avg: 461.07ms; min: 221.71ms; max: 628.97ms"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.195&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 102&#xa;    Comment: &#xa;        &lt;!-&#45;&#xa;                  You are NOT allowed to delete the credit link to TemplateMag with free version.&#xa;                  You can delete the credit link only if you bought the pro version.&#xa;                  Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/pratt-app-landing-page-template/&#xa;                  Licensing information: https://templatemag.com/license/&#xa;                -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 55&#xa;    Comment: &#xa;        &lt;!-&#45;/.nav-collapse -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 150&#xa;    Comment: &#xa;        /* Copyright Wrap */&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 11&#xa;    Comment: &#xa;        &lt;!-&#45; Favicons -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/static/js/main.js&#xa;    Line number: 3&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 21&#xa;    Comment: &#xa;        &lt;!-&#45; Main Stylesheet File -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 18&#xa;    Comment: &#xa;        &lt;!-&#45; Bootstrap CSS File -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/static/lib/jquery/jquery.min.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license */&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 15&#xa;    Comment: &#xa;        &lt;!-&#45; Google Fonts -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 38&#xa;    Comment: &#xa;        /* Links */&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 119&#xa;    Comment: &#xa;        /* Showcase Wrap */&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 167&#xa;    Comment: &#xa;        /* Contact Form */&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 73&#xa;    Comment: &#xa;        &#xa;        &#xa;           ========================================================================== */&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 34&#xa;    Comment: &#xa;        &lt;!-&#45; Fixed navbar -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 119&#xa;    Comment: &#xa;        &lt;!-&#45; Template Main Javascript File -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 104&#xa;    Comment: &#xa;        /* intro Wrap */&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 27&#xa;    Comment: &#xa;        /* Paragraph &amp; Typographic */&#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        */&#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 113&#xa;    Comment: &#xa;        &lt;!-&#45; JavaScript Libraries -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.195:80/static/lib/php-mail-form/validate.js&#xa;    Line number: 16&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.195:80/static/lib/php-mail-form/validate.js&#xa;    Line number: 12&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.195:80/static/css/style.css&#xa;    Line number: 19&#xa;    Comment: &#xa;        /* Titles */&#xa;    &#xa;    Path: http://10.10.10.195:80/static/lib/php-mail-form/validate.js&#xa;    Line number: 10&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.195:80/static/lib/php-mail-form/validate.js&#xa;    Line number: 4&#xa;    Comment: &#xa;        &#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Line number: 24&#xa;    Comment: &#xa;        &lt;!-&#45; =======================================================&#xa;            Template Name: Pratt&#xa;            Template URL: https://templatemag.com/pratt-app-landing-page-template/&#xa;            Author: TemplateMag.com&#xa;            License: https://templatemag.com/license/&#xa;          ======================================================= -&#45;&gt;&#xa;"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.195&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.10.10.195:80/login&#xa;    Form id: contact-name&#xa;    Form action: /postlogin&#xa;"/><script id="http-date" output="Wed, 26 Aug 2020 09:57:39 GMT; +1s from local time."><elem key="date">2020-08-26T09:57:39+00:00</elem>
+<elem key="delta">1.0</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.10.195&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 405&#xa;  &#x9;http://10.10.10.195:80/postlogin&#xa;"/><script id="http-favicon" output="Unknown favicon MD5: FED84E16B6CCFE88EE7FFAAE5DFEFD34"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Server: nginx/1.14.0 (Ubuntu)&#xa;  Date: Wed, 26 Aug 2020 09:57:41 GMT&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Content-Length: 3338&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Logo query returned unknown hash 9067b0f96242431e84ad8811f8d4806d&#xa;Credits query returned unknown hash 9067b0f96242431e84ad8811f8d4806d"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="nginx/1.14.0 (Ubuntu)"><elem>nginx/1.14.0 (Ubuntu)</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 3; zip: 1&#xa;    /static/css/&#xa;      css: 1&#xa;    /static/img/&#xa;      png: 2&#xa;    /static/js/&#xa;      js: 1&#xa;    /static/lib/easing/&#xa;      js: 1&#xa;    /static/lib/jquery/&#xa;      js: 1&#xa;    /static/lib/php-mail-form/&#xa;      js: 1&#xa;  Longest directory structure:&#xa;    Depth: 3&#xa;    Dir: /static/lib/jquery/&#xa;  Total files found (by extension):&#xa;    Other: 3; css: 1; js: 4; png: 2; zip: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Intense - WebApp"><elem key="title">Intense - WebApp</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;127 names had status 200"/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/></port>
+</ports>
+<times srtt="81863" rttvar="81863" to="409315"/>
+</host>
+<taskbegin task="NSE" time="1598436002"/>
+<taskend task="NSE" time="1598436002"/>
+<taskbegin task="NSE" time="1598436002"/>
+<taskend task="NSE" time="1598436002"/>
+<taskbegin task="NSE" time="1598436002"/>
+<taskend task="NSE" time="1598436002"/>
+<runstats><finished time="1598436002" timestr="Wed Aug 26 13:00:02 2020" elapsed="155.78" summary="Nmap done at Wed Aug 26 13:00:02 2020; 1 IP address (1 host up) scanned in 155.78 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

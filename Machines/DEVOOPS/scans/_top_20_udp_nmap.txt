@@ -1,0 +1,56 @@
+# Nmap 7.80 scan initiated Tue Aug 18 14:10:30 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.91/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.91/scans/xml/_top_20_udp_nmap.xml 10.10.10.91
+Nmap scan report for 10.10.10.91
+Host is up, received user-set (0.052s latency).
+Scanned at 2020-08-18 14:10:35 MSK for 279s
+
+PORT      STATE         SERVICE      REASON               VERSION
+53/udp    closed        domain       port-unreach ttl 128
+67/udp    closed        dhcps        port-unreach ttl 128
+68/udp    closed        dhcpc        port-unreach ttl 128
+69/udp    closed        tftp         port-unreach ttl 128
+123/udp   closed        ntp          port-unreach ttl 128
+135/udp   closed        msrpc        port-unreach ttl 128
+137/udp   closed        netbios-ns   port-unreach ttl 128
+138/udp   closed        netbios-dgm  port-unreach ttl 128
+139/udp   closed        netbios-ssn  port-unreach ttl 128
+161/udp   closed        snmp         port-unreach ttl 128
+162/udp   closed        snmptrap     port-unreach ttl 128
+445/udp   closed        microsoft-ds port-unreach ttl 128
+500/udp   closed        isakmp       port-unreach ttl 128
+514/udp   closed        syslog       port-unreach ttl 128
+520/udp   closed        route        port-unreach ttl 128
+631/udp   open|filtered ipp          no-response
+1434/udp  closed        ms-sql-m     port-unreach ttl 128
+1900/udp  closed        upnp         port-unreach ttl 128
+4500/udp  closed        nat-t-ike    port-unreach ttl 128
+49152/udp closed        unknown      port-unreach ttl 128
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall|general purpose
+Running (JUST GUESSING): Fortinet embedded (90%), Linux 2.6.X (86%)
+OS CPE: cpe:/h:fortinet:fortigate_200b cpe:/o:linux:linux_kernel:2.6.9
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (90%), Linux 2.6.9 (Red Hat Enterprise Linux, x86_64) (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/18%OT=%CT=%CU=53%PV=Y%DS=1%DC=T%G=N%TM=5F3BB842%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD)
+T5(R=Y%DF=N%TG=80%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=80%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%TG=80%IPL=164%UN=0%RIPL=G%RID=861A%RIPCK=G%RUCK=G%RUD=G)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=2FD5%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%TG=80%CD=S)
+IE(R=Y%DFI=N%T=80%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE (using port 161/udp)
+HOP RTT      ADDRESS
+1   53.20 ms 10.10.10.91
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 18 14:15:14 2020 -- 1 IP address (1 host up) scanned in 287.24 seconds

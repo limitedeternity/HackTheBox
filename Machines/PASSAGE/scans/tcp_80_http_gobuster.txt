@@ -1,0 +1,7 @@
+/.hta (Status: 403) [Size: 291]
+/.hta.txt (Status: 403) [Size: 295]
+/.hta.html (Status: 403) [Size: 296]
+/.hta.php (Status: 403) [Size: 295]
+/.hta.asp (Status: 403) [Size: 295]
+/.hta.aspx (Status: 403) [Size: 296]
+/.hta.jsp (Status: 403) [Size: 295]

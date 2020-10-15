@@ -1,0 +1,182 @@
+Version: 2.0.0-static
+OpenSSL 1.1.1h-dev  xx XXX xxxx
+
+Connected to 10.10.10.61
+
+Testing SSL server 10.10.10.61 on port 443 using SNI name 10.10.10.61
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   enabled
+TLSv1.1   enabled
+TLSv1.2   enabled
+TLSv1.3   disabled
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS renegotiation:
+Secure session renegotiation supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+TLSv1.2 not vulnerable to heartbleed
+TLSv1.1 not vulnerable to heartbleed
+TLSv1.0 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+Preferred TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384   Curve P-256 DHE 256
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 2048 bits
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve P-256 DHE 256
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA384       Curve P-256 DHE 256
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA256         DHE 2048 bits
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve P-256 DHE 256
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA            DHE 2048 bits
+Accepted  TLSv1.2  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 2048 bits
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA            DHE 2048 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 2048 bits
+Accepted  TLSv1.2  256 bits  AES256-GCM-SHA384            
+Accepted  TLSv1.2  128 bits  AES128-GCM-SHA256            
+Accepted  TLSv1.2  256 bits  AES256-SHA256                
+Accepted  TLSv1.2  128 bits  AES128-SHA256                
+Accepted  TLSv1.2  256 bits  AES256-SHA                   
+Accepted  TLSv1.2  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.2  128 bits  AES128-SHA                   
+Accepted  TLSv1.2  128 bits  CAMELLIA128-SHA              
+Preferred TLSv1.1  256 bits  ECDHE-RSA-AES256-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.1  256 bits  DHE-RSA-AES256-SHA            DHE 2048 bits
+Accepted  TLSv1.1  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 2048 bits
+Accepted  TLSv1.1  128 bits  ECDHE-RSA-AES128-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.1  128 bits  DHE-RSA-AES128-SHA            DHE 2048 bits
+Accepted  TLSv1.1  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 2048 bits
+Accepted  TLSv1.1  256 bits  AES256-SHA                   
+Accepted  TLSv1.1  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.1  128 bits  AES128-SHA                   
+Accepted  TLSv1.1  128 bits  CAMELLIA128-SHA              
+Preferred TLSv1.0  256 bits  ECDHE-RSA-AES256-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.0  256 bits  DHE-RSA-AES256-SHA            DHE 2048 bits
+Accepted  TLSv1.0  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 2048 bits
+Accepted  TLSv1.0  128 bits  ECDHE-RSA-AES128-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.0  128 bits  DHE-RSA-AES128-SHA            DHE 2048 bits
+Accepted  TLSv1.0  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 2048 bits
+Accepted  TLSv1.0  256 bits  AES256-SHA                   
+Accepted  TLSv1.0  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.0  128 bits  AES128-SHA                   
+Accepted  TLSv1.0  128 bits  CAMELLIA128-SHA              
+
+  Server Key Exchange Group(s):
+TLSv1.2  141 bits  sect283k1
+TLSv1.2  141 bits  sect283r1
+TLSv1.2  204 bits  sect409k1
+TLSv1.2  204 bits  sect409r1
+TLSv1.2  285 bits  sect571k1
+TLSv1.2  285 bits  sect571r1
+TLSv1.2  128 bits  secp256k1
+TLSv1.2  128 bits  secp256r1 (NIST P-256)
+TLSv1.2  192 bits  secp384r1 (NIST P-384)
+TLSv1.2  260 bits  secp521r1 (NIST P-521)
+TLSv1.2  128 bits  brainpoolP256r1
+TLSv1.2  192 bits  brainpoolP384r1
+TLSv1.2  256 bits  brainpoolP512r1
+
+  Server Signature Algorithm(s):
+TLSv1.2  rsa_pkcs1_sha1
+TLSv1.2  dsa_sha1
+TLSv1.2  ecdsa_sha1
+TLSv1.2  rsa_pkcs1_sha224
+TLSv1.2  dsa_sha224
+TLSv1.2  ecdsa_sha224
+TLSv1.2  rsa_pkcs1_sha256
+TLSv1.2  dsa_sha256
+TLSv1.2  ecdsa_secp256r1_sha256
+TLSv1.2  rsa_pkcs1_sha384
+TLSv1.2  dsa_sha384
+TLSv1.2  ecdsa_secp384r1_sha384
+TLSv1.2  rsa_pkcs1_sha512
+TLSv1.2  dsa_sha512
+TLSv1.2  ecdsa_secp521r1_sha512
+
+  SSL Certificate:
+    Certificate blob:
+-----BEGIN CERTIFICATE-----
+MIIERTCCAy2gAwIBAgIJALffXrYDvptrMA0GCSqGSIb3DQEBCwUAMIG4MQswCQYD
+VQQGEwJVSzElMCMGA1UECAwcVW5pdGVkIEZlZGVyYXRpb24gb2YgUGxhbmV0czEO
+MAwGA1UEBwwFRWFydGgxFzAVBgNVBAoMDlVTUyBFbnRlcnByaXNlMQ8wDQYDVQQL
+DAZCcmlkZ2UxGTAXBgNVBAMMEGVudGVycHJpc2UubG9jYWwxLTArBgkqhkiG9w0B
+CQEWHmplYW5sdWNwaWNhcmRAZW50ZXJwcmlzZS5sb2NhbDAeFw0xNzA4MjUxMDM1
+MTRaFw0xNzA5MjQxMDM1MTRaMIG4MQswCQYDVQQGEwJVSzElMCMGA1UECAwcVW5p
+dGVkIEZlZGVyYXRpb24gb2YgUGxhbmV0czEOMAwGA1UEBwwFRWFydGgxFzAVBgNV
+BAoMDlVTUyBFbnRlcnByaXNlMQ8wDQYDVQQLDAZCcmlkZ2UxGTAXBgNVBAMMEGVu
+dGVycHJpc2UubG9jYWwxLTArBgkqhkiG9w0BCQEWHmplYW5sdWNwaWNhcmRAZW50
+ZXJwcmlzZS5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALnT
+YTRemITs1/mZWwneQqW+s9wgvRUhgxGD7CwqYmhgwDS2N7MlcNZJYtoi46x3TJ52
+qe4WleGMRxxVDDvveqGYb2Hs230Di13gheCLc9kXNEIfVa3PtgR2KUth42rq4VPQ
+l7O0vCipdyKt0NkUHxUUcUOoRakueQmFWh57gXm7vAwqvuzm3byhYoq4yverKmL3
+IChJKPxLur5XRVk4sXbhR3pESLYs+tKMTx0wzFMtEPAqyLY/f4efemgCwCNTe0s3
++C0COiIgTgMZn2rx2ToqOrNNwFVkVKQoSRrMQ4/7P5Mheyu+dL/MWnc/SxPSgie+
+miq3oqeFeZWje5lQKwUCAwEAAaNQME4wHQYDVR0OBBYEFKU8n3KqjrULUsCOyW7C
+ewA0TVevMB8GA1UdIwQYMBaAFKU8n3KqjrULUsCOyW7CewA0TVevMAwGA1UdEwQF
+MAMBAf8wDQYJKoZIhvcNAQELBQADggEBAC3/EPr9EdW6lQ6RuFJ1/5kPtJU7XvaY
+DV8fyd6uXkWigzd/HpnlVAjF0rQdDRhfE4HRbNez6zCGcV3F5Pxl3OgzmdX5TtfH
+OlU2R5eY3TBIuARtywOM/aJZTN8NuYxUZ5Z/Su6GwtDO3ot6hZmRbcaUA41Wg6qZ
+O+BSgoJctQqR1eKV5NjZ5IqgUqQWmqs2x9JqH7or++aMf1GeHd08c0gSKHRgA4PB
+NAbDye/ORY7yVr+In3zKSpBU2xosNngxbvgn3ZGGfGVBhzHw3k9KykofNykbu5tD
+Dp1D4W+G+LvAcPCAEM5W96Y6dWyVplvyZOgySi31MPIw5rGBm5tTcHU=
+-----END CERTIFICATE-----
+    Version: 2
+    Serial Number: b7:df:5e:b6:03:be:9b:6b
+    Signature Algorithm: sha256WithRSAEncryption
+    Issuer: /C=UK/ST=United Federation of Planets/L=Earth/O=USS Enterprise/OU=Bridge/CN=enterprise.local/emailAddress=jeanlucpicard@enterprise.local
+    Not valid before: Aug 25 10:35:14 2017 GMT
+    Not valid after: Sep 24 10:35:14 2017 GMT
+    Subject: /C=UK/ST=United Federation of Planets/L=Earth/O=USS Enterprise/OU=Bridge/CN=enterprise.local/emailAddress=jeanlucpicard@enterprise.local
+    Public Key Algorithm: NULL
+    RSA Public Key: (2048 bit)
+      RSA Public-Key: (2048 bit)
+      Modulus:
+          00:b9:d3:61:34:5e:98:84:ec:d7:f9:99:5b:09:de:
+          42:a5:be:b3:dc:20:bd:15:21:83:11:83:ec:2c:2a:
+          62:68:60:c0:34:b6:37:b3:25:70:d6:49:62:da:22:
+          e3:ac:77:4c:9e:76:a9:ee:16:95:e1:8c:47:1c:55:
+          0c:3b:ef:7a:a1:98:6f:61:ec:db:7d:03:8b:5d:e0:
+          85:e0:8b:73:d9:17:34:42:1f:55:ad:cf:b6:04:76:
+          29:4b:61:e3:6a:ea:e1:53:d0:97:b3:b4:bc:28:a9:
+          77:22:ad:d0:d9:14:1f:15:14:71:43:a8:45:a9:2e:
+          79:09:85:5a:1e:7b:81:79:bb:bc:0c:2a:be:ec:e6:
+          dd:bc:a1:62:8a:b8:ca:f7:ab:2a:62:f7:20:28:49:
+          28:fc:4b:ba:be:57:45:59:38:b1:76:e1:47:7a:44:
+          48:b6:2c:fa:d2:8c:4f:1d:30:cc:53:2d:10:f0:2a:
+          c8:b6:3f:7f:87:9f:7a:68:02:c0:23:53:7b:4b:37:
+          f8:2d:02:3a:22:20:4e:03:19:9f:6a:f1:d9:3a:2a:
+          3a:b3:4d:c0:55:64:54:a4:28:49:1a:cc:43:8f:fb:
+          3f:93:21:7b:2b:be:74:bf:cc:5a:77:3f:4b:13:d2:
+          82:27:be:9a:2a:b7:a2:a7:85:79:95:a3:7b:99:50:
+          2b:05
+      Exponent: 65537 (0x10001)
+    X509v3 Extensions:
+      X509v3 Subject Key Identifier: 
+        A5:3C:9F:72:AA:8E:B5:0B:52:C0:8E:C9:6E:C2:7B:00:34:4D:57:AF
+      X509v3 Authority Key Identifier: 
+        keyid:A5:3C:9F:72:AA:8E:B5:0B:52:C0:8E:C9:6E:C2:7B:00:34:4D:57:AF
+
+      X509v3 Basic Constraints: 
+        CA:TRUE
+  Verify Certificate:
+    self signed certificate
+
+  SSL Certificate:
+Signature Algorithm: sha256WithRSAEncryption
+RSA Key Strength:    2048
+
+Subject:  enterprise.local
+Issuer:   enterprise.local
+
+Not valid before: Aug 25 10:35:14 2017 GMT
+Not valid after:  Sep 24 10:35:14 2017 GMT

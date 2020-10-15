@@ -1,0 +1,48 @@
+# Nmap 7.80 scan initiated Tue Aug 18 15:12:39 2020 as: nmap -vv --reason -Pn -sV -p 6022 --script=banner,ssh2-enum-algos,ssh-hostkey,ssh-auth-methods -oN /media/psf/Home/Downloads/results/10.10.10.110/scans/tcp_6022_ssh_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.110/scans/xml/tcp_6022_ssh_nmap.xml 10.10.10.110
+Nmap scan report for api.craft.htb (10.10.10.110)
+Host is up, received user-set (0.052s latency).
+Scanned at 2020-08-18 15:12:40 MSK for 38s
+
+PORT     STATE SERVICE REASON          VERSION
+6022/tcp open  ssh     syn-ack ttl 128 (protocol 2.0)
+|_banner: SSH-2.0-Go
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0-Go
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|_    publickey
+| ssh-hostkey: 
+|   2048 5b:cc:bf:f1:a1:8f:72:b0:c0:fb:df:a3:01:dc:a6:fb (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDU+fEcb0HbuFvUiMce89AuwclFwGQAJ/FSk+X/uPL+08lP9AzNCivAovV8Py3XEGfUhSDQeJ6Xw5aZCIZB7z/40IViSC1S1fe49lmv7TlDSFKEOZIDQIAuDP3giwyrdX0MnM5qrFtqs9lIH0D8MnGVCh3kcjG5Mh+Jb4/fcGkIpLSAyVc2Fm5PFFV0XIay5vv/SffCO1141JHFZj+Sal4t4MmlZiY1RTaAgGLsn1SshS2EYFv91rZqHmmNCk+GNVSU9txRQm3OrB+06QTsOWnYN71p6+hTe/TQjhaE53zM+/xZi7sPIq6l6evvNSMOOt9fgVQkvM2NuVutLiq6od2h
+| ssh2-enum-algos: 
+|   kex_algorithms: (6)
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (1)
+|       ssh-rsa
+|   encryption_algorithms: (6)
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       arcfour256
+|       arcfour128
+|   mac_algorithms: (4)
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-256
+|       hmac-sha1
+|       hmac-sha1-96
+|   compression_algorithms: (1)
+|_      none
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port6022-TCP:V=7.80%I=7%D=8/18%Time=5F3BC5BF%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,C,"SSH-2\.0-Go\r\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 18 15:13:18 2020 -- 1 IP address (1 host up) scanned in 39.47 seconds

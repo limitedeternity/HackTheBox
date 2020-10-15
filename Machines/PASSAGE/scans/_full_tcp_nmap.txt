@@ -1,0 +1,57 @@
+# Nmap 7.80 scan initiated Sun Sep 13 21:32:18 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.206/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.206/scans/xml/_full_tcp_nmap.xml 10.10.10.206
+adjust_timeouts2: packet supposedly had rtt of -307607 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -307607 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -270397 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -270397 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -273950 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -273950 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.206
+Host is up, received user-set (0.047s latency).
+Scanned at 2020-09-13 21:32:26 MSK for 160s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE    REASON          VERSION
+22/tcp open  ssh        syn-ack ttl 128 OpenSSH 7.2p2 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 17:eb:9e:23:ea:23:b6:b1:bc:c6:4f:db:98:d3:d4:a1 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVnCUEEK8NK4naCBGc9im6v6c67d5w/z/i72QIXW9JPJ6bv/rdc45FOdiOSovmWW6onhKbdUje+8NKX1LvHIiotFhc66Jih+AW8aeK6pIsywDxtoUwBcKcaPkVFIiFUZ3UWOsWMi+qYTFGg2DEi3OHHWSMSPzVTh+YIsCzkRCHwcecTBNipHK645LwdaBLESJBUieIwuIh8icoESGaNcirD/DkJjjQ3xKSc4nbMnD7D6C1tIgF9TGZadvQNqMgSmJJRFk/hVeA/PReo4Z+WrWTvPuFiTFr8RW+yY/nHWrG6LfldCUwpz0jj/kDFGUDYHLBEN7nsFZx4boP8+p52D8F
+|   256 71:64:51:50:c3:7f:18:47:03:98:3e:5e:b8:10:19:fc (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCdB2wKcMmurynbHuHifOk3OGwNcZ1/7kTJM67u+Cm/6np9tRhyFrjnhcsmydEtLwGiiY5+tUjr2qeTLsrgvzsY=
+|   256 fd:56:2a:f8:d0:60:a7:f1:a0:a1:47:a4:38:d6:a8:a1 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGRIhMr/zUartoStYphvYD6kVzr7TDo+gIQfS2WwhSBd
+80/tcp open  tcpwrapped syn-ack ttl 128
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (91%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Host distance (-5 network hops) appears to be negative
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=9/13%OT=22%CT=1%CU=38343%PV=Y%DS=1%DC=T%G=N%TM=5F5E665A%P=x86_64-pc-linux-gnu)
+SEQ(SP=DE%GCD=1%ISR=F8%TI=I%CI=RD%II=I%SS=S%TS=U)
+SEQ(SP=DE%GCD=1%ISR=F7%CI=RD%TS=U)
+OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)
+WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)
+ECN(R=Y%DF=N%T=7A%W=8000%O=M5B4W1N%CC=N%Q=)
+T1(R=Y%DF=N%T=7A%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=7A%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)
+T4(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=7A%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=7A%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=7A%IPL=164%UN=0%RIPL=G%RID=13DB%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=7A%CD=S)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=222 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+1   46.80 ms 10.10.10.206
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 13 21:35:06 2020 -- 1 IP address (1 host up) scanned in 171.84 seconds

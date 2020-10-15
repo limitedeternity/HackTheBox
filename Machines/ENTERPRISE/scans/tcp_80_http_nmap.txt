@@ -1,0 +1,229 @@
+# Nmap 7.80 scan initiated Sat Aug 15 21:02:49 2020 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /media/psf/Home/Downloads/results/10.10.10.61/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.61/scans/xml/tcp_80_http_nmap.xml 10.10.10.61
+Nmap scan report for 10.10.10.61
+Host is up, received user-set (0.061s latency).
+Scanned at 2020-08-15 21:02:59 MSK for 96s
+
+PORT   STATE SERVICE REASON          VERSION
+80/tcp open  http    syn-ack ttl 128 Apache httpd 2.4.10 ((Debian))
+|_http-chrono: Request times for /; avg: 2720.00ms; min: 2080.80ms; max: 3917.25ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.61
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 107
+|     Comment: 
+|         <!-- .entry-header -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 197
+|     Comment: 
+|         <!-- .site-content-contain -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 191
+|     Comment: 
+|         <!-- .social-navigation -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 75
+|     Comment: 
+|         <!-- .custom-header -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 69
+|     Comment: 
+|         <!-- .site-branding-text -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 73
+|     Comment: 
+|         <!-- .site-branding -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 90
+|     Comment: 
+|         <!-- #masthead -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 119
+|     Comment: 
+|         <!-- .entry-content -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 107
+|     Comment: 
+|         <!-- .entry-meta -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 72
+|     Comment: 
+|         <!-- .wrap -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 180
+|     Comment: 
+|         <!-- #content -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 122
+|     Comment: 
+|         <!-- #post-## -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 88
+|     Comment: 
+|         <!-- .navigation-top -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 202
+|     Comment: 
+|         /* ]]> */
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 36
+|     Comment: 
+|         <!--[if lt IE 9]>
+|         <link rel='stylesheet' id='twentyseventeen-ie8-css'  href='http://enterprise.htb/wp-content/themes/twentyseventeen/assets/css/ie8.css?ver=1.0' type='text/css' media='all' />
+|         <![endif]-->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 200
+|     Comment: 
+|         /* <![CDATA[ */
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 194
+|     Comment: 
+|         <!-- .site-info -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 196
+|     Comment: 
+|         <!-- #colophon -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 198
+|     Comment: 
+|         <!-- #page -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 39
+|     Comment: 
+|         <!--[if lt IE 9]>
+|         <script type='text/javascript' src='http://enterprise.htb/wp-content/themes/twentyseventeen/assets/js/html5.js?ver=3.7.3'></script>
+|         <![endif]-->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 175
+|     Comment: 
+|         <!-- #main -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 176
+|     Comment: 
+|         <!-- #primary -->
+|     
+|     Path: http://10.10.10.61:80/
+|     Line number: 86
+|     Comment: 
+|_        <!-- #site-navigation -->
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Sat, 15 Aug 2020 18:03:23 GMT; -5s from local time.
+|_http-devframework: Wordpress detected. Found common traces on /
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-enum: 
+|   /wp-login.php: Possible admin folder
+|   /readme.html: Wordpress version: 2 
+|   /: WordPress version: 4.8.1
+|   /wp-includes/images/rss.png: Wordpress version 2.2 found.
+|   /wp-includes/js/jquery/suggest.js: Wordpress version 2.5 found.
+|   /wp-includes/images/blank.gif: Wordpress version 2.6 found.
+|   /wp-includes/js/comment-reply.js: Wordpress version 2.7 found.
+|   /wp-login.php: Wordpress login page.
+|   /wp-admin/upgrade.php: Wordpress login page.
+|_  /readme.html: Interesting, a readme.
+| http-errors: 
+| Spidering limited to: maxpagecount=40; withinhost=10.10.10.61
+|   Found the following error pages: 
+|   
+|   Error Code: 404
+|_  	http://10.10.10.61:80/%5c%22
+|_http-feed: ERROR: Script execution failed (use -d to debug)
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-generator: WordPress 4.8.1
+| http-grep: 
+|   (1) http://10.10.10.61:80/: 
+|     (1) email: 
+|       + wordpress@example.com
+|   (1) http://10.10.10.61:80/%5c%22: 
+|     (1) ip: 
+|_      + 10.10.10.61
+| http-headers: 
+|   Date: Sat, 15 Aug 2020 18:03:31 GMT
+|   Server: Apache/2.4.10 (Debian)
+|   X-Powered-By: PHP/5.6.31
+|   Link: <http://enterprise.htb/index.php?rest_route=/>; rel="https://api.w.org/"
+|   Connection: close
+|   Content-Type: text/html; charset=UTF-8
+|   
+|_  (Request type: HEAD)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash 6f4e0f7de88245d392b4aa71935ae4f3
+| Credits query returned unknown hash 6f4e0f7de88245d392b4aa71935ae4f3
+|_Version from header x-powered-by: PHP/5.6.31
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: Apache/2.4.10 (Debian)
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    Other: 1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: USS Enterprise &#8211; Ships Log
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vhosts: 
+| 125 names had status 200
+| syslog
+|_corp
+| http-wordpress-enum: 
+| Search limited to top 100 themes/plugins
+|   themes
+|     twentyfifteen 1.8
+|     twentysixteen 1.3
+|     twentyseventeen 1.3
+|   plugins
+|_    akismet
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 21:04:35 2020 -- 1 IP address (1 host up) scanned in 106.18 seconds

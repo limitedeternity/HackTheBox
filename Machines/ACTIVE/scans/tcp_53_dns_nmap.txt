@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Sat Aug 15 19:11:02 2020 as: nmap -vv --reason -Pn -sV -p 53 "--script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /media/psf/Home/Downloads/results/10.10.10.100/scans/tcp_53_dns_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.100/scans/xml/tcp_53_dns_nmap.xml 10.10.10.100
+Nmap scan report for 10.10.10.100
+Host is up, received user-set (0.084s latency).
+Scanned at 2020-08-15 19:11:08 MSK for 22s
+
+PORT   STATE SERVICE REASON          VERSION
+53/tcp open  domain  syn-ack ttl 128 Microsoft DNS 6.1.7601 (1DB15D39) (Windows Server 2008 R2 SP1)
+|_dns-nsec-enum: Can't determine domain for host 10.10.10.100; use dns-nsec-enum.domains script arg.
+|_dns-nsec3-enum: Can't determine domain for host 10.10.10.100; use dns-nsec3-enum.domains script arg.
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008:r2:sp1
+
+Host script results:
+|_dns-brute: Can't guess domain of "10.10.10.100"; use dns-brute.domain script argument.
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 19:11:30 2020 -- 1 IP address (1 host up) scanned in 27.52 seconds

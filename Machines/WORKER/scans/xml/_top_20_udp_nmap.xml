@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Aug 18 17:38:37 2020 as: nmap -vv -&#45;reason -Pn -sU -A -&#45;top-ports=20 -&#45;version-all -oN /media/psf/Home/Downloads/results/10.10.10.203/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.203/scans/xml/_top_20_udp_nmap.xml 10.10.10.203 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sU -A -&#45;top-ports=20 -&#45;version-all -oN /media/psf/Home/Downloads/results/10.10.10.203/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.203/scans/xml/_top_20_udp_nmap.xml 10.10.10.203" start="1597761517" startstr="Tue Aug 18 17:38:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="20" services="53,67-69,123,135,137-139,161-162,445,500,514,520,631,1434,1900,4500,49152"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597761519"/>
+<taskend task="NSE" time="1597761519"/>
+<taskbegin task="NSE" time="1597761519"/>
+<taskend task="NSE" time="1597761519"/>
+<taskbegin task="NSE" time="1597761519"/>
+<taskend task="NSE" time="1597761519"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597761520"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597761520"/>
+<taskbegin task="UDP Scan" time="1597761520"/>
+<taskend task="UDP Scan" time="1597761525" extrainfo="20 total ports"/>
+<taskbegin task="Service scan" time="1597761525"/>
+<taskprogress task="Service scan" time="1597761768" percent="5.00" remaining="4618" etc="1597766385"/>
+<taskend task="Service scan" time="1597761768" extrainfo="20 services on 1 host"/>
+<taskbegin task="Traceroute" time="1597761771"/>
+<taskend task="Traceroute" time="1597761771"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597761771"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597761771"/>
+<taskbegin task="NSE" time="1597761771"/>
+<taskprogress task="NSE" time="1597761802" percent="98.57" remaining="1" etc="1597761802"/>
+<taskprogress task="NSE" time="1597761832" percent="98.64" remaining="1" etc="1597761833"/>
+<taskprogress task="NSE" time="1597761862" percent="98.75" remaining="2" etc="1597761863"/>
+<taskprogress task="NSE" time="1597761892" percent="99.06" remaining="2" etc="1597761893"/>
+<taskprogress task="NSE" time="1597761922" percent="99.13" remaining="2" etc="1597761923"/>
+<taskprogress task="NSE" time="1597761952" percent="99.24" remaining="2" etc="1597761953"/>
+<taskprogress task="NSE" time="1597761982" percent="99.43" remaining="2" etc="1597761983"/>
+<taskprogress task="NSE" time="1597762012" percent="99.66" remaining="1" etc="1597762013"/>
+<taskprogress task="NSE" time="1597762042" percent="99.89" remaining="1" etc="1597762042"/>
+<taskend task="NSE" time="1597762054"/>
+<taskbegin task="NSE" time="1597762054"/>
+<taskend task="NSE" time="1597762055"/>
+<taskbegin task="NSE" time="1597762055"/>
+<taskend task="NSE" time="1597762055"/>
+<host starttime="1597761520" endtime="1597762055"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.203" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="53"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="68"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="69"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="tftp" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ntp" method="table" conf="3"/></port>
+<port protocol="udp" portid="135"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="137"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="udp" portid="138"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="udp" portid="139"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="udp" portid="161"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="445"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/><script id="ike-version" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="udp" portid="514"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="syslog" method="table" conf="3"/></port>
+<port protocol="udp" portid="520"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="route" method="table" conf="3"/></port>
+<port protocol="udp" portid="631"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1434"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-m" method="table" conf="3"/></port>
+<port protocol="udp" portid="1900"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="49152"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><osmatch name="Palmmicro AR1688 VoIP module" accuracy="89" line="92139">
+<osclass type="VoIP phone" vendor="Palmmicro" osfamily="embedded" accuracy="89"/>
+</osmatch>
+<osmatch name="VMware Player virtual NAT device" accuracy="89" line="103933">
+<osclass type="specialized" vendor="VMware" osfamily="Player" accuracy="89"><cpe>cpe:/a:vmware:player</cpe></osclass>
+</osmatch>
+<osmatch name="Fortinet FortiGate 200B firewall" accuracy="88" line="25631">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="88"><cpe>cpe:/h:fortinet:fortigate_200b</cpe></osclass>
+</osmatch>
+<osmatch name="Aethra Starvoice 1042 ADSL router" accuracy="86" line="1722">
+<osclass type="broadband router" vendor="Aethra" osfamily="embedded" accuracy="86"><cpe>cpe:/h:aethra:starvoice_1042</cpe></osclass>
+</osmatch>
+<osmatch name="AKCP sensorProbe2 remote sensor device" accuracy="86" line="1910">
+<osclass type="specialized" vendor="AKCP" osfamily="embedded" accuracy="86"/>
+</osmatch>
+<osmatch name="APC AOS 5" accuracy="86" line="3156">
+<osclass type="power-device" vendor="APC" osfamily="AOS" osgen="5.X" accuracy="86"><cpe>cpe:/o:apc:aos:5</cpe></osclass>
+</osmatch>
+<osmatch name="Bluebird SuperDOS" accuracy="86" line="10460">
+<osclass type="general purpose" vendor="Bluebird" osfamily="SuperDOS" accuracy="86"><cpe>cpe:/o:bluebird:superdos</cpe></osclass>
+</osmatch>
+<osmatch name="Brother NC-130h print server" accuracy="86" line="10723">
+<osclass type="print server" vendor="Brother" osfamily="embedded" accuracy="86"><cpe>cpe:/h:brother:nc-130h</cpe></osclass>
+</osmatch>
+<osmatch name="Brother HL-1870N printer" accuracy="86" line="10939">
+<osclass type="printer" vendor="Brother" osfamily="embedded" accuracy="86"><cpe>cpe:/h:brother:hl-1870n</cpe></osclass>
+</osmatch>
+<osmatch name="Brother HL-2070N or MFC-5460CN printer" accuracy="86" line="10958">
+<osclass type="printer" vendor="Brother" osfamily="embedded" accuracy="86"><cpe>cpe:/h:brother:hl-2070n</cpe><cpe>cpe:/h:brother:mfc-5460cn</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.80%E=4%D=8/18%OT=%CT=%CU=%PV=Y%DS=1%DC=T%G=N%TM=5F3BEA07%P=x86_64-pc-linux-gnu)&#xa;SEQ(CI=I%II=I)&#xa;T6(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)&#xa;T7(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=80%CD=Z)&#xa;"/>
+</os>
+<distance value="1"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.10.203" rtt="50.20"/>
+</trace>
+<times srtt="46383" rttvar="8275" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1597762056"/>
+<taskend task="NSE" time="1597762056"/>
+<taskbegin task="NSE" time="1597762056"/>
+<taskend task="NSE" time="1597762056"/>
+<taskbegin task="NSE" time="1597762056"/>
+<taskend task="NSE" time="1597762056"/>
+<runstats><finished time="1597762056" timestr="Tue Aug 18 17:47:36 2020" elapsed="540.88" summary="Nmap done at Tue Aug 18 17:47:36 2020; 1 IP address (1 host up) scanned in 540.88 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

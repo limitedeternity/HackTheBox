@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 14 15:02:12 2020 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/_full_tcp_nmap.xml 10.10.10.134 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/_full_tcp_nmap.xml 10.10.10.134" start="1597406532" startstr="Fri Aug 14 15:02:12 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597406534"/>
+<taskend task="NSE" time="1597406534"/>
+<taskbegin task="NSE" time="1597406534"/>
+<taskend task="NSE" time="1597406534"/>
+<taskbegin task="NSE" time="1597406534"/>
+<taskend task="NSE" time="1597406534"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597406534"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597406534"/>
+<taskbegin task="SYN Stealth Scan" time="1597406534"/>
+<taskprogress task="SYN Stealth Scan" time="1597406565" percent="19.92" remaining="125" etc="1597406690"/>
+<taskprogress task="SYN Stealth Scan" time="1597406595" percent="27.10" remaining="165" etc="1597406759"/>
+<taskprogress task="SYN Stealth Scan" time="1597406625" percent="45.70" remaining="109" etc="1597406733"/>
+<taskprogress task="SYN Stealth Scan" time="1597406655" percent="59.56" remaining="83" etc="1597406737"/>
+<taskprogress task="SYN Stealth Scan" time="1597406685" percent="75.60" remaining="49" etc="1597406734"/>
+<taskend task="SYN Stealth Scan" time="1597406712" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1597406712"/>
+<taskprogress task="Service scan" time="1597406774" percent="53.85" remaining="54" etc="1597406827"/>
+<taskend task="Service scan" time="1597406775" extrainfo="13 services on 1 host"/>
+<taskbegin task="Traceroute" time="1597406785"/>
+<taskend task="Traceroute" time="1597406785"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597406785"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597406785"/>
+<taskbegin task="NSE" time="1597406785"/>
+<taskend task="NSE" time="1597406796"/>
+<taskbegin task="NSE" time="1597406796"/>
+<taskend task="NSE" time="1597406796"/>
+<taskbegin task="NSE" time="1597406796"/>
+<taskend task="NSE" time="1597406796"/>
+<host starttime="1597406534" endtime="1597406796"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.134" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65522">
+<extrareasons reason="resets" count="65522"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" product="OpenSSH" version="for_Windows_7.9" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:for_windows_7.9</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 3a:56:ae:75:3c:78:0e:c8:56:4d:cb:1c:22:bf:45:8a (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3bG3TRRwV6dlU1lPbviOW+3fBC7wab+KSQ0Gyhvf9Z1OxFh9v5e6GP4rt5Ss76ic1oAJPIDvQwGlKdeUEnjtEtQXB/78Ptw6IPPPPwF5dI1W4GvoGR4MV5Q6CPpJ6HLIJdvAcn3isTCZgoJT69xRK0ymPnqUqaB+/ptC4xvHmW9ptHdYjDOFLlwxg17e7Sy0CA67PW/nXu7+OKaIOx0lLn8QPEcyrYVCWAqVcUsgNNAjR4h1G7tYLVg3SGrbSmIcxlhSMexIFIVfR37LFlNIYc6Pa58lj2MSQLusIzRoQxaXO4YSp/dM1tk7CN2cKx1PTd9VVSDH+/Nq0HCXPiYh3&#xa;  256 cc:2e:56:ab:19:97:d5:bb:03:fb:82:cd:63:da:68:01 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF1Mau7cS9INLBOXVd4TXFX/02+0gYbMoFzIayeYeEOAcFQrAXa1nxhHjhfpHXWEj2u0Z/hfPBzOLBGi/ngFRUg=&#xa;  256 93:5f:5d:aa:ca:9f:53:e7:f2:82:e6:64:a8:a3:a0:18 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB34X2ZgGpYNXYb+KLFENmf0P0iQ22Q0sjws2ATjFsiN"><table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC3bG3TRRwV6dlU1lPbviOW+3fBC7wab+KSQ0Gyhvf9Z1OxFh9v5e6GP4rt5Ss76ic1oAJPIDvQwGlKdeUEnjtEtQXB/78Ptw6IPPPPwF5dI1W4GvoGR4MV5Q6CPpJ6HLIJdvAcn3isTCZgoJT69xRK0ymPnqUqaB+/ptC4xvHmW9ptHdYjDOFLlwxg17e7Sy0CA67PW/nXu7+OKaIOx0lLn8QPEcyrYVCWAqVcUsgNNAjR4h1G7tYLVg3SGrbSmIcxlhSMexIFIVfR37LFlNIYc6Pa58lj2MSQLusIzRoQxaXO4YSp/dM1tk7CN2cKx1PTd9VVSDH+/Nq0HCXPiYh3</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">3a56ae753c780ec8564dcb1c22bf458a</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF1Mau7cS9INLBOXVd4TXFX/02+0gYbMoFzIayeYeEOAcFQrAXa1nxhHjhfpHXWEj2u0Z/hfPBzOLBGi/ngFRUg=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">cc2e56ab1997d5bb03fb82cd63da6801</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIB34X2ZgGpYNXYb+KLFENmf0P0iQ22Q0sjws2ATjFsiN</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">935f5daaca9f53e7f282e664a8a3a018</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" product="Windows Server 2016 Standard 14393 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="41336"/>
+<osmatch name="Fortinet FortiGate 200B firewall" accuracy="91" line="25631">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="91"><cpe>cpe:/h:fortinet:fortigate_200b</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=8/14%OT=22%CT=1%CU=41336%PV=Y%DS=1%DC=T%G=Y%TM=5F367E4&#xa;OS:C%P=x86_64-pc-linux-gnu)SEQ(SP=E4%GCD=1%ISR=F1%TI=I%CI=RD%II=I%SS=S%TS=U&#xa;OS:)OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)W&#xa;OS:IN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)ECN(R=Y%DF=N%T=81%W=8&#xa;OS:000%O=M5B4W1N%CC=N%Q=)T1(R=Y%DF=N%T=81%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N&#xa;OS:%T=81%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=N%T=81%W=8000%S=O%A=S+%F=&#xa;OS:AS%O=M109W1N%RD=0%Q=)T4(R=Y%DF=N%T=81%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)T5(R&#xa;OS:=Y%DF=N%T=81%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=N%T=81%W=2000%S=A&#xa;OS:%A=S%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=81%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)U1(R&#xa;OS:=Y%DF=N%T=81%IPL=164%UN=0%RIPL=G%RID=2123%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DF&#xa;OS:I=N%T=81%CD=Z)&#xa;"/>
+</os>
+<distance value="1"/>
+<tcpsequence index="231" difficulty="Good luck!" values="1F810E,4AED121,E30AC65,1407FE36,1AD51D65,26D1F7CF"/>
+<ipidsequence class="Incremental" values="7AE5,7AE6,7AE7,7AE8,7AE9,7AEA"/>
+<tcptssequence class="none returned (unsupported)"/>
+<hostscript><script id="clock-skew" output="mean: -39m59s, deviation: 1h09m14s, median: -1s"><elem key="median">-1</elem>
+<elem key="count">3</elem>
+<elem key="mean">-2399</elem>
+<elem key="stddev">4154</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 45726/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 26941/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 54624/udp): CLEAN (Timeout)&#xa;  Check 4 (port 18741/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)&#xa;  Computer name: Bastion&#xa;  NetBIOS computer name: BASTION\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2020-08-14T14:06:29+02:00&#xa;"><elem key="os">Windows Server 2016 Standard 14393</elem>
+<elem key="lanmanager">Windows Server 2016 Standard 6.3</elem>
+<elem key="server">BASTION\x00</elem>
+<elem key="date">2020-08-14T14:06:29+02:00</elem>
+<elem key="fqdn">Bastion</elem>
+<elem key="domain_dns">Bastion</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-08-14T12:06:26&#xa;  start_date: 2020-08-14T12:00:06"><elem key="date">2020-08-14T12:06:26</elem>
+<elem key="start_date">2020-08-14T12:00:06</elem>
+</script></hostscript><trace port="8888" proto="tcp">
+<hop ttl="1" ipaddr="10.10.10.134" rtt="62.89"/>
+</trace>
+<times srtt="45679" rttvar="31449" to="171475"/>
+</host>
+<taskbegin task="NSE" time="1597406796"/>
+<taskend task="NSE" time="1597406796"/>
+<taskbegin task="NSE" time="1597406796"/>
+<taskend task="NSE" time="1597406796"/>
+<taskbegin task="NSE" time="1597406796"/>
+<taskend task="NSE" time="1597406796"/>
+<runstats><finished time="1597406796" timestr="Fri Aug 14 15:06:36 2020" elapsed="266.11" summary="Nmap done at Fri Aug 14 15:06:36 2020; 1 IP address (1 host up) scanned in 266.11 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

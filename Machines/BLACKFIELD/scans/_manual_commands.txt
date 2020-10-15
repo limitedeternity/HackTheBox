@@ -1,0 +1,32 @@
+[*] msrpc on tcp/135
+
+	[-] RPC Client:
+
+		rpcclient -p 135 -U "" 10.10.10.192
+
+
+[*] ldap on tcp/389
+
+	[-] ldapsearch command (modify before running)
+
+		ldapsearch -x -D "<username>" -w "<password>"" -p 389 -h 10.10.10.192 -b "dc=example,dc=com" -s sub "(objectclass=*) 2>&1 | tee > "/media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_389_ldap_all-entries.txt"
+
+
+[*] microsoft-ds on tcp/445
+
+	[-] Nmap scans for SMB vulnerabilities that could potentially cause a DoS if scanned (according to Nmap). Be careful:
+
+		nmap -vv --reason -Pn -sV -p 445 --script="smb-vuln-ms06-025" --script-args="unsafe=1" -oN "/media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_445_smb_ms06-025.txt" -oX "/media/psf/Home/Downloads/results/10.10.10.192/scans/xml/tcp_445_smb_ms06-025.xml" 10.10.10.192
+
+		nmap -vv --reason -Pn -sV -p 445 --script="smb-vuln-ms07-029" --script-args="unsafe=1" -oN "/media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_445_smb_ms07-029.txt" -oX "/media/psf/Home/Downloads/results/10.10.10.192/scans/xml/tcp_445_smb_ms07-029.xml" 10.10.10.192
+
+		nmap -vv --reason -Pn -sV -p 445 --script="smb-vuln-ms08-067" --script-args="unsafe=1" -oN "/media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_445_smb_ms08-067.txt" -oX "/media/psf/Home/Downloads/results/10.10.10.192/scans/xml/tcp_445_smb_ms08-067.xml" 10.10.10.192
+
+
+[*] ldap on tcp/3268
+
+	[-] ldapsearch command (modify before running)
+
+		ldapsearch -x -D "<username>" -w "<password>"" -p 3268 -h 10.10.10.192 -b "dc=example,dc=com" -s sub "(objectclass=*) 2>&1 | tee > "/media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_3268_ldap_all-entries.txt"
+
+

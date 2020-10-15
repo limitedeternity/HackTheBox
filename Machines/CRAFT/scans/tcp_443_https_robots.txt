@@ -1,0 +1,11 @@
+HTTP/1.1 500 INTERNAL SERVER ERROR
+Server: nginx/1.15.8
+Date: Tue, 18 Aug 2020 11:58:18 GMT
+Content-Type: text/html
+Content-Length: 291
+Connection: keep-alive
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>

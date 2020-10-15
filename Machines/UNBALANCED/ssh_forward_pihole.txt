@@ -1,0 +1,3 @@
+https://habr.com/ru/post/331348/
+
+ssh -L 9999:localhost:8080 bryan@10.10.10.200

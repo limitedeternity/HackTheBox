@@ -1,0 +1,1941 @@
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri Aug 14 23:59:13 2020
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 10.10.10.161
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ ==================================================== 
+|    Enumerating Workgroup/Domain on 10.10.10.161    |
+ ==================================================== 
+[E] Can't find workgroup/domain
+
+
+ ============================================ 
+|    Nbtstat Information for 10.10.10.161    |
+ ============================================ 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 437.
+Looking up status of 10.10.10.161
+No reply from 10.10.10.161
+
+ ===================================== 
+|    Session Check on 10.10.10.161    |
+ ===================================== 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 451.
+[+] Server 10.10.10.161 allows sessions using username '', password ''
+[+] Got domain/workgroup name: 
+
+ ===================================================== 
+|    Getting information via LDAP for 10.10.10.161    |
+ ===================================================== 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 359.
+[+] Long domain name for 10.10.10.161: htb.local
+[+] 10.10.10.161 appears to be a root/parent DC
+
+ =========================================== 
+|    Getting domain SID for 10.10.10.161    |
+ =========================================== 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 458.
+Domain Name: HTB
+Domain Sid: S-1-5-21-3072663084-364016917-1341370565
+[+] Host is part of a domain (not a workgroup)
+
+ ====================================== 
+|    OS information on 10.10.10.161    |
+ ====================================== 
+Use of uninitialized value $os_info in concatenation (.) or string at ./enum4linux.pl line 464.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 467.
+[+] Got OS info for 10.10.10.161 from smbclient: 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 866.
+[+] Got OS info for 10.10.10.161 from srvinfo:
+Could not initialise srvsvc. Error was NT_STATUS_ACCESS_DENIED
+
+ ============================= 
+|    Users on 10.10.10.161    |
+ ============================= 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 881.
+index: 0x2137 RID: 0x463 acb: 0x00020015 Account: $331000-VK4ADACQNUCA	Name: (null)	Desc: (null)
+index: 0xfbc RID: 0x1f4 acb: 0x00020010 Account: Administrator	Name: Administrator	Desc: Built-in account for administering the computer/domain
+index: 0x2369 RID: 0x47e acb: 0x00000210 Account: andy	Name: Andy Hislip	Desc: (null)
+index: 0xfbe RID: 0x1f7 acb: 0x00000215 Account: DefaultAccount	Name: (null)	Desc: A user account managed by the system.
+index: 0xfbd RID: 0x1f5 acb: 0x00000215 Account: Guest	Name: (null)	Desc: Built-in account for guest access to the computer/domain
+index: 0x2352 RID: 0x478 acb: 0x00000210 Account: HealthMailbox0659cc1	Name: HealthMailbox-EXCH01-010	Desc: (null)
+index: 0x234b RID: 0x471 acb: 0x00000210 Account: HealthMailbox670628e	Name: HealthMailbox-EXCH01-003	Desc: (null)
+index: 0x234d RID: 0x473 acb: 0x00000210 Account: HealthMailbox6ded678	Name: HealthMailbox-EXCH01-005	Desc: (null)
+index: 0x2351 RID: 0x477 acb: 0x00000210 Account: HealthMailbox7108a4e	Name: HealthMailbox-EXCH01-009	Desc: (null)
+index: 0x234e RID: 0x474 acb: 0x00000210 Account: HealthMailbox83d6781	Name: HealthMailbox-EXCH01-006	Desc: (null)
+index: 0x234c RID: 0x472 acb: 0x00000210 Account: HealthMailbox968e74d	Name: HealthMailbox-EXCH01-004	Desc: (null)
+index: 0x2350 RID: 0x476 acb: 0x00000210 Account: HealthMailboxb01ac64	Name: HealthMailbox-EXCH01-008	Desc: (null)
+index: 0x234a RID: 0x470 acb: 0x00000210 Account: HealthMailboxc0a90c9	Name: HealthMailbox-EXCH01-002	Desc: (null)
+index: 0x2348 RID: 0x46e acb: 0x00000210 Account: HealthMailboxc3d7722	Name: HealthMailbox-EXCH01-Mailbox-Database-1118319013	Desc: (null)
+index: 0x2349 RID: 0x46f acb: 0x00000210 Account: HealthMailboxfc9daad	Name: HealthMailbox-EXCH01-001	Desc: (null)
+index: 0x234f RID: 0x475 acb: 0x00000210 Account: HealthMailboxfd87238	Name: HealthMailbox-EXCH01-007	Desc: (null)
+index: 0xff4 RID: 0x1f6 acb: 0x00020011 Account: krbtgt	Name: (null)	Desc: Key Distribution Center Service Account
+index: 0x2360 RID: 0x47a acb: 0x00000210 Account: lucinda	Name: Lucinda Berger	Desc: (null)
+index: 0x236a RID: 0x47f acb: 0x00000210 Account: mark	Name: Mark Brandt	Desc: (null)
+index: 0x236b RID: 0x480 acb: 0x00000210 Account: santi	Name: Santi Rodriguez	Desc: (null)
+index: 0x235c RID: 0x479 acb: 0x00000210 Account: sebastien	Name: Sebastien Caron	Desc: (null)
+index: 0x215a RID: 0x468 acb: 0x00020011 Account: SM_1b41c9286325456bb	Name: Microsoft Exchange Migration	Desc: (null)
+index: 0x2161 RID: 0x46c acb: 0x00020011 Account: SM_1ffab36a2f5f479cb	Name: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}	Desc: (null)
+index: 0x2156 RID: 0x464 acb: 0x00020011 Account: SM_2c8eef0a09b545acb	Name: Microsoft Exchange Approval Assistant	Desc: (null)
+index: 0x2159 RID: 0x467 acb: 0x00020011 Account: SM_681f53d4942840e18	Name: Discovery Search Mailbox	Desc: (null)
+index: 0x2158 RID: 0x466 acb: 0x00020011 Account: SM_75a538d3025e4db9a	Name: Microsoft Exchange	Desc: (null)
+index: 0x215c RID: 0x46a acb: 0x00020011 Account: SM_7c96b981967141ebb	Name: E4E Encryption Store - Active	Desc: (null)
+index: 0x215b RID: 0x469 acb: 0x00020011 Account: SM_9b69f1b9d2cc45549	Name: Microsoft Exchange Federation Mailbox	Desc: (null)
+index: 0x215d RID: 0x46b acb: 0x00020011 Account: SM_c75ee099d0a64c91b	Name: Microsoft Exchange	Desc: (null)
+index: 0x2157 RID: 0x465 acb: 0x00020011 Account: SM_ca8c2ed5bdab4dc9b	Name: Microsoft Exchange	Desc: (null)
+index: 0x2365 RID: 0x47b acb: 0x00010210 Account: svc-alfresco	Name: svc-alfresco	Desc: (null)
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+user:[Administrator] rid:[0x1f4]
+user:[Guest] rid:[0x1f5]
+user:[krbtgt] rid:[0x1f6]
+user:[DefaultAccount] rid:[0x1f7]
+user:[$331000-VK4ADACQNUCA] rid:[0x463]
+user:[SM_2c8eef0a09b545acb] rid:[0x464]
+user:[SM_ca8c2ed5bdab4dc9b] rid:[0x465]
+user:[SM_75a538d3025e4db9a] rid:[0x466]
+user:[SM_681f53d4942840e18] rid:[0x467]
+user:[SM_1b41c9286325456bb] rid:[0x468]
+user:[SM_9b69f1b9d2cc45549] rid:[0x469]
+user:[SM_7c96b981967141ebb] rid:[0x46a]
+user:[SM_c75ee099d0a64c91b] rid:[0x46b]
+user:[SM_1ffab36a2f5f479cb] rid:[0x46c]
+user:[HealthMailboxc3d7722] rid:[0x46e]
+user:[HealthMailboxfc9daad] rid:[0x46f]
+user:[HealthMailboxc0a90c9] rid:[0x470]
+user:[HealthMailbox670628e] rid:[0x471]
+user:[HealthMailbox968e74d] rid:[0x472]
+user:[HealthMailbox6ded678] rid:[0x473]
+user:[HealthMailbox83d6781] rid:[0x474]
+user:[HealthMailboxfd87238] rid:[0x475]
+user:[HealthMailboxb01ac64] rid:[0x476]
+user:[HealthMailbox7108a4e] rid:[0x477]
+user:[HealthMailbox0659cc1] rid:[0x478]
+user:[sebastien] rid:[0x479]
+user:[lucinda] rid:[0x47a]
+user:[svc-alfresco] rid:[0x47b]
+user:[andy] rid:[0x47e]
+user:[mark] rid:[0x47f]
+user:[santi] rid:[0x480]
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_9b69f1b9d2cc45549
+	Full Name   :	Microsoft Exchange Federation Mailbox
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x469
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailbox7108a4e
+	Full Name   :	HealthMailbox-EXCH01-009
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:57:48 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:57:48 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x477
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	mark
+	Full Name   :	Mark Brandt
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Sat, 21 Sep 2019 01:57:30 MSK
+	Password can change Time :	Sun, 22 Sep 2019 01:57:30 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x47f
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_7c96b981967141ebb
+	Full Name   :	E4E Encryption Store - Active
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x46a
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	krbtgt
+	Full Name   :	
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	Key Distribution Center Service Account
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Wed, 18 Sep 2019 13:53:23 MSK
+	Password can change Time :	Thu, 19 Sep 2019 13:53:23 MSK
+	Password must change Time:	Wed, 30 Oct 2019 13:53:23 MSK
+	unknown_2[0..31]...
+	user_rid :	0x1f6
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailbox6ded678
+	Full Name   :	HealthMailbox-EXCH01-005
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:57:07 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:57:07 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x473
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailboxfd87238
+	Full Name   :	HealthMailbox-EXCH01-007
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:57:27 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:57:27 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x475
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	DefaultAccount
+	Full Name   :	
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	A user account managed by the system.
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x1f7
+	group_rid:	0x201
+	acb_info :	0x00000215
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	sebastien
+	Full Name   :	Sebastien Caron
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Mon, 23 Sep 2019 01:29:30 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Fri, 20 Sep 2019 03:30:00 MSK
+	Password can change Time :	Sat, 21 Sep 2019 03:30:00 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x479
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000008
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailboxfc9daad
+	Full Name   :	HealthMailbox-EXCH01-001
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Tue, 24 Sep 2019 01:52:06 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Tue, 24 Sep 2019 01:51:35 MSK
+	Password can change Time :	Wed, 25 Sep 2019 01:51:35 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x46f
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x0000003b
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_c75ee099d0a64c91b
+	Full Name   :	Microsoft Exchange
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x46b
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_1b41c9286325456bb
+	Full Name   :	Microsoft Exchange Migration
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x468
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	andy
+	Full Name   :	Andy Hislip
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Mon, 23 Sep 2019 01:44:16 MSK
+	Password can change Time :	Tue, 24 Sep 2019 01:44:16 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x47e
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	$331000-VK4ADACQNUCA
+	Full Name   :	
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x463
+	group_rid:	0x201
+	acb_info :	0x00020015
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailbox968e74d
+	Full Name   :	HealthMailbox-EXCH01-004
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:56:56 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:56:56 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x472
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_ca8c2ed5bdab4dc9b
+	Full Name   :	Microsoft Exchange
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x465
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailbox83d6781
+	Full Name   :	HealthMailbox-EXCH01-006
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:57:17 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:57:17 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x474
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailbox0659cc1
+	Full Name   :	HealthMailbox-EXCH01-010
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:57:59 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:57:59 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x478
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailboxb01ac64
+	Full Name   :	HealthMailbox-EXCH01-008
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:57:38 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:57:38 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x476
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	Administrator
+	Full Name   :	Administrator
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	Built-in account for administering the computer/domain
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Mon, 07 Oct 2019 13:57:07 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password last set Time   :	Wed, 18 Sep 2019 20:09:08 MSK
+	Password can change Time :	Thu, 19 Sep 2019 20:09:08 MSK
+	Password must change Time:	Wed, 30 Oct 2019 20:09:08 MSK
+	unknown_2[0..31]...
+	user_rid :	0x1f4
+	group_rid:	0x201
+	acb_info :	0x00020010
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000031
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	lucinda
+	Full Name   :	Lucinda Berger
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Fri, 20 Sep 2019 03:44:13 MSK
+	Password can change Time :	Sat, 21 Sep 2019 03:44:13 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x47a
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	Guest
+	Full Name   :	
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	Built-in account for guest access to the computer/domain
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x1f5
+	group_rid:	0x202
+	acb_info :	0x00000215
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	svc-alfresco
+	Full Name   :	svc-alfresco
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Mon, 23 Sep 2019 14:09:48 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password last set Time   :	Sat, 15 Aug 2020 00:07:00 MSK
+	Password can change Time :	Sun, 16 Aug 2020 00:07:00 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x47b
+	group_rid:	0x201
+	acb_info :	0x00010210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000006
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	santi
+	Full Name   :	Santi Rodriguez
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Sat, 21 Sep 2019 02:02:55 MSK
+	Password can change Time :	Sun, 22 Sep 2019 02:02:55 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x480
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_2c8eef0a09b545acb
+	Full Name   :	Microsoft Exchange Approval Assistant
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x464
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailbox670628e
+	Full Name   :	HealthMailbox-EXCH01-003
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:56:46 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:56:46 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x471
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailboxc0a90c9
+	Full Name   :	HealthMailbox-EXCH01-002
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 19 Sep 2019 14:56:35 MSK
+	Password can change Time :	Fri, 20 Sep 2019 14:56:35 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x470
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_681f53d4942840e18
+	Full Name   :	Discovery Search Mailbox
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x467
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	SM_1ffab36a2f5f479cb
+	Full Name   :	SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x46c
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 927.
+	User Name   :	HealthMailboxc3d7722
+	Full Name   :	HealthMailbox-EXCH01-Mailbox-Database-1118319013
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Tue, 24 Sep 2019 01:57:12 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Tue, 24 Sep 2019 01:51:32 MSK
+	Password can change Time :	Wed, 25 Sep 2019 01:51:32 MSK
+	Password must change Time:	Thu, 14 Sep 30828 05:48:05 MSK
+	unknown_2[0..31]...
+	user_rid :	0x46e
+	group_rid:	0x201
+	acb_info :	0x00000210
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x000005be
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : False
+	Password does not expire : True
+	Account locked out       : False
+	Password expired         : False
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 640.
+	User Name   :	SM_75a538d3025e4db9a
+	Full Name   :	Microsoft Exchange
+	Home Drive  :	
+	Dir Drive   :	
+	Profile Path:	
+	Logon Script:	
+	Description :	
+	Workstations:	
+	Comment     :	
+	Remote Dial :
+	Logon Time               :	Thu, 01 Jan 1970 03:00:00 MSK
+	Logoff Time              :	Thu, 01 Jan 1970 03:00:00 MSK
+	Kickoff Time             :	Thu, 14 Sep 30828 05:48:05 MSK
+	Password last set Time   :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password can change Time :	Thu, 01 Jan 1970 03:00:00 MSK
+	Password must change Time:	Thu, 01 Jan 1970 03:00:00 MSK
+	unknown_2[0..31]...
+	user_rid :	0x466
+	group_rid:	0x201
+	acb_info :	0x00020011
+	fields_present:	0x00ffffff
+	logon_divs:	168
+	bad_password_count:	0x00000000
+	logon_count:	0x00000000
+	padding1[0..7]...
+	logon_hrs[0..21]...
+	Account Disabled         : True
+	Password does not expire : False
+	Account locked out       : False
+	Password expired         : True
+	Interdomain trust account: False
+	Workstation trust account: False
+	Server trust account     : False
+	Trusted for delegation   : False
+
+
+ =========================================== 
+|    Machine Enumeration on 10.10.10.161    |
+ =========================================== 
+[E] Internal error.  Not implmented in this version of enum4linux.
+
+ ========================================= 
+|    Share Enumeration on 10.10.10.161    |
+ ========================================= 
+
+	Sharename       Type      Comment
+	---------       ----      -------
+SMB1 disabled -- no workgroup available
+
+[+] Attempting to map shares on 10.10.10.161
+
+ ==================================================== 
+|    Password Policy Information for 10.10.10.161    |
+ ==================================================== 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 501.
+
+
+[+] Attaching to 10.10.10.161 using a NULL share
+
+[+] Trying protocol 139/SMB...
+
+	[!] Protocol failed: Cannot request session (Called Name:10.10.10.161)
+
+[+] Trying protocol 445/SMB...
+
+[+] Found domain(s):
+
+	[+] HTB
+	[+] Builtin
+
+[+] Password Info for Domain: HTB
+
+	[+] Minimum password length: 7
+	[+] Password history length: 24
+	[+] Maximum password age: 41 days 23 hours 53 minutes 
+	[+] Password Complexity Flags: 000000
+
+		[+] Domain Refuse Password Change: 0
+		[+] Domain Password Store Cleartext: 0
+		[+] Domain Password Lockout Admins: 0
+		[+] Domain Password No Clear Change: 0
+		[+] Domain Password No Anon Change: 0
+		[+] Domain Password Complex: 0
+
+	[+] Minimum password age: 1 day 4 minutes 
+	[+] Reset Account Lockout Counter: 30 minutes 
+	[+] Locked Account Duration: 30 minutes 
+	[+] Account Lockout Threshold: None
+	[+] Forced Log off Time: Not Set
+
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 542.
+
+[+] Retieved partial password policy with rpcclient:
+
+Password Complexity: Disabled
+Minimum Password Length: 7
+
+
+ ============================== 
+|    Groups on 10.10.10.161    |
+ ============================== 
+
+[+] Getting builtin groups:
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+group:[Account Operators] rid:[0x224]
+group:[Pre-Windows 2000 Compatible Access] rid:[0x22a]
+group:[Incoming Forest Trust Builders] rid:[0x22d]
+group:[Windows Authorization Access Group] rid:[0x230]
+group:[Terminal Server License Servers] rid:[0x231]
+group:[Administrators] rid:[0x220]
+group:[Users] rid:[0x221]
+group:[Guests] rid:[0x222]
+group:[Print Operators] rid:[0x226]
+group:[Backup Operators] rid:[0x227]
+group:[Replicator] rid:[0x228]
+group:[Remote Desktop Users] rid:[0x22b]
+group:[Network Configuration Operators] rid:[0x22c]
+group:[Performance Monitor Users] rid:[0x22e]
+group:[Performance Log Users] rid:[0x22f]
+group:[Distributed COM Users] rid:[0x232]
+group:[IIS_IUSRS] rid:[0x238]
+group:[Cryptographic Operators] rid:[0x239]
+group:[Event Log Readers] rid:[0x23d]
+group:[Certificate Service DCOM Access] rid:[0x23e]
+group:[RDS Remote Access Servers] rid:[0x23f]
+group:[RDS Endpoint Servers] rid:[0x240]
+group:[RDS Management Servers] rid:[0x241]
+group:[Hyper-V Administrators] rid:[0x242]
+group:[Access Control Assistance Operators] rid:[0x243]
+group:[Remote Management Users] rid:[0x244]
+group:[System Managed Accounts Group] rid:[0x245]
+group:[Storage Replica Administrators] rid:[0x246]
+group:[Server Operators] rid:[0x225]
+
+[+] Getting builtin group memberships:
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Pre-Windows 2000 Compatible Access' (RID: 554) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Administrators' (RID: 544) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Account Operators' (RID: 548) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Windows Authorization Access Group' (RID: 560) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'System Managed Accounts Group' (RID: 581) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'IIS_IUSRS' (RID: 568) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Guests' (RID: 546) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Users' (RID: 545) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Remote Management Users' (RID: 580) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[+] Getting detailed info for group Pre-Windows 2000 Compatible Access (RID: 554)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group RDS Endpoint Servers (RID: 576)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Event Log Readers (RID: 573)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Administrators (RID: 544)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Network Configuration Operators (RID: 556)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Replicator (RID: 552)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Performance Monitor Users (RID: 558)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Terminal Server License Servers (RID: 561)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Certificate Service DCOM Access (RID: 574)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Storage Replica Administrators (RID: 582)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Account Operators (RID: 548)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Windows Authorization Access Group (RID: 560)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group System Managed Accounts Group (RID: 581)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group IIS_IUSRS (RID: 568)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Access Control Assistance Operators (RID: 579)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Remote Desktop Users (RID: 555)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Print Operators (RID: 550)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Incoming Forest Trust Builders (RID: 557)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Guests (RID: 546)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Users (RID: 545)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Cryptographic Operators (RID: 569)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Performance Log Users (RID: 559)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group RDS Remote Access Servers (RID: 575)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Server Operators (RID: 549)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Backup Operators (RID: 551)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Hyper-V Administrators (RID: 578)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group RDS Management Servers (RID: 577)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Remote Management Users (RID: 580)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Distributed COM Users (RID: 562)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 542.
+[E] No info found
+
+
+[+] Getting local groups:
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+group:[Cert Publishers] rid:[0x205]
+group:[RAS and IAS Servers] rid:[0x229]
+group:[Allowed RODC Password Replication Group] rid:[0x23b]
+group:[Denied RODC Password Replication Group] rid:[0x23c]
+group:[DnsAdmins] rid:[0x44d]
+
+[+] Getting local group memberships:
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Group 'Denied RODC Password Replication Group' (RID: 572) has member: Couldn't lookup SIDs
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 574.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[+] Getting detailed info for group Denied RODC Password Replication Group (RID: 572)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Allowed RODC Password Replication Group (RID: 571)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group RAS and IAS Servers (RID: 553)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group DnsAdmins (RID: 1101)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[E] No info found
+
+[+] Getting detailed info for group Cert Publishers (RID: 517)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 593.
+[E] No info found
+
+
+[+] Getting domain groups:
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+group:[Enterprise Read-only Domain Controllers] rid:[0x1f2]
+group:[Domain Admins] rid:[0x200]
+group:[Domain Users] rid:[0x201]
+group:[Domain Guests] rid:[0x202]
+group:[Domain Computers] rid:[0x203]
+group:[Domain Controllers] rid:[0x204]
+group:[Schema Admins] rid:[0x206]
+group:[Enterprise Admins] rid:[0x207]
+group:[Group Policy Creator Owners] rid:[0x208]
+group:[Read-only Domain Controllers] rid:[0x209]
+group:[Cloneable Domain Controllers] rid:[0x20a]
+group:[Protected Users] rid:[0x20d]
+group:[Key Admins] rid:[0x20e]
+group:[Enterprise Key Admins] rid:[0x20f]
+group:[DnsUpdateProxy] rid:[0x44e]
+group:[Organization Management] rid:[0x450]
+group:[Recipient Management] rid:[0x451]
+group:[View-Only Organization Management] rid:[0x452]
+group:[Public Folder Management] rid:[0x453]
+group:[UM Management] rid:[0x454]
+group:[Help Desk] rid:[0x455]
+group:[Records Management] rid:[0x456]
+group:[Discovery Management] rid:[0x457]
+group:[Server Management] rid:[0x458]
+group:[Delegated Setup] rid:[0x459]
+group:[Hygiene Management] rid:[0x45a]
+group:[Compliance Management] rid:[0x45b]
+group:[Security Reader] rid:[0x45c]
+group:[Security Administrator] rid:[0x45d]
+group:[Exchange Servers] rid:[0x45e]
+group:[Exchange Trusted Subsystem] rid:[0x45f]
+group:[Managed Availability Servers] rid:[0x460]
+group:[Exchange Windows Permissions] rid:[0x461]
+group:[ExchangeLegacyInterop] rid:[0x462]
+group:[$D31000-NSEL5BRJ63V7] rid:[0x46d]
+group:[Service Accounts] rid:[0x47c]
+group:[Privileged IT Accounts] rid:[0x47d]
+group:[test] rid:[0x13ed]
+
+[+] Getting domain group memberships:
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Exchange Windows Permissions' (RID: 1121) has member: HTB\Exchange Trusted Subsystem
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Exchange Trusted Subsystem' (RID: 1119) has member: HTB\EXCH01$
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Schema Admins' (RID: 518) has member: HTB\Administrator
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Enterprise Admins' (RID: 519) has member: HTB\Administrator
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Domain Users' (RID: 513) has member: HTB\Administrator
+Group 'Domain Users' (RID: 513) has member: HTB\DefaultAccount
+Group 'Domain Users' (RID: 513) has member: HTB\krbtgt
+Group 'Domain Users' (RID: 513) has member: HTB\$331000-VK4ADACQNUCA
+Group 'Domain Users' (RID: 513) has member: HTB\SM_2c8eef0a09b545acb
+Group 'Domain Users' (RID: 513) has member: HTB\SM_ca8c2ed5bdab4dc9b
+Group 'Domain Users' (RID: 513) has member: HTB\SM_75a538d3025e4db9a
+Group 'Domain Users' (RID: 513) has member: HTB\SM_681f53d4942840e18
+Group 'Domain Users' (RID: 513) has member: HTB\SM_1b41c9286325456bb
+Group 'Domain Users' (RID: 513) has member: HTB\SM_9b69f1b9d2cc45549
+Group 'Domain Users' (RID: 513) has member: HTB\SM_7c96b981967141ebb
+Group 'Domain Users' (RID: 513) has member: HTB\SM_c75ee099d0a64c91b
+Group 'Domain Users' (RID: 513) has member: HTB\SM_1ffab36a2f5f479cb
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailboxc3d7722
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailboxfc9daad
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailboxc0a90c9
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailbox670628e
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailbox968e74d
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailbox6ded678
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailbox83d6781
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailboxfd87238
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailboxb01ac64
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailbox7108a4e
+Group 'Domain Users' (RID: 513) has member: HTB\HealthMailbox0659cc1
+Group 'Domain Users' (RID: 513) has member: HTB\sebastien
+Group 'Domain Users' (RID: 513) has member: HTB\lucinda
+Group 'Domain Users' (RID: 513) has member: HTB\svc-alfresco
+Group 'Domain Users' (RID: 513) has member: HTB\andy
+Group 'Domain Users' (RID: 513) has member: HTB\mark
+Group 'Domain Users' (RID: 513) has member: HTB\santi
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Group Policy Creator Owners' (RID: 520) has member: HTB\Administrator
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group '$D31000-NSEL5BRJ63V7' (RID: 1133) has member: HTB\EXCH01$
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Domain Guests' (RID: 514) has member: HTB\Guest
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Domain Controllers' (RID: 516) has member: HTB\FOREST$
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Organization Management' (RID: 1104) has member: HTB\Administrator
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Managed Availability Servers' (RID: 1120) has member: HTB\EXCH01$
+Group 'Managed Availability Servers' (RID: 1120) has member: HTB\Exchange Servers
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Privileged IT Accounts' (RID: 1149) has member: HTB\Service Accounts
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Domain Computers' (RID: 515) has member: HTB\EXCH01$
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Service Accounts' (RID: 1148) has member: HTB\svc-alfresco
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Domain Admins' (RID: 512) has member: HTB\Administrator
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 614.
+Group 'Exchange Servers' (RID: 1118) has member: HTB\EXCH01$
+Group 'Exchange Servers' (RID: 1118) has member: HTB\$D31000-NSEL5BRJ63V7
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+[+] Getting detailed info for group Discovery Management (RID: 1111)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Discovery Management
+	Description:	Members of this management role group can perform searches of mailboxes in the Exchange organization for data that meets specific criteria.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Security Reader (RID: 1116)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Security Reader
+	Description:	Membership in this role group is synchronized across services and managed centrally. This role group is not manageable through the administrator portals. Members of this role group may include cross-service administrators, as well as external partner groups and Microsoft Support. By default, this group may not be assigned any roles. However, it will be a member of the Security Reader role groups and will inherit the capabilities of that role group.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Help Desk (RID: 1109)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Help Desk
+	Description:	Members of this management role group can view and manage the configuration for individual recipients and view recipients in an Exchange organization. Members of this role group can only manage the configuration each user can manage on his or her own mailbox. Additional  permissions can be added by assigning additional management roles to this role group.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Exchange Windows Permissions (RID: 1121)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Exchange Windows Permissions
+	Description:	This group contains Exchange servers that run Exchange cmdlets on behalf of users via the management service. Its members have permission to read and modify all Windows accounts and groups. This group should not be deleted.
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Exchange Trusted Subsystem (RID: 1119)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Exchange Trusted Subsystem
+	Description:	This group contains Exchange servers that run Exchange cmdlets on behalf of users via the management service. Its members have permission to read and modify all Exchange configuration, as well as user accounts and groups. This group should not be deleted.
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Schema Admins (RID: 518)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Schema Admins
+	Description:	Designated administrators of the schema
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Enterprise Admins (RID: 519)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Enterprise Admins
+	Description:	Designated administrators of the enterprise
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Public Folder Management (RID: 1107)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Public Folder Management
+	Description:	Members of this management role group can manage public folders. Members can create and delete public folders and manage public folder settings such as replicas, quotas, age limits, and permissions as well as mail-enable and mail-disable public folders.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group DnsUpdateProxy (RID: 1102)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	DnsUpdateProxy
+	Description:	DNS clients who are permitted to perform dynamic updates on behalf of some other clients (such as DHCP servers).
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Domain Users (RID: 513)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Domain Users
+	Description:	All domain users
+	Group Attribute:7
+	Num Members:30
+
+[+] Getting detailed info for group Security Administrator (RID: 1117)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Security Administrator
+	Description:	Membership in this role group is synchronized across services and managed centrally. This role group is not manageable through the administrator portals. Members of this role group may include cross-service administrators, as well as external partner groups and Microsoft Support. By default, this group may not be assigned any roles. However, it will be a member of the Security Administrators role groups and will inherit the capabilities of that role group.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group UM Management (RID: 1108)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	UM Management
+	Description:	Members of this management role group can manage Unified Messaging organization, server, and recipient configuration.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Group Policy Creator Owners (RID: 520)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Group Policy Creator Owners
+	Description:	Members in this group can modify group policy for the domain
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group $D31000-NSEL5BRJ63V7 (RID: 1133)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	$D31000-NSEL5BRJ63V7
+	Description:	This group is used during Exchange setup and is not intended to be used for other purposes.
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Enterprise Key Admins (RID: 527)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Enterprise Key Admins
+	Description:	Members of this group can perform administrative actions on key objects within the forest.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Delegated Setup (RID: 1113)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Delegated Setup
+	Description:	Members of this management role group have permissions to install and uninstall Exchange on provisioned servers. This role group shouldn't be deleted.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Cloneable Domain Controllers (RID: 522)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Cloneable Domain Controllers
+	Description:	Members of this group that are domain controllers may be cloned.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Domain Guests (RID: 514)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Domain Guests
+	Description:	All domain guests
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group test (RID: 5101)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	test
+	Description:	
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Domain Controllers (RID: 516)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Domain Controllers
+	Description:	All domain controllers in the domain
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Organization Management (RID: 1104)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Organization Management
+	Description:	Members of this management role group have permissions to manage Exchange objects and their properties in the Exchange organization. Members can also delegate role groups and management roles in the organization. This role group shouldn't be deleted.
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Key Admins (RID: 526)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Key Admins
+	Description:	Members of this group can perform administrative actions on key objects within the domain.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Records Management (RID: 1110)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Records Management
+	Description:	Members of this management role group can configure compliance features such as retention policy tags, message classifications, transport rules, and more.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Read-only Domain Controllers (RID: 521)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Read-only Domain Controllers
+	Description:	Members of this group are Read-Only Domain Controllers in the domain
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group View-Only Organization Management (RID: 1106)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	View-Only Organization Management
+	Description:	Members of this management role group can view recipient and configuration objects and their properties in the Exchange organization.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Managed Availability Servers (RID: 1120)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Managed Availability Servers
+	Description:	This group contains all the Managed Availability servers. This group shouldn't be deleted.
+	Group Attribute:7
+	Num Members:2
+
+[+] Getting detailed info for group Recipient Management (RID: 1105)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Recipient Management
+	Description:	Members of this management role group have rights to create, manage, and remove Exchange recipient objects in the Exchange organization.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Protected Users (RID: 525)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Protected Users
+	Description:	Members of this group are afforded additional protections against authentication security threats. See http://go.microsoft.com/fwlink/?LinkId=298939 for more information.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Privileged IT Accounts (RID: 1149)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Privileged IT Accounts
+	Description:	
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Domain Computers (RID: 515)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Domain Computers
+	Description:	All workstations and servers joined to the domain
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Hygiene Management (RID: 1114)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Hygiene Management
+	Description:	Members of this management role group can manage Exchange anti-spam features and grant permissions for antivirus products to integrate with Exchange.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Service Accounts (RID: 1148)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Service Accounts
+	Description:	
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Enterprise Read-only Domain Controllers (RID: 498)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Enterprise Read-only Domain Controllers
+	Description:	Members of this group are Read-Only Domain Controllers in the enterprise
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Server Management (RID: 1112)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Server Management
+	Description:	Members of this management role group have permissions to manage all Exchange servers within the Exchange organization, but members don't have permissions to perform operations that have global impact in the Exchange organization.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Domain Admins (RID: 512)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Domain Admins
+	Description:	Designated administrators of the domain
+	Group Attribute:7
+	Num Members:1
+
+[+] Getting detailed info for group Compliance Management (RID: 1115)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Compliance Management
+	Description:	This role group will allow a specified user, responsible for compliance, to properly configure and manage compliance settings within Exchange in accordance with their policy.
+	Group Attribute:7
+	Num Members:0
+
+[+] Getting detailed info for group Exchange Servers (RID: 1118)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 909.
+	Group Name:	Exchange Servers
+	Description:	This group contains all the Exchange servers. This group shouldn't be deleted.
+	Group Attribute:7
+	Num Members:2
+
+[+] Getting detailed info for group ExchangeLegacyInterop (RID: 1122)
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 710.
+	Group Name:	ExchangeLegacyInterop
+	Description:	This group is for interoperability with Exchange 2003 servers within the same forest. This group should not be deleted.
+	Group Attribute:7
+	Num Members:0
+
+
+ ======================================================================= 
+|    Users on 10.10.10.161 via RID cycling (RIDS: 500-550,1000-1050)    |
+ ======================================================================= 
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 742.
+[E] Couldn't get SID: NT_STATUS_ACCESS_DENIED.  RID cycling not possible.
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 991.
+
+ ============================================= 
+|    Getting printer info for 10.10.10.161    |
+ ============================================= 
+Could not initialise spoolss. Error was NT_STATUS_ACCESS_DENIED
+
+
+enum4linux complete on Sat Aug 15 00:06:28 2020
+

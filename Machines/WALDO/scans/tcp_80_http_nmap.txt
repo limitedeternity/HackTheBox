@@ -1,0 +1,106 @@
+# Nmap 7.80 scan initiated Fri Aug 28 00:02:57 2020 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /media/psf/Home/Downloads/results/10.10.10.87/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.87/scans/xml/tcp_80_http_nmap.xml 10.10.10.87
+Nmap scan report for 10.10.10.87
+Host is up, received user-set (0.050s latency).
+Scanned at 2020-08-28 00:03:05 MSK for 143s
+
+PORT   STATE SERVICE REASON          VERSION
+80/tcp open  http    syn-ack ttl 128 nginx 1.12.2
+|_http-chrono: Request times for /; avg: 871.84ms; min: 467.66ms; max: 1740.31ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.87
+|     
+|     Path: http://10.10.10.87:80/
+|     Line number: 46
+|     Comment: 
+|_        /* The rectangle in which to repeat.*/
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Thu, 27 Aug 2020 21:03:13 GMT; -2s from local time.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-errors: Couldn't find any error pages.
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Server: nginx/1.12.2
+|   Date: Thu, 27 Aug 2020 21:03:17 GMT
+|   Content-Type: text/html
+|   Content-Length: 1656
+|   Last-Modified: Thu, 03 May 2018 20:48:36 GMT
+|   Connection: close
+|   ETag: "5aeb75a4-678"
+|   Accept-Ranges: bytes
+|   
+|_  (Request type: HEAD)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash c870d597010d4ca019be706e416b211b
+|_Credits query returned unknown hash c870d597010d4ca019be706e416b211b
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: nginx/1.12.2
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       html: 1; js: 1; png: 1
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    html: 1; js: 1; png: 1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-title: List Manager
+|_Requested resource was /list.html
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Redirected To: /list.html
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vhosts: 
+|_127 names had status 302
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2011-3192  BID:49303
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.tenable.com/plugins/nessus/55976
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|       https://www.securityfocus.com/bid/49303
+|_      https://seclists.org/fulldisclosure/2011/Aug/175
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+| http-waf-detect: IDS/IPS/WAF detected:
+|_10.10.10.87:80/?p4yl04d3=<script>alert(document.cookie)</script>
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 28 00:05:28 2020 -- 1 IP address (1 host up) scanned in 152.32 seconds

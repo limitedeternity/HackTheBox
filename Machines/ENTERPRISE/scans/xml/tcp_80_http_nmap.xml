@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Aug 15 21:02:49 2020 as: nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.61/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.61/scans/xml/tcp_80_http_nmap.xml 10.10.10.61 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.61/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.61/scans/xml/tcp_80_http_nmap.xml 10.10.10.61" start="1597514569" startstr="Sat Aug 15 21:02:49 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1597514578"/>
+<taskend task="NSE" time="1597514578"/>
+<taskbegin task="NSE" time="1597514578"/>
+<taskend task="NSE" time="1597514578"/>
+<taskbegin task="NSE" time="1597514578"/>
+<taskend task="NSE" time="1597514578"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597514579"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597514579"/>
+<taskbegin task="SYN Stealth Scan" time="1597514579"/>
+<taskend task="SYN Stealth Scan" time="1597514579" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1597514581"/>
+<taskend task="Service scan" time="1597514587" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1597514587"/>
+<taskprogress task="NSE" time="1597514618" percent="83.17" remaining="7" etc="1597514624"/>
+<taskprogress task="NSE" time="1597514648" percent="98.36" remaining="2" etc="1597514649"/>
+<taskend task="NSE" time="1597514669"/>
+<taskbegin task="NSE" time="1597514669"/>
+<taskend task="NSE" time="1597514675"/>
+<taskbegin task="NSE" time="1597514675"/>
+<taskend task="NSE" time="1597514675"/>
+<host starttime="1597514579" endtime="1597514675"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.61" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Apache httpd" version="2.4.10" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.10</cpe></service><script id="http-chrono" output="Request times for /; avg: 2720.00ms; min: 2080.80ms; max: 3917.25ms"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.61&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 107&#xa;    Comment: &#xa;        &lt;!-&#45; .entry-header -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 197&#xa;    Comment: &#xa;        &lt;!-&#45; .site-content-contain -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 191&#xa;    Comment: &#xa;        &lt;!-&#45; .social-navigation -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 75&#xa;    Comment: &#xa;        &lt;!-&#45; .custom-header -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 69&#xa;    Comment: &#xa;        &lt;!-&#45; .site-branding-text -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 73&#xa;    Comment: &#xa;        &lt;!-&#45; .site-branding -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 90&#xa;    Comment: &#xa;        &lt;!-&#45; #masthead -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 119&#xa;    Comment: &#xa;        &lt;!-&#45; .entry-content -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 107&#xa;    Comment: &#xa;        &lt;!-&#45; .entry-meta -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 72&#xa;    Comment: &#xa;        &lt;!-&#45; .wrap -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 180&#xa;    Comment: &#xa;        &lt;!-&#45; #content -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 122&#xa;    Comment: &#xa;        &lt;!-&#45; #post-## -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 88&#xa;    Comment: &#xa;        &lt;!-&#45; .navigation-top -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 202&#xa;    Comment: &#xa;        /* ]]&gt; */&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 36&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;        &lt;link rel=&apos;stylesheet&apos; id=&apos;twentyseventeen-ie8-css&apos;  href=&apos;http://enterprise.htb/wp-content/themes/twentyseventeen/assets/css/ie8.css?ver=1.0&apos; type=&apos;text/css&apos; media=&apos;all&apos; /&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 200&#xa;    Comment: &#xa;        /* &lt;![CDATA[ */&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 194&#xa;    Comment: &#xa;        &lt;!-&#45; .site-info -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 196&#xa;    Comment: &#xa;        &lt;!-&#45; #colophon -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 198&#xa;    Comment: &#xa;        &lt;!-&#45; #page -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 39&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;        &lt;script type=&apos;text/javascript&apos; src=&apos;http://enterprise.htb/wp-content/themes/twentyseventeen/assets/js/html5.js?ver=3.7.3&apos;&gt;&lt;/script&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 175&#xa;    Comment: &#xa;        &lt;!-&#45; #main -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 176&#xa;    Comment: &#xa;        &lt;!-&#45; #primary -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.61:80/&#xa;    Line number: 86&#xa;    Comment: &#xa;        &lt;!-&#45; #site-navigation -&#45;&gt;&#xa;"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Sat, 15 Aug 2020 18:03:23 GMT; -5s from local time."><elem key="date">2020-08-15T18:03:23+00:00</elem>
+<elem key="delta">-5.0</elem>
+</script><script id="http-devframework" output="Wordpress detected. Found common traces on /"/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-enum" output="&#xa;  /wp-login.php: Possible admin folder&#xa;  /readme.html: Wordpress version: 2 &#xa;  /: WordPress version: 4.8.1&#xa;  /wp-includes/images/rss.png: Wordpress version 2.2 found.&#xa;  /wp-includes/js/jquery/suggest.js: Wordpress version 2.5 found.&#xa;  /wp-includes/images/blank.gif: Wordpress version 2.6 found.&#xa;  /wp-includes/js/comment-reply.js: Wordpress version 2.7 found.&#xa;  /wp-login.php: Wordpress login page.&#xa;  /wp-admin/upgrade.php: Wordpress login page.&#xa;  /readme.html: Interesting, a readme.&#xa;"/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.10.61&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 404&#xa;  &#x9;http://10.10.10.61:80/%5c%22&#xa;"/><script id="http-feed" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-generator" output="WordPress 4.8.1"/><script id="http-grep" output="&#xa;  (1) http://10.10.10.61:80/: &#xa;    (1) email: &#xa;      + wordpress@example.com&#xa;  (1) http://10.10.10.61:80/%5c%22: &#xa;    (1) ip: &#xa;      + 10.10.10.61"><table key="(1) http://10.10.10.61:80/">
+<table key="(1) email">
+<elem>+ wordpress@example.com</elem>
+</table>
+</table>
+<table key="(1) http://10.10.10.61:80/%5c%22">
+<table key="(1) ip">
+<elem>+ 10.10.10.61</elem>
+</table>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Sat, 15 Aug 2020 18:03:31 GMT&#xa;  Server: Apache/2.4.10 (Debian)&#xa;  X-Powered-By: PHP/5.6.31&#xa;  Link: &lt;http://enterprise.htb/index.php?rest_route=/&gt;; rel=&quot;https://api.w.org/&quot;&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Logo query returned unknown hash 6f4e0f7de88245d392b4aa71935ae4f3&#xa;Credits query returned unknown hash 6f4e0f7de88245d392b4aa71935ae4f3&#xa;Version from header x-powered-by: PHP/5.6.31"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Apache/2.4.10 (Debian)"><elem>Apache/2.4.10 (Debian)</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="USS Enterprise &amp;#8211; Ships Log"><elem key="title">USS Enterprise &amp;#8211; Ships Log</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;125 names had status 200&#xa;syslog&#xa;corp"/><script id="http-wordpress-enum" output="&#xa;Search limited to top 100 themes/plugins&#xa;  themes&#xa;    twentyfifteen 1.8&#xa;    twentysixteen 1.3&#xa;    twentyseventeen 1.3&#xa;  plugins&#xa;    akismet&#xa;"><table key="twentyfifteen">
+<elem key="name">twentyfifteen</elem>
+<elem key="installation_version">1.8</elem>
+<elem key="category">themes</elem>
+<elem key="path">/wp-content/themes/twentyfifteen/</elem>
+</table>
+<table key="twentysixteen">
+<elem key="name">twentysixteen</elem>
+<elem key="installation_version">1.3</elem>
+<elem key="category">themes</elem>
+<elem key="path">/wp-content/themes/twentysixteen/</elem>
+</table>
+<table key="twentyseventeen">
+<elem key="name">twentyseventeen</elem>
+<elem key="installation_version">1.3</elem>
+<elem key="category">themes</elem>
+<elem key="path">/wp-content/themes/twentyseventeen/</elem>
+</table>
+<table key="akismet">
+<elem key="name">akismet</elem>
+<elem key="category">plugins</elem>
+<elem key="path">/wp-content/plugins/akismet/</elem>
+</table>
+<elem key="title">Search limited to top 100 themes/plugins</elem>
+</script></port>
+</ports>
+<times srtt="60925" rttvar="60925" to="304625"/>
+</host>
+<taskbegin task="NSE" time="1597514675"/>
+<taskend task="NSE" time="1597514675"/>
+<taskbegin task="NSE" time="1597514675"/>
+<taskend task="NSE" time="1597514675"/>
+<taskbegin task="NSE" time="1597514675"/>
+<taskend task="NSE" time="1597514675"/>
+<runstats><finished time="1597514675" timestr="Sat Aug 15 21:04:35 2020" elapsed="106.18" summary="Nmap done at Sat Aug 15 21:04:35 2020; 1 IP address (1 host up) scanned in 106.18 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Aug 23 22:38:32 2020 as: nmap -vv --reason -Pn -sV -p 88 --script=banner,krb5-enum-users -oN /media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_88_kerberos_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.192/scans/xml/tcp_88_kerberos_nmap.xml 10.10.10.192
+Nmap scan report for 10.10.10.192
+Host is up, received user-set (0.16s latency).
+Scanned at 2020-08-23 22:38:42 MSK for 23s
+
+PORT   STATE SERVICE      REASON          VERSION
+88/tcp open  kerberos-sec syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2020-08-24 02:38:50Z)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 23 22:39:06 2020 -- 1 IP address (1 host up) scanned in 33.74 seconds

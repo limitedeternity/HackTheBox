@@ -1,0 +1,1 @@
+printf "GET cache_object://10.10.10.200:3128/menu HTTP/1.1\r\nUser-Agent: nc/0.0.1\r\nHost: 10.10.10.200\r\nAccept: */*\r\nAuthorization: Basic OlRoYWgkU2gx\r\n\r\n" | nc 10.10.10.200 3128

@@ -1,0 +1,5 @@
+/admin (Status: 403) [Size: 234]
+/home (Status: 200) [Size: 3338]
+/login (Status: 200) [Size: 4333]
+/logout (Status: 200) [Size: 44]
+/submit (Status: 200) [Size: 3998]

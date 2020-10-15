@@ -1,0 +1,247 @@
+# Nmap 7.80 scan initiated Sat Aug 15 21:02:51 2020 as: nmap -vv --reason -Pn -sV -p 443 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /media/psf/Home/Downloads/results/10.10.10.61/scans/tcp_443_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.61/scans/xml/tcp_443_https_nmap.xml 10.10.10.61
+Nmap scan report for 10.10.10.61
+Host is up, received user-set (0.076s latency).
+Scanned at 2020-08-15 21:03:00 MSK for 1253s
+
+PORT    STATE SERVICE  REASON          VERSION
+443/tcp open  ssl/http syn-ack ttl 128 Apache httpd 2.4.25 ((Ubuntu))
+|_http-chrono: Request times for /; avg: 1078.95ms; min: 749.07ms; max: 1545.77ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.61
+|     
+|     Path: http://10.10.10.61:443/
+|     Line number: 201
+|     Comment: 
+|         <!--      <div class="table_of_contents floating_element">
+|                 <div class="section_header section_header_grey">
+|                   TABLE OF CONTENTS
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#about">About</a>
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#changes">Changes</a>
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#scope">Scope</a>
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#files">Config files</a>
+|                 </div>
+|               </div>
+|         -->
+|     
+|     Path: http://10.10.10.61:443/
+|     Line number: 4
+|     Comment: 
+|         <!--
+|             Modified from the Debian original for Ubuntu
+|             Last updated: 2016-11-16
+|             See: https://launchpad.net/bugs/1288690
+|_          -->
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Sat, 15 Aug 2020 18:03:16 GMT; -1s from local time.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-errors: 
+| Spidering limited to: maxpagecount=40; withinhost=10.10.10.61
+|   Found the following error pages: 
+|   
+|   Error Code: 404
+|_  	http://10.10.10.61:443/manual
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (1) http://10.10.10.61:443/manual: 
+|     (1) ip: 
+|_      + 10.10.10.61
+| http-headers: 
+|   Date: Sat, 15 Aug 2020 18:03:46 GMT
+|   Server: Apache/2.4.25 (Ubuntu)
+|   Last-Modified: Fri, 25 Aug 2017 10:28:07 GMT
+|   ETag: "2aa6-5579166a49cfd"
+|   Accept-Ranges: bytes
+|   Content-Length: 10918
+|   Vary: Accept-Encoding
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: GET)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash 3526531ccd6c6a1d2340574a305a18f8
+|_Credits query returned unknown hash 3526531ccd6c6a1d2340574a305a18f8
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+|_http-server-header: Apache/2.4.25 (Ubuntu)
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1
+|     /icons/
+|       png: 1
+|   Longest directory structure:
+|     Depth: 1
+|     Dir: /icons/
+|   Total files found (by extension):
+|_    Other: 1; png: 1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: 400 Bad Request
+| http-traceroute: 
+|   HTML title
+|     Hop #1: 400 Bad Request
+|     Hop #2: 400 Bad Request
+|     Hop #3: Apache2 Ubuntu Default Page: It works
+|   Status Code
+|     Hop #1: 400
+|     Hop #2: 400
+|     Hop #3: 200
+|   content-type
+|     Hop #1: text/html; charset=iso-8859-1
+|     Hop #2: text/html; charset=iso-8859-1
+|     Hop #3: text/html
+|   content-length
+|     Hop #1: 443
+|     Hop #2: 443
+|     Hop #3: 10918
+|   last-modified
+|     Hop #1
+|     Hop #2
+|_    Hop #3: Fri, 25 Aug 2017 10:28:07 GMT
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     PHPCrawl
+|     URI::Fetch
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|   Change in Status Code: 
+|     HTTP::Lite: 400
+|     Zend_Http_Client: 400
+|     lwp-trivial: 400
+|     WWW-Mechanize/1.34: 400
+|     PHP/: 400
+|_    libcurl-agent/1.0: 400
+| http-vhosts: 
+| 72 names had status 200
+| 50 names had status 400
+| db
+| devel
+| sip
+| news
+|_squid
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| ssl-cert: Subject: commonName=enterprise.local/organizationName=USS Enterprise/stateOrProvinceName=United Federation of Planets/countryName=UK/emailAddress=jeanlucpicard@enterprise.local/organizationalUnitName=Bridge/localityName=Earth
+| Issuer: commonName=enterprise.local/organizationName=USS Enterprise/stateOrProvinceName=United Federation of Planets/countryName=UK/emailAddress=jeanlucpicard@enterprise.local/organizationalUnitName=Bridge/localityName=Earth
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2017-08-25T10:35:14
+| Not valid after:  2017-09-24T10:35:14
+| MD5:   65f7 f983 9ad3 f32e 3c7d b1b5 2176 2ff8
+| SHA-1: 6b08 22b5 1838 1aea 0a6f b4bf a622 20a9 9381 e04a
+| -----BEGIN CERTIFICATE-----
+| MIIERTCCAy2gAwIBAgIJALffXrYDvptrMA0GCSqGSIb3DQEBCwUAMIG4MQswCQYD
+| VQQGEwJVSzElMCMGA1UECAwcVW5pdGVkIEZlZGVyYXRpb24gb2YgUGxhbmV0czEO
+| MAwGA1UEBwwFRWFydGgxFzAVBgNVBAoMDlVTUyBFbnRlcnByaXNlMQ8wDQYDVQQL
+| DAZCcmlkZ2UxGTAXBgNVBAMMEGVudGVycHJpc2UubG9jYWwxLTArBgkqhkiG9w0B
+| CQEWHmplYW5sdWNwaWNhcmRAZW50ZXJwcmlzZS5sb2NhbDAeFw0xNzA4MjUxMDM1
+| MTRaFw0xNzA5MjQxMDM1MTRaMIG4MQswCQYDVQQGEwJVSzElMCMGA1UECAwcVW5p
+| dGVkIEZlZGVyYXRpb24gb2YgUGxhbmV0czEOMAwGA1UEBwwFRWFydGgxFzAVBgNV
+| BAoMDlVTUyBFbnRlcnByaXNlMQ8wDQYDVQQLDAZCcmlkZ2UxGTAXBgNVBAMMEGVu
+| dGVycHJpc2UubG9jYWwxLTArBgkqhkiG9w0BCQEWHmplYW5sdWNwaWNhcmRAZW50
+| ZXJwcmlzZS5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALnT
+| YTRemITs1/mZWwneQqW+s9wgvRUhgxGD7CwqYmhgwDS2N7MlcNZJYtoi46x3TJ52
+| qe4WleGMRxxVDDvveqGYb2Hs230Di13gheCLc9kXNEIfVa3PtgR2KUth42rq4VPQ
+| l7O0vCipdyKt0NkUHxUUcUOoRakueQmFWh57gXm7vAwqvuzm3byhYoq4yverKmL3
+| IChJKPxLur5XRVk4sXbhR3pESLYs+tKMTx0wzFMtEPAqyLY/f4efemgCwCNTe0s3
+| +C0COiIgTgMZn2rx2ToqOrNNwFVkVKQoSRrMQ4/7P5Mheyu+dL/MWnc/SxPSgie+
+| miq3oqeFeZWje5lQKwUCAwEAAaNQME4wHQYDVR0OBBYEFKU8n3KqjrULUsCOyW7C
+| ewA0TVevMB8GA1UdIwQYMBaAFKU8n3KqjrULUsCOyW7CewA0TVevMAwGA1UdEwQF
+| MAMBAf8wDQYJKoZIhvcNAQELBQADggEBAC3/EPr9EdW6lQ6RuFJ1/5kPtJU7XvaY
+| DV8fyd6uXkWigzd/HpnlVAjF0rQdDRhfE4HRbNez6zCGcV3F5Pxl3OgzmdX5TtfH
+| OlU2R5eY3TBIuARtywOM/aJZTN8NuYxUZ5Z/Su6GwtDO3ot6hZmRbcaUA41Wg6qZ
+| O+BSgoJctQqR1eKV5NjZ5IqgUqQWmqs2x9JqH7or++aMf1GeHd08c0gSKHRgA4PB
+| NAbDye/ORY7yVr+In3zKSpBU2xosNngxbvgn3ZGGfGVBhzHw3k9KykofNykbu5tD
+| Dp1D4W+G+LvAcPCAEM5W96Y6dWyVplvyZOgySi31MPIw5rGBm5tTcHU=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| ssl-enum-ciphers: 
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|_  least strength: A
+|_sslv2-drown: 
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 21:23:53 2020 -- 1 IP address (1 host up) scanned in 1262.47 seconds

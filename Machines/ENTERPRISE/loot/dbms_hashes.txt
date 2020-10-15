@@ -1,0 +1,15 @@
+database management system users password hashes:
+[*] joomladb [1]:
+    password hash: *95B8A7B0A041CF2011BEA41DB57315C603285253
+[*] mysql.sys [1]:
+    password hash: *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE
+[*] root [2]:
+    password hash: *2EB70FD4EB74F31283541AAD4E83AB6E077BC0DF
+    password hash: *95B8A7B0A041CF2011BEA41DB57315C603285253
+[*] wordpressdb [1]:
+    password hash: *10C910BC9C2C46140DC275CB69DC6565DE125630
+
+decrypted:
+10c910bc9c2c46140dc275cb69dc6565de125630:passwordwordpress
+2eb70fd4eb74f31283541aad4e83ab6e077bc0df:joomlapassword!
+95b8a7b0a041cf2011bea41db57315c603285253:NCC-1701E

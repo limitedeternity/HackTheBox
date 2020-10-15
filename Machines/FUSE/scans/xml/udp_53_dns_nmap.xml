@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Aug 22 17:54:19 2020 as: nmap -vv -&#45;reason -Pn -sU -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.193/scans/udp_53_dns_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.193/scans/xml/udp_53_dns_nmap.xml 10.10.10.193 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sU -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /media/psf/Home/Downloads/results/10.10.10.193/scans/udp_53_dns_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.193/scans/xml/udp_53_dns_nmap.xml 10.10.10.193" start="1598108059" startstr="Sat Aug 22 17:54:19 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="1" services="53"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1598108060"/>
+<taskend task="NSE" time="1598108060"/>
+<taskbegin task="NSE" time="1598108060"/>
+<taskend task="NSE" time="1598108060"/>
+<taskbegin task="NSE" time="1598108060"/>
+<taskend task="NSE" time="1598108060"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598108061"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598108061"/>
+<taskbegin task="UDP Scan" time="1598108061"/>
+<taskend task="UDP Scan" time="1598108061" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1598108062"/>
+<taskend task="Service scan" time="1598108082" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1598108082"/>
+<taskend task="NSE" time="1598108100"/>
+<taskbegin task="NSE" time="1598108100"/>
+<taskend task="NSE" time="1598108100"/>
+<taskbegin task="NSE" time="1598108100"/>
+<taskend task="NSE" time="1598108100"/>
+<host starttime="1598108061" endtime="1598108100"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.193" addrtype="ipv4"/>
+<hostnames>
+<hostname name="fuse.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="udp" portid="53"><state state="open" reason="udp-response" reason_ttl="128"/><service name="domain" extrainfo="generic dns response: SERVFAIL" servicefp="SF-Port53-UDP:V=7.80%I=7%D=8/22%Time=5F4131B2%P=x86_64-pc-linux-gnu%r(NBTStat,32,&quot;\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01&quot;);" method="probed" conf="10"/><script id="dns-cache-snoop" output="0 of 100 tested domains are cached.&#xa;"/><script id="dns-nsec-enum" output="&#xa;  No NSEC records found&#xa;"/><script id="dns-nsec3-enum" output="&#xa;  DNSSEC NSEC3 not supported&#xa;"/><script id="fingerprint-strings" output="&#xa;  NBTStat: &#xa;    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"><elem key="NBTStat">&#xa;    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</elem>
+</script></port>
+</ports>
+<hostscript><script id="dns-brute" output="&#xa;  DNS Brute-force hostnames: No results."><table key="DNS Brute-force hostnames">
+</table>
+</script></hostscript><times srtt="213734" rttvar="213734" to="1068670"/>
+</host>
+<taskbegin task="NSE" time="1598108100"/>
+<taskend task="NSE" time="1598108100"/>
+<taskbegin task="NSE" time="1598108100"/>
+<taskend task="NSE" time="1598108100"/>
+<taskbegin task="NSE" time="1598108100"/>
+<taskend task="NSE" time="1598108100"/>
+<runstats><finished time="1598108100" timestr="Sat Aug 22 17:55:00 2020" elapsed="41.90" summary="Nmap done at Sat Aug 22 17:55:00 2020; 1 IP address (1 host up) scanned in 41.90 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

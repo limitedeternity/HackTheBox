@@ -1,0 +1,27 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.10.110
++ Target Hostname:    10.10.10.110
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:        Subject:  /C=US/ST=NY/O=Craft/CN=craft.htb
+                   Ciphers:  ECDHE-RSA-AES256-GCM-SHA384
+                   Issuer:   /C=US/ST=New York/L=Buffalo/O=Craft/OU=Craft/CN=Craft CA/emailAddress=admin@craft.htb
++ Start Time:         2020-08-18 14:58:27 (GMT3)
+---------------------------------------------------------------------------
++ Server: nginx/1.15.8
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The site uses SSL and the Strict-Transport-Security HTTP header is not defined.
++ The site uses SSL and Expect-CT header is not present.
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Server may leak inodes via ETags, header found with file /static/ico/apple-touch-icon-144-precomposed.png, inode: 1549210104.0, size: 3614, mtime: 1183323266
++ Hostname '10.10.10.110' does not match certificate's names: craft.htb
++ Allowed HTTP Methods: HEAD, OPTIONS, GET 
++ ERROR: Error limit (20) reached for host, giving up. Last error: opening stream: can't connect: Connect failed: ; Connection refused at /var/lib/nikto/plugins/LW2.pm line 5157.
+: Connection refused
++ Scan terminated:  19 error(s) and 8 item(s) reported on remote host
++ End Time:           2020-08-18 15:53:41 (GMT3) (3314 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

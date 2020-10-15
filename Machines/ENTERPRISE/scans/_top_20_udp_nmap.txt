@@ -1,0 +1,49 @@
+# Nmap 7.80 scan initiated Sat Aug 15 21:02:23 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.61/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.61/scans/xml/_top_20_udp_nmap.xml 10.10.10.61
+adjust_timeouts2: packet supposedly had rtt of -458658 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -432791 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -432791 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.61
+Host is up, received user-set (0.065s latency).
+Scanned at 2020-08-15 21:02:25 MSK for 17s
+
+PORT      STATE  SERVICE      REASON               VERSION
+53/udp    closed domain       port-unreach ttl 128
+67/udp    closed dhcps        port-unreach ttl 128
+68/udp    closed dhcpc        port-unreach ttl 128
+69/udp    closed tftp         port-unreach ttl 128
+123/udp   closed ntp          port-unreach ttl 128
+135/udp   closed msrpc        port-unreach ttl 128
+137/udp   closed netbios-ns   port-unreach ttl 128
+138/udp   closed netbios-dgm  port-unreach ttl 128
+139/udp   closed netbios-ssn  port-unreach ttl 128
+161/udp   closed snmp         port-unreach ttl 128
+162/udp   closed snmptrap     port-unreach ttl 128
+445/udp   closed microsoft-ds port-unreach ttl 128
+500/udp   closed isakmp       port-unreach ttl 128
+514/udp   closed syslog       port-unreach ttl 128
+520/udp   closed route        port-unreach ttl 128
+631/udp   closed ipp          port-unreach ttl 128
+1434/udp  closed ms-sql-m     port-unreach ttl 128
+1900/udp  closed upnp         port-unreach ttl 128
+4500/udp  closed nat-t-ike    port-unreach ttl 128
+49152/udp closed unknown      port-unreach ttl 128
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall
+Running: Fortinet embedded
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS details: Fortinet FortiGate 200B firewall
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=8/15%OT=%CT=%CU=53%PV=Y%DS=1%DC=T%G=N%TM=5F382342%P=x8
+OS:6_64-pc-linux-gnu)T6(R=Y%DF=N%TG=80%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)T7(R=Y
+OS:%DF=N%TG=80%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)U1(R=N)IE(R=Y%DFI=N%TG=80%CD=
+OS:S)
+
+Network Distance: 1 hop
+
+TRACEROUTE (using port 520/udp)
+HOP RTT      ADDRESS
+1   61.26 ms 10.10.10.61
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 21:02:42 2020 -- 1 IP address (1 host up) scanned in 19.88 seconds

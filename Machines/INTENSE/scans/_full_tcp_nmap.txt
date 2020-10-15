@@ -1,0 +1,255 @@
+# Nmap 7.80 scan initiated Wed Aug 26 12:41:04 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.195/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.195/scans/xml/_full_tcp_nmap.xml 10.10.10.195
+Increasing send delay for 10.10.10.195 from 0 to 5 due to 11 out of 31 dropped probes since last increase.
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+adjust_timeouts2: packet supposedly had rtt of 8000064 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8000064 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8001121 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8001121 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8001266 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8001266 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8002370 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8002370 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8002560 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8002560 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003511 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003511 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003672 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003672 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8004713 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8004713 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8004836 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8004836 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8005876 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8005876 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8005988 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8005988 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003762 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003762 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003823 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8003823 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8005799 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8005799 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8009766 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8009766 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8009923 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8009923 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8007673 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8007673 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8007754 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8007754 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8008895 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8008895 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8009037 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8009037 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8010070 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8010070 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8010175 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8010175 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8012374 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8012374 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8012541 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8012541 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8013470 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8013470 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8036407 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8036407 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8040490 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8040490 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8040719 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8040719 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8040702 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8040702 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8042751 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8042751 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8042909 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8042909 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8045431 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8045431 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8047016 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8047016 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8046988 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8046988 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8048027 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8048027 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8048167 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8048167 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8048774 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8048774 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8049451 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8049451 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8050662 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8050662 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8050908 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8050908 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8052323 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8052323 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8052474 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8052474 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8053049 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8053049 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8054667 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8054667 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8054317 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8054317 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8056004 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8056004 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8056102 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8056102 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8056144 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8056144 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8062923 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8062923 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064332 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064332 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064636 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064636 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064677 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064677 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8062307 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8062307 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8062444 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8062444 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8063549 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8063549 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064707 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064707 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064864 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8064864 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8065951 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8065951 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8066059 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8066059 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8067176 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8067176 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8070972 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8070972 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8068226 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8068226 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8070930 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8070930 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8074668 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8074668 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8074822 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8074822 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8076279 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8076279 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8076439 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8076439 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8077365 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8077365 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8077560 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8077560 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8078886 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8078886 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8079043 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8079043 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8080121 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8080121 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8081172 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8081172 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8084099 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8084099 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8085342 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8085342 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8085467 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8085467 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8086489 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8086489 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8086146 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8086146 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8087642 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8087642 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8087862 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8087862 microseconds.  Ignoring time.
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+adjust_timeouts2: packet supposedly had rtt of -56704 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -56704 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.195
+Host is up, received user-set (0.042s latency).
+Scanned at 2020-08-26 12:41:08 MSK for 978s
+Not shown: 65534 closed ports
+Reason: 65534 resets
+PORT   STATE SERVICE REASON          VERSION
+80/tcp open  http    syn-ack ttl 128 nginx 1.14.0 (Ubuntu)
+|_http-favicon: Unknown favicon MD5: FED84E16B6CCFE88EE7FFAAE5DFEFD34
+| http-methods: 
+|_  Supported Methods: GET OPTIONS HEAD
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: Intense - WebApp
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (95%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Host distance (-3 network hops) appears to be negative
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (95%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/26%OT=80%CT=1%CU=33185%PV=Y%DS=1%DC=T%G=N%TM=5F463206%P=x86_64-pc-linux-gnu)
+SEQ(SP=D6%GCD=1%ISR=EE%TI=RD%CI=RD%II=I%TS=U)
+SEQ(SP=D2%GCD=1%ISR=F1%TI=I%CI=RD%II=I%SS=S%TS=U)
+OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)
+WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)
+ECN(R=Y%DF=N%T=7C%W=8000%O=M5B4W1N%CC=N%Q=)
+T1(R=Y%DF=N%T=7C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=7C%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=7C%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)
+T4(R=Y%DF=N%T=7C%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=7C%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=7C%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=7C%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=7C%IPL=164%UN=0%RIPL=G%RID=C842%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=7C%CD=S)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=210 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 12839/tcp)
+HOP RTT      ADDRESS
+1   41.19 ms 10.10.10.195
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 26 12:57:26 2020 -- 1 IP address (1 host up) scanned in 983.84 seconds

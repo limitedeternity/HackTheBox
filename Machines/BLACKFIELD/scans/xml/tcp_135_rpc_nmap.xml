@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 23 22:38:33 2020 as: nmap -vv -&#45;reason -Pn -sV -p 135 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_135_rpc_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.192/scans/xml/tcp_135_rpc_nmap.xml 10.10.10.192 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 135 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /media/psf/Home/Downloads/results/10.10.10.192/scans/tcp_135_rpc_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.192/scans/xml/tcp_135_rpc_nmap.xml 10.10.10.192" start="1598211513" startstr="Sun Aug 23 22:38:33 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="135"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1598211518"/>
+<taskend task="NSE" time="1598211518"/>
+<taskbegin task="NSE" time="1598211518"/>
+<taskend task="NSE" time="1598211518"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598211518"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598211522"/>
+<taskbegin task="SYN Stealth Scan" time="1598211522"/>
+<taskend task="SYN Stealth Scan" time="1598211522" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1598211523"/>
+<taskend task="Service scan" time="1598211530" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1598211530"/>
+<taskend task="NSE" time="1598211545"/>
+<taskbegin task="NSE" time="1598211545"/>
+<taskend task="NSE" time="1598211545"/>
+<host starttime="1598211522" endtime="1598211545"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.192" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="217626" rttvar="217626" to="1088130"/>
+</host>
+<taskbegin task="NSE" time="1598211546"/>
+<taskend task="NSE" time="1598211546"/>
+<taskbegin task="NSE" time="1598211546"/>
+<taskend task="NSE" time="1598211546"/>
+<runstats><finished time="1598211546" timestr="Sun Aug 23 22:39:06 2020" elapsed="33.64" summary="Nmap done at Sun Aug 23 22:39:06 2020; 1 IP address (1 host up) scanned in 33.64 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

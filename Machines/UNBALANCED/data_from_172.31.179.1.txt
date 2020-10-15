@@ -1,0 +1,27 @@
+rita
+Rita Fubelli
+
+rita@unbalanced.htb
+
+Role: HR Manager
+
+jim
+Jim Mickelson
+
+jim@unbalanced.htb
+
+Role: Web Designer
+
+bryan
+Bryan Angstrom
+
+bryan@unbalanced.htb
+
+Role: System Administrator
+
+sarah
+Sarah Goodman
+
+sarah@unbalanced.htb
+
+Role: Team Leader

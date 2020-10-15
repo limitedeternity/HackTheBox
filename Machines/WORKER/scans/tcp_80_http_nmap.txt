@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Tue Aug 18 17:38:53 2020 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /media/psf/Home/Downloads/results/10.10.10.203/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.203/scans/xml/tcp_80_http_nmap.xml 10.10.10.203
+Nmap scan report for 10.10.10.203
+Host is up, received user-set (0.0045s latency).
+Scanned at 2020-08-18 17:39:10 MSK for 0s
+
+PORT   STATE  SERVICE REASON        VERSION
+80/tcp closed http    reset ttl 128
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 18 17:39:11 2020 -- 1 IP address (1 host up) scanned in 18.03 seconds

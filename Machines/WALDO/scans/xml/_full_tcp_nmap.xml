@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 28 00:02:32 2020 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.87/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.87/scans/xml/_full_tcp_nmap.xml 10.10.10.87 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.87/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.87/scans/xml/_full_tcp_nmap.xml 10.10.10.87" start="1598562152" startstr="Fri Aug 28 00:02:32 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1598562154"/>
+<taskend task="NSE" time="1598562154"/>
+<taskbegin task="NSE" time="1598562154"/>
+<taskend task="NSE" time="1598562154"/>
+<taskbegin task="NSE" time="1598562154"/>
+<taskend task="NSE" time="1598562154"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598562154"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598562158"/>
+<taskbegin task="SYN Stealth Scan" time="1598562158"/>
+<taskprogress task="SYN Stealth Scan" time="1598562189" percent="4.43" remaining="669" etc="1598562858"/>
+<taskprogress task="SYN Stealth Scan" time="1598562219" percent="10.16" remaining="540" etc="1598562759"/>
+<taskprogress task="SYN Stealth Scan" time="1598562249" percent="15.82" remaining="485" etc="1598562733"/>
+<taskprogress task="SYN Stealth Scan" time="1598562279" percent="21.93" remaining="431" etc="1598562710"/>
+<taskprogress task="SYN Stealth Scan" time="1598562309" percent="27.51" remaining="398" etc="1598562707"/>
+<taskprogress task="SYN Stealth Scan" time="1598562339" percent="33.68" remaining="357" etc="1598562695"/>
+<taskprogress task="SYN Stealth Scan" time="1598562369" percent="39.81" remaining="320" etc="1598562688"/>
+<taskprogress task="SYN Stealth Scan" time="1598562399" percent="46.01" remaining="283" etc="1598562682"/>
+<taskprogress task="SYN Stealth Scan" time="1598562429" percent="52.47" remaining="246" etc="1598562674"/>
+<taskprogress task="SYN Stealth Scan" time="1598562459" percent="59.07" remaining="209" etc="1598562668"/>
+<taskprogress task="SYN Stealth Scan" time="1598562489" percent="65.47" remaining="175" etc="1598562664"/>
+<taskprogress task="SYN Stealth Scan" time="1598562519" percent="72.11" remaining="140" etc="1598562659"/>
+<taskprogress task="SYN Stealth Scan" time="1598562549" percent="78.15" remaining="110" etc="1598562658"/>
+<taskprogress task="SYN Stealth Scan" time="1598562579" percent="89.09" remaining="52" etc="1598562631"/>
+<taskend task="SYN Stealth Scan" time="1598562630" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1598562630"/>
+<taskend task="Service scan" time="1598562636" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1598562640"/>
+<taskend task="Traceroute" time="1598562640"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598562640"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598562640"/>
+<taskbegin task="NSE" time="1598562640"/>
+<taskend task="NSE" time="1598562642"/>
+<taskbegin task="NSE" time="1598562642"/>
+<taskend task="NSE" time="1598562642"/>
+<taskbegin task="NSE" time="1598562642"/>
+<taskend task="NSE" time="1598562642"/>
+<host starttime="1598562158" endtime="1598562642"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.87" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" product="OpenSSH" version="7.5" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.5</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 c4:ff:81:aa:ac:df:66:9e:da:e1:c8:78:00:ab:32:9e (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUBrGVTenfm2F4qteJkyDe6hVIFmu8bbhvIHpgyeurAI6685LtchiyT67l6xdhhc4jKe9kPp7Sb123/oqHf0lkoHywgwn2VI4Fxbj2QUoRw6LXeT1UL3W9vYMNazvGgjriv7S/pfXZA9E0IGIGauQfWhMsh2LMi7R9XLCgvtglmEe+PJP3PtR1OosHIYJzbF9iP/gaN303eDZXkDbWlIcr5hLDFDw/OLPYY1ew8oHMdJKs/WSEZfbRJFE6NTfjuumX5Sfbo8lk5jcWZ683BUeHK8PFknqlDQnqLa2F9M4vq9vSXvDNfd315vaLpLoA/OymCyXzamwXVVEUI4hm7oMj&#xa;  256 b3:e7:54:6a:16:bd:c9:29:1f:4a:8c:cd:4c:01:24:27 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOGNlwRr8whDd+DtY94Sa6uDIuCTTnDO9rp4ezQyJRbB866Useclk0U03GooZdUNgcyHttrfBhrLRbNp4EYmSEg=&#xa;  256 38:64:ac:57:56:44:d5:69:de:74:a8:88:dc:a0:b4:fd (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILhvDtrIfnHWdGIA3ewprB+7ZA1wfv/PcQtO/vlNHaks"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCUBrGVTenfm2F4qteJkyDe6hVIFmu8bbhvIHpgyeurAI6685LtchiyT67l6xdhhc4jKe9kPp7Sb123/oqHf0lkoHywgwn2VI4Fxbj2QUoRw6LXeT1UL3W9vYMNazvGgjriv7S/pfXZA9E0IGIGauQfWhMsh2LMi7R9XLCgvtglmEe+PJP3PtR1OosHIYJzbF9iP/gaN303eDZXkDbWlIcr5hLDFDw/OLPYY1ew8oHMdJKs/WSEZfbRJFE6NTfjuumX5Sfbo8lk5jcWZ683BUeHK8PFknqlDQnqLa2F9M4vq9vSXvDNfd315vaLpLoA/OymCyXzamwXVVEUI4hm7oMj</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">c4ff81aaacdf669edae1c87800ab329e</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOGNlwRr8whDd+DtY94Sa6uDIuCTTnDO9rp4ezQyJRbB866Useclk0U03GooZdUNgcyHttrfBhrLRbNp4EYmSEg=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">b3e7546a16bdc9291f4a8ccd4c012427</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILhvDtrIfnHWdGIA3ewprB+7ZA1wfv/PcQtO/vlNHaks</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">3864ac575644d569de74a888dca0b4fd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="nginx" version="1.12.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.12.2</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.12.2"><elem>nginx/1.12.2</elem>
+</script><script id="http-title" output="List Manager&#xa;Requested resource was /list.html"><elem key="title">List Manager</elem>
+<elem key="redirect_url">/list.html</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/></port>
+<port protocol="tcp" portid="8888"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sun-answerbook" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42806"/>
+<osmatch name="Fortinet FortiGate 200B firewall" accuracy="95" line="25631">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="95"><cpe>cpe:/h:fortinet:fortigate_200b</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.80%E=4%D=8/28%OT=22%CT=1%CU=42806%PV=Y%DS=1%DC=T%G=N%TM=5F482152%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=E2%GCD=1%ISR=F3%TI=I%CI=RD%II=I%SS=S%TS=U)&#xa;OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)&#xa;WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)&#xa;ECN(R=Y%DF=N%T=7B%W=8000%O=M5B4W1N%CC=N%Q=)&#xa;T1(R=Y%DF=N%T=7B%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)&#xa;T3(R=Y%DF=N%T=7B%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)&#xa;T4(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)&#xa;T5(R=Y%DF=N%T=7B%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)&#xa;T7(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=7B%IPL=164%UN=0%RIPL=G%RID=E041%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=7B%CD=S)&#xa;"/>
+</os>
+<distance value="1"/>
+<tcpsequence index="217" difficulty="Good luck!" values="C02343C,126CAC9F,188C0B70,1DB5871B,2442F676,2C01BCCF"/>
+<ipidsequence class="Incremental" values="1135,113A,113F,1144,1149,114E"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="23" proto="tcp">
+<hop ttl="1" ipaddr="10.10.10.87" rtt="47.48"/>
+</trace>
+<times srtt="44187" rttvar="6860" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1598562642"/>
+<taskend task="NSE" time="1598562642"/>
+<taskbegin task="NSE" time="1598562642"/>
+<taskend task="NSE" time="1598562642"/>
+<taskbegin task="NSE" time="1598562642"/>
+<taskend task="NSE" time="1598562642"/>
+<runstats><finished time="1598562642" timestr="Fri Aug 28 00:10:42 2020" elapsed="491.54" summary="Nmap done at Fri Aug 28 00:10:42 2020; 1 IP address (1 host up) scanned in 491.54 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

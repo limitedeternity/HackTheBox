@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Sun Sep 13 21:32:19 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=200 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.206/scans/_top_200_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.206/scans/xml/_top_200_udp_nmap.xml 10.10.10.206

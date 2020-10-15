@@ -1,0 +1,2 @@
+ldapsearch -x -H ldap://ldap.travel.htb -b "cn=lynik-admin,dc=travel,dc=htb" -w Theroadlesstraveled
+ldapmodify -x -D "cn=lynik-admin,dc=travel,dc=htb" -w Theroadlesstraveled -H ldap://ldap.travel.htb -f jane.ldif

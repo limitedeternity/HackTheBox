@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Sat Aug 22 17:45:49 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.193/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.193/scans/xml/_full_tcp_nmap.xml 10.10.10.193

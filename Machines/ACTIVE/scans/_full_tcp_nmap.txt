@@ -1,0 +1,84 @@
+# Nmap 7.80 scan initiated Sat Aug 15 19:07:41 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /media/psf/Home/Downloads/results/10.10.10.100/scans/_full_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.100/scans/xml/_full_tcp_nmap.xml 10.10.10.100
+Nmap scan report for 10.10.10.100
+Host is up, received user-set (0.053s latency).
+Scanned at 2020-08-15 19:07:44 MSK for 273s
+Not shown: 65512 closed ports
+Reason: 65512 resets
+PORT      STATE SERVICE       REASON          VERSION
+53/tcp    open  domain        syn-ack ttl 128 Microsoft DNS 6.1.7601 (1DB15D39) (Windows Server 2008 R2 SP1)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)
+88/tcp    open  kerberos-sec  syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2020-08-15 16:09:03Z)
+135/tcp   open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 128 Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: active.htb, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack ttl 128
+464/tcp   open  kpasswd5?     syn-ack ttl 128
+593/tcp   open  ncacn_http    syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack ttl 128
+3268/tcp  open  ldap          syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: active.htb, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack ttl 128
+5722/tcp  open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+9389/tcp  open  mc-nmf        syn-ack ttl 128 .NET Message Framing
+47001/tcp open  http          syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49152/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49153/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49154/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49155/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49157/tcp open  ncacn_http    syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49169/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49171/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+49182/tcp open  msrpc         syn-ack ttl 128 Microsoft Windows RPC
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Host distance (-6 network hops) appears to be negative
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/15%OT=53%CT=1%CU=43114%PV=Y%DS=1%DC=T%G=N%TM=5F380961%P=x86_64-pc-linux-gnu)
+SEQ(SP=D5%GCD=1%ISR=EE%TI=I%CI=RD%II=I%SS=S%TS=U)
+OPS(O1=M5B4W1N%O2=M578W1N%O3=M280W1N%O4=M5B4W1N%O5=M218W1N%O6=M109W0N)
+WIN(W1=8000%W2=8000%W3=8000%W4=8000%W5=8000%W6=8000)
+ECN(R=Y%DF=N%T=79%W=8000%O=M5B4W1N%CC=N%Q=)
+T1(R=Y%DF=N%T=79%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=79%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=79%W=8000%S=O%A=S+%F=AS%O=M109W1N%RD=0%Q=)
+T4(R=Y%DF=N%T=79%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=79%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=79%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=79%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=79%IPL=164%UN=0%RIPL=G%RID=36DA%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=79%CD=Z)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=220 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008:r2:sp1, cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: -1s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 50096/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 40109/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 32199/udp): CLEAN (Timeout)
+|   Check 4 (port 38631/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-08-15T16:10:09
+|_  start_date: 2020-08-15T08:54:55
+
+TRACEROUTE (using port 995/tcp)
+HOP RTT      ADDRESS
+1   60.51 ms 10.10.10.100
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 19:12:18 2020 -- 1 IP address (1 host up) scanned in 277.81 seconds

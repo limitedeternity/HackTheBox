@@ -1,0 +1,42 @@
+# Nmap 7.80 scan initiated Wed Aug 26 12:41:05 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=200 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.195/scans/_top_200_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.195/scans/xml/_top_200_udp_nmap.xml 10.10.10.195
+Nmap scan report for 10.10.10.195
+Host is up, received user-set (0.040s latency).
+Scanned at 2020-08-26 12:41:08 MSK for 2480s
+Not shown: 199 open|filtered ports
+Reason: 199 no-responses
+PORT    STATE SERVICE REASON       VERSION
+161/udp open  snmp    udp-response SNMPv1 server; net-snmp SNMPv3 server (public)
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: f20383648c26d05d00000000
+|   snmpEngineBoots: 603
+|_  snmpEngineTime: 30m41s
+| snmp-sysdescr: Linux intense 4.15.0-55-generic #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019 x86_64
+|_  System uptime: 30m41.44s (184144 timeticks)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (91%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/26%OT=%CT=%CU=31461%PV=Y%DS=1%DC=T%G=N%TM=5F4637E4%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD%II=I)
+T5(R=Y%DF=N%T=7B%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=7B%IPL=164%UN=0%RIPL=G%RID=E74%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=7B%CD=S)
+
+Network Distance: 1 hop
+Service Info: Host: intense
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   43.00 ms 10.10.10.195
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 26 13:22:28 2020 -- 1 IP address (1 host up) scanned in 2485.88 seconds

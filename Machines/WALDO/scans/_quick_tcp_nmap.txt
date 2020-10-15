@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Fri Aug 28 00:02:31 2020 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /media/psf/Home/Downloads/results/10.10.10.87/scans/_quick_tcp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.87/scans/xml/_quick_tcp_nmap.xml 10.10.10.87
+Nmap scan report for 10.10.10.87
+Host is up, received user-set (0.060s latency).
+Scanned at 2020-08-28 00:02:37 MSK for 17s
+Not shown: 997 closed ports
+Reason: 997 resets
+PORT     STATE    SERVICE        REASON          VERSION
+22/tcp   open     ssh            syn-ack ttl 128 OpenSSH 7.5 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 c4:ff:81:aa:ac:df:66:9e:da:e1:c8:78:00:ab:32:9e (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUBrGVTenfm2F4qteJkyDe6hVIFmu8bbhvIHpgyeurAI6685LtchiyT67l6xdhhc4jKe9kPp7Sb123/oqHf0lkoHywgwn2VI4Fxbj2QUoRw6LXeT1UL3W9vYMNazvGgjriv7S/pfXZA9E0IGIGauQfWhMsh2LMi7R9XLCgvtglmEe+PJP3PtR1OosHIYJzbF9iP/gaN303eDZXkDbWlIcr5hLDFDw/OLPYY1ew8oHMdJKs/WSEZfbRJFE6NTfjuumX5Sfbo8lk5jcWZ683BUeHK8PFknqlDQnqLa2F9M4vq9vSXvDNfd315vaLpLoA/OymCyXzamwXVVEUI4hm7oMj
+|   256 b3:e7:54:6a:16:bd:c9:29:1f:4a:8c:cd:4c:01:24:27 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOGNlwRr8whDd+DtY94Sa6uDIuCTTnDO9rp4ezQyJRbB866Useclk0U03GooZdUNgcyHttrfBhrLRbNp4EYmSEg=
+|   256 38:64:ac:57:56:44:d5:69:de:74:a8:88:dc:a0:b4:fd (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILhvDtrIfnHWdGIA3ewprB+7ZA1wfv/PcQtO/vlNHaks
+80/tcp   open     http           syn-ack ttl 128 nginx 1.12.2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: nginx/1.12.2
+| http-title: List Manager
+|_Requested resource was /list.html
+|_http-trane-info: Problem with XML parsing of /evox/about
+8888/tcp filtered sun-answerbook no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 28 00:02:54 2020 -- 1 IP address (1 host up) scanned in 23.96 seconds

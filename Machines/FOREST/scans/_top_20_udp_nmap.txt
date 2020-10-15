@@ -1,0 +1,81 @@
+# Nmap 7.80 scan initiated Fri Aug 14 23:48:52 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.161/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.161/scans/xml/_top_20_udp_nmap.xml 10.10.10.161
+Nmap scan report for 10.10.10.161
+Host is up, received user-set (0.084s latency).
+Scanned at 2020-08-14 23:48:54 MSK for 333s
+
+PORT      STATE         SERVICE      REASON               VERSION
+53/udp    open          domain       udp-response ttl 128 (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   DNS-SD: 
+|     _services
+|     _dns-sd
+|     _udp
+|     local
+|   NBTStat: 
+|     CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+|   NTPRequest: 
+|     O#Kq
+|   serialnumberd: 
+|_    ERY: 127.0.0.1:AAAAAA:xsvr
+67/udp    closed        dhcps        port-unreach ttl 128
+68/udp    open|filtered dhcpc        no-response
+69/udp    closed        tftp         port-unreach ttl 128
+123/udp   open          ntp          udp-response ttl 128 NTP v3
+| ntp-info: 
+|_  receive time stamp: 2020-08-14T21:00:26
+135/udp   closed        msrpc        port-unreach ttl 128
+137/udp   open|filtered netbios-ns   no-response
+138/udp   open|filtered netbios-dgm  no-response
+139/udp   closed        netbios-ssn  port-unreach ttl 128
+161/udp   closed        snmp         port-unreach ttl 128
+162/udp   closed        snmptrap     port-unreach ttl 128
+445/udp   closed        microsoft-ds port-unreach ttl 128
+500/udp   open|filtered isakmp       no-response
+|_ike-version: ERROR: Script execution failed (use -d to debug)
+514/udp   closed        syslog       port-unreach ttl 128
+520/udp   closed        route        port-unreach ttl 128
+631/udp   closed        ipp          port-unreach ttl 128
+1434/udp  closed        ms-sql-m     port-unreach ttl 128
+1900/udp  closed        upnp         port-unreach ttl 128
+4500/udp  open|filtered nat-t-ike    no-response
+49152/udp closed        unknown      port-unreach ttl 128
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-UDP:V=7.80%I=9%D=8/14%Time=5F36F8DE%P=x86_64-pc-linux-gnu%r(NBTS
+SF:tat,32,"\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAA
+SF:AAAAAAA\0\0!\0\x01")%r(NTPRequest,30,"\xe3\0\x84\x81\0\x01\0\0\0\x01\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xc5O#Kq\xb1R\
+SF:xf3")%r(DNS-SD,2E,"\0\0\x80\x82\0\x01\0\0\0\0\0\0\t_services\x07_dns-sd
+SF:\x04_udp\x05local\0\0\x0c\0\x01")%r(serialnumberd,1E,"SN\xd1\x04ERY:\x2
+SF:0127\.0\.0\.1:AAAAAA:xsvr")%r(TeamSpeak3,A2,"\x05\xca\xff\x04\x9c\x11\x
+SF:f9\x89\0\0\0\0\x02\x9dt\x8bE\xaa{\xef\xb9\x9e\xfe\xad\x08\x19\xba\xcfA\
+SF:xe0\x16\xa22l\xf3\xcf\xf4\x8e<D\x83\xc8\x8dQEo\x90\x95#>\0\x97\+\x1cq\x
+SF:b2N\xc0a\xf1\xd7o\xc5~\xf6HR\xbf\x82j\xa2;e\xaa\x18z\x178\xc3\x81'\xc3G
+SF:\xfc\xa75\xba\xfc\x0f\x9d\x9dr\$\x9d\xfc\x02\x17mk\xb1-r\xc6\xe3\x17\x1
+SF:c\x95\xd9i\x99W\xce\xdd\xdf\x05\xdc\x03\x94V\x04:\x14\xe5\xad\x9a\+\x14
+SF:0:#\xa3%\xad\xe8\xe69\x8a\x85\*\xc6\xdf\xe5\]-\xa0/\]\x9c\xd7\+\$\xfb\x
+SF:b0\x9c\xc2\xba\x89\xb4\x1b\x17\xa2\xb6");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+No OS matches for host
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=8/14%OT=%CT=%CU=67%PV=Y%DS=1%DC=T%G=N%TM=5F36FA03%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD)
+SEQ(CI=RD%II=I)
+T5(R=Y%DF=N%T=7D%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=7D%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=7D%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=7D%IPL=164%UN=0%RIPL=G%RID=44F%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=7D%CD=Z)
+
+Network Distance: 1 hop
+
+Host script results:
+|_clock-skew: 7m02s
+
+TRACEROUTE (using port 69/udp)
+HOP RTT      ADDRESS
+1   51.13 ms 10.10.10.161
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 23:54:27 2020 -- 1 IP address (1 host up) scanned in 335.90 seconds

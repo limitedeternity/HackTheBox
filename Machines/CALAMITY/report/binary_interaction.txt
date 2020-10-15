@@ -1,0 +1,70 @@
+xalvas@calamity:/tmp$ ~/app/goodluck
+
+Filename:  /tmp/stage0
+
+
+	-----MENU-----
+1) leave message to admin
+2) print session ID
+3)login (admin only)
+4)change user
+5)exit
+
+ action: 2
+
+debug info: 0x10977ef
+
+
+	-----MENU-----
+1) leave message to admin
+2) print session ID
+3)login (admin only)
+4)change user
+5)exit
+
+ action: 4
+
+Filename:  /tmp/stage1
+
+
+	-----MENU-----
+1) leave message to admin
+2) print session ID
+3)login (admin only)
+4)change user
+5)exit
+
+ action: 3
+
+this function is problematic on purpose
+
+I'm trying to test some things...and that means get control of the program! 
+vulnerable pointer is at bffff5b0
+memory information on this binary:
+
+80000000-80002000 r-xp 00000000 08:01 404837     /home/xalvas/app/goodluck
+80002000-80003000 r--p 00001000 08:01 404837     /home/xalvas/app/goodluck
+80003000-80004000 rw-p 00002000 08:01 404837     /home/xalvas/app/goodluck
+80004000-80025000 rw-p 00000000 00:00 0          [heap]
+b7e1a000-b7e54000 r-xp 00000000 08:01 142037     /lib/i386-linux-gnu/libc-2.23.so
+b7e54000-b7e55000 r--p 0003a000 08:01 142037     /lib/i386-linux-gnu/libc-2.23.so
+b7e55000-b7fca000 r-xp 0003b000 08:01 142037     /lib/i386-linux-gnu/libc-2.23.so
+b7fca000-b7fcc000 r--p 001af000 08:01 142037     /lib/i386-linux-gnu/libc-2.23.so
+b7fcc000-b7fcd000 rw-p 001b1000 08:01 142037     /lib/i386-linux-gnu/libc-2.23.so
+b7fcd000-b7fd0000 rw-p 00000000 00:00 0 
+b7fd6000-b7fd8000 rw-p 00000000 00:00 0 
+b7fd8000-b7fda000 r--p 00000000 00:00 0          [vvar]
+b7fda000-b7fdb000 r-xp 00000000 00:00 0          [vdso]
+b7fdb000-b7ffd000 r-xp 00000000 08:01 142016     /lib/i386-linux-gnu/ld-2.23.so
+b7ffd000-b7ffe000 rw-p 00000000 00:00 0 
+b7ffe000-b7fff000 r--p 00022000 08:01 142016     /lib/i386-linux-gnu/ld-2.23.so
+b7fff000-b8000000 rw-p 00023000 08:01 142016     /lib/i386-linux-gnu/ld-2.23.so
+bfedf000-c0000000 rw-p 00000000 00:00 0          [stack]
+
+
+
+Filename:  /tmp/stage2
+# whoami
+root
+# 
+

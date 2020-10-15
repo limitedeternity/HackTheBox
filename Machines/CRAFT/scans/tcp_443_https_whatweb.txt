@@ -1,0 +1,68 @@
+WhatWeb report for https://10.10.10.110:443
+Status    : 200 OK
+Title     : About
+IP        : 10.10.10.110
+Country   : RESERVED, ZZ
+
+Summary   : Bootstrap[3.1.1], HTML5, HTTPServer[nginx/1.15.8], JQuery[1.11.1], Modernizr[2.8.2.min], nginx[1.15.8], Script[text/javascript]
+
+Detected Plugins:
+[ Bootstrap ]
+	Bootstrap is an open source toolkit for developing with 
+	HTML, CSS, and JS. 
+
+	Version      : 3.1.1
+	Version      : 3.1.1
+	Website     : https://getbootstrap.com/
+
+[ HTML5 ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : nginx/1.15.8 (from server string)
+
+[ JQuery ]
+	A fast, concise, JavaScript that simplifies how to traverse 
+	HTML documents, handle events, perform animations, and add 
+	AJAX. 
+
+	Version      : 1.11.1
+	Version      : 1.11.1
+	Website     : http://jquery.com/
+
+[ Modernizr ]
+	Modernizr adds classes to the <html> element which allow 
+	you to target specific browser functionality in your 
+	stylesheet. You don't actually need to write any Javascript 
+	to use it. [JavaScript] 
+
+	Version      : 2.8.2.min
+	Website     : http://www.modernizr.com/
+
+[ Script ]
+	This plugin detects instances of script HTML elements and 
+	returns the script language/type. 
+
+	String       : text/javascript
+
+[ nginx ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : 1.15.8
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Server: nginx/1.15.8
+	Date: Tue, 18 Aug 2020 11:58:30 GMT
+	Content-Type: text/html; charset=utf-8
+	Content-Length: 3779
+	Connection: close
+	Accept-Ranges: bytes
+	

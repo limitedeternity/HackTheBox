@@ -1,0 +1,144 @@
+Version: 2.0.0-static
+OpenSSL 1.1.1h-dev  xx XXX xxxx
+
+Connected to 10.10.10.110
+
+Testing SSL server 10.10.10.110 on port 443 using SNI name 10.10.10.110
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   disabled
+TLSv1.1   disabled
+TLSv1.2   enabled
+TLSv1.3   disabled
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS renegotiation:
+Session renegotiation not supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+TLSv1.2 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+Preferred TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384   Curve 25519 DHE 253
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA384       Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-CAMELLIA256-SHA384  Curve 25519 DHE 253
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-CAMELLIA128-SHA256  Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-CHACHA20-POLY1305   Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA          Curve 25519 DHE 253
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA          Curve 25519 DHE 253
+Accepted  TLSv1.2  256 bits  AES256-GCM-SHA384            
+Accepted  TLSv1.2  256 bits  AES256-CCM8                  
+Accepted  TLSv1.2  256 bits  AES256-CCM                   
+Accepted  TLSv1.2  128 bits  AES128-GCM-SHA256            
+Accepted  TLSv1.2  128 bits  AES128-CCM8                  
+Accepted  TLSv1.2  128 bits  AES128-CCM                   
+Accepted  TLSv1.2  256 bits  AES256-SHA256                
+Accepted  TLSv1.2  256 bits  CAMELLIA256-SHA256           
+Accepted  TLSv1.2  128 bits  AES128-SHA256                
+Accepted  TLSv1.2  128 bits  CAMELLIA128-SHA256           
+Accepted  TLSv1.2  256 bits  AES256-SHA                   
+Accepted  TLSv1.2  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.2  128 bits  AES128-SHA                   
+Accepted  TLSv1.2  128 bits  CAMELLIA128-SHA              
+
+  Server Key Exchange Group(s):
+TLSv1.2  128 bits  secp256r1 (NIST P-256)
+TLSv1.2  192 bits  secp384r1 (NIST P-384)
+TLSv1.2  260 bits  secp521r1 (NIST P-521)
+TLSv1.2  128 bits  x25519
+
+  Server Signature Algorithm(s):
+TLSv1.2  rsa_pkcs1_sha1
+TLSv1.2  dsa_sha1
+TLSv1.2  ecdsa_sha1
+TLSv1.2  rsa_pkcs1_sha224
+TLSv1.2  dsa_sha224
+TLSv1.2  ecdsa_sha224
+TLSv1.2  rsa_pkcs1_sha256
+TLSv1.2  dsa_sha256
+TLSv1.2  ecdsa_secp256r1_sha256
+TLSv1.2  rsa_pkcs1_sha384
+TLSv1.2  dsa_sha384
+TLSv1.2  ecdsa_secp384r1_sha384
+TLSv1.2  rsa_pkcs1_sha512
+TLSv1.2  dsa_sha512
+TLSv1.2  ecdsa_secp521r1_sha512
+
+  SSL Certificate:
+    Certificate blob:
+-----BEGIN CERTIFICATE-----
+MIIEQDCCAigCCQC6e7PJjcRLnzANBgkqhkiG9w0BAQsFADCBhTELMAkGA1UEBhMC
+VVMxETAPBgNVBAgMCE5ldyBZb3JrMRAwDgYDVQQHDAdCdWZmYWxvMQ4wDAYDVQQK
+DAVDcmFmdDEOMAwGA1UECwwFQ3JhZnQxETAPBgNVBAMMCENyYWZ0IENBMR4wHAYJ
+KoZIhvcNAQkBFg9hZG1pbkBjcmFmdC5odGIwHhcNMTkwMjA2MDIyNTQ3WhcNMjAw
+NjIwMDIyNTQ3WjA+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCTlkxDjAMBgNVBAoM
+BUNyYWZ0MRIwEAYDVQQDDAljcmFmdC5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQDV6vf1Ki4fZhJeMOQBAUFx98hM70l6Hpu+4MlB4++i/u2fKRvV
+woGYPpz3KGuNKv+BvjR0+yGFM2HflIgZcc5yE//MGnb9F1fcjJ66rT3qBHjIfwls
+6MRygl9NRVSa09PvrXUbULBr95V624TTPewiEy1yZgMP+ByQzm9Td0jdTQ8HDugq
+kmOmUDX34kDtZc5u7iFBicTXYBpnYVZNEVsUoT6QVZiez07E5L9d0XZ9+iLeVvaB
+XmeimEdbaR2iKKDTmmWaduH/YLUAEP+gS0STM2lKiXL3euL13f9z6i0KjI8Tymby
+Sb6zeznqWCYuJRHfEZnYj+B26jcXU2ZE0GwrAgMBAAEwDQYJKoZIhvcNAQELBQAD
+ggIBACEEpKD0fivZFNx7Q8/q81SNE8TbAQKyfOP98SXU6LAMPOIfAf27tG8C8xGF
+NCmQcggUwpuz2PB+t8vN91oRHdehkpDsVa7ZOKPQm+RQYH7WlMyO65bz5M2zxkbq
+m7Eesaeakdj2XR4ah7TbCeSU7Mu2ePdOLgHme8qI60XjvTrNJ7sB7i5vc5cs7Q9j
+AgOQhQFJddhFsViOcuICei+m8WDg2w4/Kmbu1lSHCCAm4HPA+H8+dZcHN3v3EtqQ
+IRwoph/Jl5h9yxZXDDrFyGMburGjWtIwvrDJmC3m5eDigliUM1OZEWOmDEzBKfUG
+dpNln6Mku8EI2qrVITepg9Szb/7lbd8OJsWo1g4s9BPi2NA/ZGk3z3no6AvGPo6d
+74uNAzGaIBaPH9v2pyUsKbeNm/TY2GikZuOUVdSt/dXCEQ5I5TVxLBJYB9RmzA2+
+u5qS2hN6KOBNBWvYsvLTsAyq5VTzi6seRUk887S5oMoVzD4AxchcrwmBOKPaeyTS
+sUpN2F4Ea7TRPyQWN1IjVnIjkpRzN5mUwnKyyKovKyQaYE9HPM59PC8uTri59mIv
+Rtz++eBxJu/2FFDhI7AiOctOhzKTa7AN0JmTO1pp4OFY5uDl4yFk3t+1lMKhggMa
+UOpGWGGlST3o/VI2ebJq4nDewBf/LY3ZtJbNIKcXNpQQzB7/
+-----END CERTIFICATE-----
+    Version: 0
+    Serial Number: ba:7b:b3:c9:8d:c4:4b:9f
+    Signature Algorithm: sha256WithRSAEncryption
+    Issuer: /C=US/ST=New York/L=Buffalo/O=Craft/OU=Craft/CN=Craft CA/emailAddress=admin@craft.htb
+    Not valid before: Feb  6 02:25:47 2019 GMT
+    Not valid after: Jun 20 02:25:47 2020 GMT
+    Subject: /C=US/ST=NY/O=Craft/CN=craft.htb
+    Public Key Algorithm: NULL
+    RSA Public Key: (2048 bit)
+      RSA Public-Key: (2048 bit)
+      Modulus:
+          00:d5:ea:f7:f5:2a:2e:1f:66:12:5e:30:e4:01:01:
+          41:71:f7:c8:4c:ef:49:7a:1e:9b:be:e0:c9:41:e3:
+          ef:a2:fe:ed:9f:29:1b:d5:c2:81:98:3e:9c:f7:28:
+          6b:8d:2a:ff:81:be:34:74:fb:21:85:33:61:df:94:
+          88:19:71:ce:72:13:ff:cc:1a:76:fd:17:57:dc:8c:
+          9e:ba:ad:3d:ea:04:78:c8:7f:09:6c:e8:c4:72:82:
+          5f:4d:45:54:9a:d3:d3:ef:ad:75:1b:50:b0:6b:f7:
+          95:7a:db:84:d3:3d:ec:22:13:2d:72:66:03:0f:f8:
+          1c:90:ce:6f:53:77:48:dd:4d:0f:07:0e:e8:2a:92:
+          63:a6:50:35:f7:e2:40:ed:65:ce:6e:ee:21:41:89:
+          c4:d7:60:1a:67:61:56:4d:11:5b:14:a1:3e:90:55:
+          98:9e:cf:4e:c4:e4:bf:5d:d1:76:7d:fa:22:de:56:
+          f6:81:5e:67:a2:98:47:5b:69:1d:a2:28:a0:d3:9a:
+          65:9a:76:e1:ff:60:b5:00:10:ff:a0:4b:44:93:33:
+          69:4a:89:72:f7:7a:e2:f5:dd:ff:73:ea:2d:0a:8c:
+          8f:13:ca:66:f2:49:be:b3:7b:39:ea:58:26:2e:25:
+          11:df:11:99:d8:8f:e0:76:ea:37:17:53:66:44:d0:
+          6c:2b
+      Exponent: 65537 (0x10001)
+  Verify Certificate:
+    unable to get local issuer certificate
+
+  SSL Certificate:
+Signature Algorithm: sha256WithRSAEncryption
+RSA Key Strength:    2048
+
+Subject:  craft.htb
+Issuer:   Craft CA
+
+Not valid before: Feb  6 02:25:47 2019 GMT
+Not valid after:  Jun 20 02:25:47 2020 GMT

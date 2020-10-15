@@ -1,0 +1,1484 @@
+KEY 288089592C5467AA217011ED6E8295AD
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 33E0B1410D0B8B11788B016BE22DDFD3
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481669 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/header.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 08011BAB8C312DEB1697F3BA640685AE
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480786 LU:1596480786 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/SourceSansPro/SourceSansPro-Semibold.ttf
+	inmem_lo: 0
+	inmem_hi: 149835
+	swapout: 0 bytes queued
+	object_sz: 149835
+
+KEY 13619CF0AE24FABF979AF27DB903F0E2
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480866 LU:1596480866 LM:-1        EX:1596580866
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/network.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 81E14B6DFFEC269E7021FFBF128B8404
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/index.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 954193FDB879873E3785C763723B0FE6
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_zip.png
+	inmem_lo: 0
+	inmem_hi: 602
+	swapout: 0 bytes queued
+	object_sz: 602
+
+KEY AD419A654A2132A83D4F0E15B833199A
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596481669 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 2 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/skin-blue.min.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 1081
+	swapout: 0 bytes queued
+	object_sz: 1081
+
+KEY B381D3DAF2DA8B9E416AD5DDBEF4F5EC
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/script_palette.png
+	inmem_lo: 0
+	inmem_hi: 1133
+	swapout: 0 bytes queued
+	object_sz: 1133
+
+KEY F8E1CFF53EA8013A1901B195F32F1787
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/picture.png
+	inmem_lo: 0
+	inmem_hi: 822
+	swapout: 0 bytes queued
+	object_sz: 822
+
+KEY 27C2B2885035AA94317CEBE27CE9877F
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/jquery.dataTables.min.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 28363
+	swapout: 0 bytes queued
+	object_sz: 28363
+
+KEY 29C2CBD1301855D44A8729A7CB89F57F
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/bomb.png
+	inmem_lo: 0
+	inmem_hi: 1009
+	swapout: 0 bytes queued
+	object_sz: 1009
+
+KEY DF42C6983C8
+1000
+1FBD4D86291E52B7482FF
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/box.png
+	inmem_lo: 0
+	inmem_hi: 771
+	swapout: 0 bytes queued
+	object_sz: 771
+
+KEY 2C03867121A8B7E1CFF07F5B4196D435
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480725 LU:1596481669 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 2 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/img/logo.svg
+	inmem_lo: 0
+	inmem_hi: 1942
+	swapout: 0 bytes queued
+	object_sz: 1942
+
+KEY 4B6359C3F20C0795CE60E33322C9DD20
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/folder_table.png
+	inmem_lo: 0
+	inmem_hi: 891
+	swapout: 0 bytes queued
+	object_sz: 891
+
+KEY AC633FCCFF0F011F2688938C27060C4D
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474232 LU:1596474232 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY C123B88BE056EC949ED6F2B7465F90E5
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596481669 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 2 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/font-awesome-5.6.3/css/all.min.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 11984
+	swapout: 0 bytes queued
+	object_sz: 11984
+
+KEY C54388C1679927C18B3527490AED32FB
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_excel.png
+	inmem_lo: 0
+	inmem_hi: 1033
+	swapout: 0 bytes queued
+	object_sz: 1033
+
+KEY C8A3D4082447049E194BBEF552A4556D
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/layers.png
+	inmem_lo: 0
+	inmem_hi: 813
+	swapout: 0 bytes queued
+	object_sz: 813
+
+KEY 29E47B6EB028DEBF2204C20F30ADD29A
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480725 LU:1596480725 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/SourceSansPro/SourceSansPro-Regular.ttf
+	inmem_lo: 0
+	inmem_hi: 150171
+	swapout: 0 bytes queued
+	object_sz: 150171
+
+KEY 6E2471C3DBB0C3ADA6EC7AD03C9CB61F
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596481669 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 2 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/header.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 641
+	swapout: 0 bytes queued
+	object_sz: 641
+
+KEY ABE4257ECADBABCDBC4BBD31ED108E5D
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/database_table.png
+	inmem_lo: 0
+	inmem_hi: 942
+	swapout: 0 bytes queued
+	object_sz: 942
+
+KEY AF4441347438C411D0A1194C6F62E04F
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/film.png
+	inmem_lo: 0
+	inmem_hi: 869
+	swapout: 0 bytes queued
+	object_s
+1000
+z: 869
+
+KEY C06402734C1E3658F728EC433A74F0D2
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596481511 LU:1596481511 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/bootstrap/css/bootstrap.min.css.map
+	inmem_lo: 0
+	inmem_hi: 54655
+	swapout: 0 bytes queued
+	object_sz: 54655
+
+KEY DA64FFAC3FC43A2B9BB90A8B630FBBB9
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/arrow_up.png
+	inmem_lo: 0
+	inmem_hi: 588
+	swapout: 0 bytes queued
+	object_sz: 588
+
+KEY A665060983EFAA3D04AD000DEF95E40E
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480965 LU:1596480965 LM:-1        EX:1596580965
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/queries.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY B4A5B7B4765CB3016CE17C53D3C9B032
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596481714 LU:1596481715 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+	inmem_lo: 0
+	inmem_hi: 18267
+	swapout: 0 bytes queued
+	object_sz: 18267
+
+KEY 1026CC13365BD5DF727137C2CEA06D25
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/footer.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 5286516A573223ACCE9791740CC8E3FF
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/app.min.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 8966AAEE1CBC9429C478B7E17E008C95
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/Chart.bundle.min.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 62951
+	swapout: 0 bytes queued
+	object_sz: 62951
+
+KEY B26637216E14B00F54B4E433C36EF6FC
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_magnify.png
+	inmem_lo: 0
+	inmem_hi: 770
+	swapout: 0 bytes queued
+	object_sz: 770
+
+KEY E3A66DBAB84BD169D01E29A4C17A5EB6
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481510 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/bootstrap/css/bootstrap.min.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY E66632DC2ABB454B230BDF52E781D52E
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480978 LU:1596480978 LM:-1        EX:1596580978
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/debug.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY EB86814EE7C59C410CA437193DF273E4
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 49471A95FA2E40B68507EDABBB83A9C5
+	STORE_OK      IN_MEMORY     SW
+1000
+APOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481669 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/daterangepicker.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 5AC78D6AF6DFDAADCF1D494AB0A4BD67
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_powerpoint.png
+	inmem_lo: 0
+	inmem_hi: 804
+	swapout: 0 bytes queued
+	object_sz: 804
+
+KEY EEE7E4BE879CA1F15A7C036872C106E2
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480725 LU:1596480725 LM:-1        EX:1596580725
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/pihole/blockingpage.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 1108DF7A8DEB6650F96A74171EF52658
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/jquery.dataTables.min.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 39C8D4875CEA10A6E94AF93FDEC21D0B
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY A2889DB43B142BBD7195245B9267CD8C
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596481669 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 2 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/pi-hole.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 1957
+	swapout: 0 bytes queued
+	object_sz: 1957
+
+KEY C888C519735BF9422C7430B5899474BC
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/layout.png
+	inmem_lo: 0
+	inmem_hi: 696
+	swapout: 0 bytes queued
+	object_sz: 696
+
+KEY DF087ED24F9A1B9829342A1386E6F87B
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_flash.png
+	inmem_lo: 0
+	inmem_hi: 798
+	swapout: 0 bytes queued
+	object_sz: 798
+
+KEY 2929CAE6095D0E602B57A99817704206
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 7089
+	swapout: 0 bytes queued
+	object_sz: 7089
+
+KEY 66099FFF6EA48276F184D98A32CE2974
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/dataTables.bootstrap.min.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 70296E47DA21D3A3DE71B88629FF0AF5
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596481510 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 2 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/AdminLTE.min.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 14070
+	swapout: 0 bytes queued
+	object_sz: 14070
+
+KEY D2699E567542BD477D9FA8F8FB85311C
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1     
+1000
+   EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY A68A4E9C677B207BFBB0001430D7CE26
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_code.png
+	inmem_lo: 0
+	inmem_hi: 1034
+	swapout: 0 bytes queued
+	object_sz: 1034
+
+KEY A62A520FB257B44BDB2EF51E195AFE5E
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596481669 LU:1596481669 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/list.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 2431
+	swapout: 0 bytes queued
+	object_sz: 2431
+
+KEY F46AAA5E8CBF2EB31AC77CF3571E3D9A
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/jquery-ui.min.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY F6EAA30078C54DCC0ADC0CE6F72441FA
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/script.png
+	inmem_lo: 0
+	inmem_hi: 964
+	swapout: 0 bytes queued
+	object_sz: 964
+
+KEY 0D4BBFB17EAD64D7AB09E09E583B40A9
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/index.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 7671
+	swapout: 0 bytes queued
+	object_sz: 7671
+
+KEY 3E6B653DF80B95A0D2D5181CF9ADA0E5
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596482180 LU:1596482180 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/php/fun.php
+	inmem_lo: 0
+	inmem_hi: 547
+	swapout: 0 bytes queued
+	object_sz: 547
+
+KEY 576BA269A136EBD07FA742F7921CA8D4
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY A88B72FEE8A9BB99A389E3407A7D0730
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596481669 LU:1596481669 LM:-1        EX:1596581669
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/list.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY B7EBAAB6A96EF4EBA917C49F2A661109
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480901 LU:1596480901 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/SourceSansPro/SourceSansPro-Italic.ttf
+	inmem_lo: 0
+	inmem_hi: 117527
+	swapout: 0 bytes queued
+	object_sz: 117527
+
+KEY E18BB339C0282844943354F6C77FAA04
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 1E2C7DAB8FDE30F62E7DCCA3B63F8A1A
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:31
+6D4
+28/squid-internal-static/icons/silk/application.png
+	inmem_lo: 0
+	inmem_hi: 680
+	swapout: 0 bytes queued
+	object_sz: 680
+
+KEY 5F8C52AD8C9FBB811B685CBC6E93293C
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/dataTables.bootstrap.min.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 1293
+	swapout: 0 bytes queued
+	object_sz: 1293
+
+KEY 8C4CE9A2485A6B3F52922FE829DA4E38
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480887 LU:1596480887 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/settings.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 2609
+	swapout: 0 bytes queued
+	object_sz: 2609
+
+KEY B7AC08F27DA0E3D8216EC634F5E822EA
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480887 LU:1596480887 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/jquery.confirm.min.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 1566
+	swapout: 0 bytes queued
+	object_sz: 1566
+
+KEY DA4C7196E40DA7A72A4303A1B3E616FB
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_acrobat.png
+	inmem_lo: 0
+	inmem_hi: 807
+	swapout: 0 bytes queued
+	object_sz: 807
+
+
+1000
+KEY 742D25EB683E578C5F8ED957134A0549
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596469624 LU:1596469624 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://intranet.unbalanced.htb/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6963
+	swapout: 0 bytes queued
+	object_sz: 6963
+
+KEY CE8DB3CD982AEB920CD3026207C052AB
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480786 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/font-awesome-5.6.3/webfonts/fa-solid-900.woff2
+	inmem_lo: 0
+	inmem_hi: 79339
+	swapout: 0 bytes queued
+	object_sz: 79339
+
+KEY 2F2EF2B6F27B268CD3758E8DDC6CB998
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480866 LU:1596480866 LM:-1        EX:1596580866
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/moment.min.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 3D2EEA5861A2104883AFF9A285D83097
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481669 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/skin-blue.min.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 49AE4DA7BB31DA443501ED66ADF43F11
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480978 LU:1596480978 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/debug.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 1076
+	swapout: 0 bytes queued
+	object_sz: 1076
+
+KEY 66EE312313B331C3DA875790CE843E26
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474232 LU:1596474232 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 95AED1733A795FF05B9CEFC99AEC1155
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_word.png
+	inmem_lo: 0
+	inmem_hi: 867
+	swapout: 0 bytes queued
+	object_sz: 867
+
+KEY DFEEA1F63AEE2F588A80AB8807457743
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/Chart.bundle.min.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY EBEE242A68CF7AB5F5800A46219DFD01
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480981 LU:1596480981 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/auditlog.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 1870
+	swapout: 0 bytes queued
+	object_sz: 1870
+
+KEY 2ECF7F0D7E80F4C4CE27F1F9FCAF212C
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/script_gear.png
+	inmem_lo: 0
+	inmem_hi: 1077
+	swapout: 0 bytes queued
+	object_sz: 1077
+
+KEY 42EF02E0EA2E38A2A2DFB17ADB8EE61C
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 60AF4CA6B52F632E104DC3C7C8763D70
+	STORE_OK      IN_MEMORY     S
+1000
+WAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481669 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/SourceSansPro/SourceSansPro.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 8ACF9B4D92EF6146FAD8F28913C6D913
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480887 LU:1596480887 LM:-1        EX:1596580887
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/settings.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 948FBE686444ED022461B0D1039649BF
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_picture.png
+	inmem_lo: 0
+	inmem_hi: 866
+	swapout: 0 bytes queued
+	object_sz: 866
+
+KEY 9EEF315701B4A07BF7F41F7AF8E14D71
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/link.png
+	inmem_lo: 0
+	inmem_hi: 559
+	swapout: 0 bytes queued
+	object_sz: 559
+
+KEY B3AF5D59F981AEF7CE3AE4F28A534D7E
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/bullet_red.png
+	inmem_lo: 0
+	inmem_hi: 503
+	swapout: 0 bytes queued
+	object_sz: 503
+
+KEY EA0FE845CF615133295B9CA24F049F09
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/drive_disk.png
+	inmem_lo: 0
+	inmem_hi: 911
+	swapout: 0 bytes queued
+	object_sz: 911
+
+KEY 4390EA4DCAB0B27684F7EBA055FBEBB1
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480866 LU:1596480866 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/network.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 2715
+	swapout: 0 bytes queued
+	object_sz: 2715
+
+KEY 8E10D1747691C900960B3241897F5C11
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/folder.png
+	inmem_lo: 0
+	inmem_hi: 753
+	swapout: 0 bytes queued
+	object_sz: 753
+
+KEY AD70353AE15B3C53E72BFD15A43B4E96
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596461404 LU:1596466404 LM:1585896196 EX:-1       
+	0 locks, 0 clients, 8 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://intranet.unbalanced.htb/css/w3.css
+	inmem_lo: 0
+	inmem_hi: 23423
+	swapout: 0 bytes queued
+	object_sz: 23423
+
+KEY B7F09082237730CCA9E72766A4F7F177
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_world.png
+	inmem_lo: 0
+	inmem_hi: 1119
+	swapout: 0 bytes queued
+	object_sz: 1119
+
+KEY E3D0ABD3C19D54E62D7F0DD794518284
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596480785 LM:-1        EX:1596580785
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/bootstrap/js/bootstrap.min.js
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 0A11E48581DA89E8904DA749E2D10106
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:15
+1000
+96480785 LU:1596481669 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/pi-hole.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 3451B2995FD4A6AFFBE55A53E552B4B7
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/footer.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 2192
+	swapout: 0 bytes queued
+	object_sz: 2192
+
+KEY 6311A06CF2E9167A69D522E517265E29
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 6CB19DA75DFCDEFD42FBBA9B392A2437
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/cup.png
+	inmem_lo: 0
+	inmem_hi: 849
+	swapout: 0 bytes queued
+	object_sz: 849
+
+KEY 83F1AF2C746CD1186888798FBFFC9E79
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_stack.png
+	inmem_lo: 0
+	inmem_hi: 533
+	swapout: 0 bytes queued
+	object_sz: 533
+
+KEY D0B1C56FBC2A25194D9D6237F4816C16
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 9EF243028042B7600158829F563835AF
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 9FD29EC1EE91A3E2DDB13ADAC824C066
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/information.png
+	inmem_lo: 0
+	inmem_hi: 994
+	swapout: 0 bytes queued
+	object_sz: 994
+
+KEY C0D2DDBB2F9ED10614BCE9C19902DB10
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596469516 LU:1596469516 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://intranet.unbalanced.htb/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6963
+	swapout: 0 bytes queued
+	object_sz: 6963
+
+KEY 25533F4262790300B79FB6822C5E590B
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/music.png
+	inmem_lo: 0
+	inmem_hi: 601
+	swapout: 0 bytes queued
+	object_sz: 601
+
+KEY 4733200000000000D302000001000000
+	STORE_PENDING NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	DELAY_SENDING,RELEASE_REQUEST,PRIVATE,VALIDATED
+	LV:-1        LU:1596482888 LM:-1        EX:1596482888
+	3 locks, 1 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET cache_object://10.10.10.200/objects
+	inmem_lo: 0
+	inmem_hi: 29798
+	swapout: 0 bytes queued
+
+KEY 48136A39F3EAF00936EF3415851F7F14
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-s
+1000
+tatic/icons/silk/page_white_cplusplus.png
+	inmem_lo: 0
+	inmem_hi: 837
+	swapout: 0 bytes queued
+	object_sz: 837
+
+KEY 71933CA2C9D9F5E0B85F8CDC989E0540
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/ionicons-2.0.1/css/ionicons.min.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 8710
+	swapout: 0 bytes queued
+	object_sz: 8710
+
+KEY 829315C000F3B896E3E9AD8553310CB7
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/computer_link.png
+	inmem_lo: 0
+	inmem_hi: 1008
+	swapout: 0 bytes queued
+	object_sz: 1008
+
+KEY 85538C38BE750DA1C71E839C72C75524
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/photo.png
+	inmem_lo: 0
+	inmem_hi: 805
+	swapout: 0 bytes queued
+	object_sz: 805
+
+KEY 45F4744405311247083B41A7CDCEF7F6
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/plugin.png
+	inmem_lo: 0
+	inmem_hi: 807
+	swapout: 0 bytes queued
+	object_sz: 807
+
+KEY 6BD438F3A19BE904AC44952B23F93B93
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/database.png
+	inmem_lo: 0
+	inmem_hi: 606
+	swapout: 0 bytes queued
+	object_sz: 606
+
+KEY F0B49BD02D3D5065115225E3B27B8FA7
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596472532 LU:1596472532 LM:1585895819 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/css/w3.css
+	inmem_lo: 0
+	inmem_hi: 23423
+	swapout: 0 bytes queued
+	object_sz: 23423
+
+KEY 2B7554E4746A6B7B7F5C47E9B55089E3
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/app.min.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 3216
+	swapout: 0 bytes queued
+	object_sz: 3216
+
+KEY 3CF58537F046C31AEDB43A4132EB75F3
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/css.png
+	inmem_lo: 0
+	inmem_hi: 740
+	swapout: 0 bytes queued
+	object_sz: 740
+
+KEY 8615E8F2B7747F69BD203A0AFA438452
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480725 LU:1596480725 LM:1568955444 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/pihole/blockingpage.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 4404
+	swapout: 0 bytes queued
+	object_sz: 4404
+
+KEY 9D758ED2EC1B6DB7E7E2D84229DDA6A9
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/plugin_add.png
+	inmem_lo: 0
+	inmem_hi: 907
+	swapout: 0 bytes queued
+	object_sz: 907
+
+KEY D515E6DA6B20BDB5FC6F1545A5924423
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596469385 LU:1596469385 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap 
+1000
+Dir -1, File 0XFFFFFFFF
+	GET http://intranet.unbalanced.htb/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6963
+	swapout: 0 bytes queued
+	object_sz: 6963
+
+KEY DE95ED267F1799A0E652ADCDC462846E
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481510 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/AdminLTE.min.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY EF557BCEFD3DD0B5A082C069A146EA9E
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/page_white_text.png
+	inmem_lo: 0
+	inmem_hi: 558
+	swapout: 0 bytes queued
+	object_sz: 558
+
+KEY FF75106CF2D8639C390E7213A820E082
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481669 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/font-awesome-5.6.3/css/all.min.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+KEY 29F69A048BB8D50D858999FCDF2D09A7
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY 2A567D59CC33783CC0A2060657D79EC6
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480956 LU:1596480956 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/ionicons-2.0.1/fonts/ionicons.ttf?
+	inmem_lo: 0
+	inmem_hi: 188707
+	swapout: 0 bytes queued
+	object_sz: 188707
+
+KEY 4EB6AABE9D18DA5172C7271C5377C08E
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596481669 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 2 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/js-warn.css
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 901
+	swapout: 0 bytes queued
+	object_sz: 901
+
+KEY B4D6814580ADEE131B4F8B3ABB4DA183
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596473976 LU:1596473976 LM:1585896340 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.3/css/w3.css
+	inmem_lo: 0
+	inmem_hi: 23423
+	swapout: 0 bytes queued
+	object_sz: 23423
+
+KEY D016892C203B81CC509975447EFED354
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480785 LU:1596480785 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/vendor/dataTables.bootstrap.min.js
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 1406
+	swapout: 0 bytes queued
+	object_sz: 1406
+
+KEY 0CF7402277D8D16490613170A107E1C6
+	STORE_OK      NOT_IN_MEMORY SWAPOUT_NONE PING_NONE   
+	SPECIAL,VALIDATED
+	LV:1596457054 LU:1596457054 LM:1588619235 EX:-1       
+	0 locks, 0 clients, 0 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://unbalanced:3128/squid-internal-static/icons/silk/film_key.png
+	inmem_lo: 0
+	inmem_hi: 1051
+	swapout: 0 bytes queued
+	object_sz: 1051
+
+KEY 307759F5D08476B1901C93B2350E61BC
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480725 LU:1596480725 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/
+	inmem_lo: 0
+	inmem_hi: 547
+	swapout: 0 bytes queued
+	object_sz: 547
+
+KEY 3977E6D9DD1FA825239EF612DBBDB43A
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596480975 LU:1596480975 LM:1568955425 EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/scripts/pi-hole/js/taillog.js
+
+5C9
+	vary_headers: accept-encoding="gzip,%20deflate"
+	inmem_lo: 0
+	inmem_hi: 953
+	swapout: 0 bytes queued
+	object_sz: 953
+
+KEY 6097F84E2360225E4AE18DDB4646EC40
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474232 LU:1596474232 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 6983
+	swapout: 0 bytes queued
+	object_sz: 6983
+
+KEY D337636917F792A12A1DF0C188FF4979
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596481713 LU:1596481713 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/img/donate.gif
+	inmem_lo: 0
+	inmem_hi: 3830
+	swapout: 0 bytes queued
+	object_sz: 3830
+
+KEY E997702C43F1E3561F141272D3526F1C
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_DONE   
+	DISPATCHED,VALIDATED
+	LV:1596474233 LU:1596474233 LM:-1        EX:-1       
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.179.1/intranet.php?
+	inmem_lo: 0
+	inmem_hi: 7089
+	swapout: 0 bytes queued
+	object_sz: 7089
+
+KEY 28988839E735666F7DF2B3DB44B8E33A
+	STORE_OK      IN_MEMORY     SWAPOUT_NONE PING_NONE   
+	VALIDATED
+	LV:1596480785 LU:1596481669 LM:-1        EX:1596580785
+	0 locks, 0 clients, 1 refs
+	Swap Dir -1, File 0XFFFFFFFF
+	GET http://172.31.11.3/admin/style/vendor/js-warn.css
+	inmem_lo: 0
+	inmem_hi: 214
+	swapout: 0 bytes queued
+	object_sz: 214
+
+

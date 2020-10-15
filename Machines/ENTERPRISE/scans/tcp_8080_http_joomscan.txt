@@ -1,0 +1,67 @@
+[H[2J[3J[33m
+    ____  _____  _____  __  __  ___   ___    __    _  _ 
+   (_  _)(  _  )(  _  )(  \/  )/ __) / __)  /__\  ( \( )
+  .-_)(   )(_)(  )(_)(  )    ( \__ \( (__  /(__)\  )  ( 
+  \____) (_____)(_____)(_/\/\_)(___/ \___)(__)(__)(_)\_)
+[31m			(1337.today)[0m
+   
+    --=[[34mOWASP JoomScan[0m
+    +---++---==[Version : [31m0.0.7
+[0m    +---++---==[Update Date : [[31m2018/09/23[0m]
+    +---++---==[Authors : [31mMohammad Reza Espargham , Ali Razmjoo[0m
+    --=[Code name : [31mSelf Challenge[0m
+    @OWASP_JoomScan , @rezesp , @Ali_Razmjo0 , @OWASP
+
+[34m[34mProcessing http://10.10.10.61:8080/ ...
+
+
+[34m
+[+] FireWall Detector
+[31m[++] Firewall not detected
+[34m[34m
+[+] Detecting Joomla Version
+[33m[++] Joomla 3.7.5
+[34m[34m
+[+] Core Joomla Vulnerability
+[31m[++] Target Joomla core is not vulnerable
+[34m[34m
+[+] Checking apache info/status files
+[31m[++] Readable info/status files are not found
+[34m[34m
+[+] admin finder
+[33m[++] Admin page : http://10.10.10.61:8080/administrator/
+[34m[34m
+[+] Checking robots.txt existing
+[33m[++] robots.txt is found
+path : http://10.10.10.61:8080/robots.txt 
+
+Interesting path found from robots.txt
+http://10.10.10.61:8080/joomla/administrator/
+http://10.10.10.61:8080/administrator/
+http://10.10.10.61:8080/bin/
+http://10.10.10.61:8080/cache/
+http://10.10.10.61:8080/cli/
+http://10.10.10.61:8080/components/
+http://10.10.10.61:8080/includes/
+http://10.10.10.61:8080/installation/
+http://10.10.10.61:8080/language/
+http://10.10.10.61:8080/layouts/
+http://10.10.10.61:8080/libraries/
+http://10.10.10.61:8080/logs/
+http://10.10.10.61:8080/modules/
+http://10.10.10.61:8080/plugins/
+http://10.10.10.61:8080/tmp/
+
+[34m[34m
+[+] Finding common backup files name
+[31m[++] Backup files are not found
+[34m[34m
+[+] Finding common log files name
+[31m[++] error log is not found
+[34m[34m
+[+] Checking sensitive config.php.x file
+[31m[++] Readable config files are not found
+[34m[33m
+
+Your Report : reports/10.10.10.61:8080/
+[0m

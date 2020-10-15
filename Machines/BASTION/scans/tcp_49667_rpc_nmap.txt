@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Fri Aug 14 15:08:05 2020 as: nmap -vv --reason -Pn -sV -p 49667 --script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /media/psf/Home/Downloads/results/10.10.10.134/scans/tcp_49667_rpc_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.134/scans/xml/tcp_49667_rpc_nmap.xml 10.10.10.134
+Nmap scan report for 10.10.10.134
+Host is up, received user-set (0.091s latency).
+Scanned at 2020-08-14 15:08:07 MSK for 70s
+
+PORT      STATE SERVICE REASON          VERSION
+49667/tcp open  msrpc   syn-ack ttl 128 Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 15:09:17 2020 -- 1 IP address (1 host up) scanned in 72.89 seconds

@@ -1,0 +1,1 @@
+# Hydra v9.0 run at 2020-08-18 16:35:41 on 10.10.10.110 ssh (hydra -L users.txt -P passwords.txt -e nsr -s 6022 -o /media/psf/Home/Downloads/results/10.10.10.110/scans/tcp_6022_ssh_hydra.txt ssh://10.10.10.110)
