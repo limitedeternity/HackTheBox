@@ -1,0 +1,52 @@
+# Nmap 7.91 scan initiated Wed Oct 28 16:00:25 2020 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /media/psf/Home/Downloads/results/10.10.10.212/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.212/scans/xml/_top_20_udp_nmap.xml 10.10.10.212
+Nmap scan report for bucket.htb (10.10.10.212)
+Host is up, received user-set (0.081s latency).
+Scanned at 2020-10-28 16:00:27 MSK for 21s
+
+PORT      STATE  SERVICE      REASON               VERSION
+53/udp    closed domain       port-unreach ttl 128
+67/udp    closed dhcps        port-unreach ttl 128
+68/udp    closed dhcpc        port-unreach ttl 128
+69/udp    closed tftp         port-unreach ttl 128
+123/udp   closed ntp          port-unreach ttl 128
+135/udp   closed msrpc        port-unreach ttl 128
+137/udp   closed netbios-ns   port-unreach ttl 128
+138/udp   closed netbios-dgm  port-unreach ttl 128
+139/udp   closed netbios-ssn  port-unreach ttl 128
+161/udp   closed snmp         port-unreach ttl 128
+162/udp   closed snmptrap     port-unreach ttl 128
+445/udp   closed microsoft-ds port-unreach ttl 128
+500/udp   closed isakmp       port-unreach ttl 128
+514/udp   closed syslog       port-unreach ttl 128
+520/udp   closed route        port-unreach ttl 128
+631/udp   closed ipp          port-unreach ttl 128
+1434/udp  closed ms-sql-m     port-unreach ttl 128
+1900/udp  closed upnp         port-unreach ttl 128
+4500/udp  closed nat-t-ike    port-unreach ttl 128
+49152/udp closed unknown      port-unreach ttl 128
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (91%)
+OS CPE: cpe:/h:fortinet:fortigate_200b
+OS fingerprint not ideal because: Missing an open TCP port so results incomplete
+Aggressive OS guesses: Fortinet FortiGate 200B firewall (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=10/28%OT=%CT=%CU=53%PV=Y%DS=2%DC=T%G=N%TM=5F996B80%P=x86_64-pc-linux-gnu)
+SEQ(CI=RD%II=I)
+T5(R=Y%DF=N%T=7B%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=7B%IPL=164%UN=0%RIPL=G%RID=E9EE%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=7B%CD=S)
+
+Network Distance: 2 hops
+
+TRACEROUTE (using port 138/udp)
+HOP RTT      ADDRESS
+1   ...
+2   51.12 ms bucket.htb (10.10.10.212)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 28 16:00:48 2020 -- 1 IP address (1 host up) scanned in 24.38 seconds

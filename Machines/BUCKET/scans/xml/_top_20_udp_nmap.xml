@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Oct 28 16:00:25 2020 as: nmap -vv -&#45;reason -Pn -sU -A -&#45;top-ports=20 -&#45;version-all -oN /media/psf/Home/Downloads/results/10.10.10.212/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.212/scans/xml/_top_20_udp_nmap.xml 10.10.10.212 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sU -A -&#45;top-ports=20 -&#45;version-all -oN /media/psf/Home/Downloads/results/10.10.10.212/scans/_top_20_udp_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.212/scans/xml/_top_20_udp_nmap.xml 10.10.10.212" start="1603890025" startstr="Wed Oct 28 16:00:25 2020" version="7.91" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="20" services="53,67-69,123,135,137-139,161-162,445,500,514,520,631,1434,1900,4500,49152"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1603890027"/>
+<taskend task="NSE" time="1603890027"/>
+<taskbegin task="NSE" time="1603890027"/>
+<taskend task="NSE" time="1603890027"/>
+<taskbegin task="NSE" time="1603890027"/>
+<taskend task="NSE" time="1603890027"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1603890027"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1603890027"/>
+<taskbegin task="UDP Scan" time="1603890027"/>
+<taskend task="UDP Scan" time="1603890041" extrainfo="20 total ports"/>
+<taskbegin task="Service scan" time="1603890042"/>
+<taskbegin task="Traceroute" time="1603890045"/>
+<taskend task="Traceroute" time="1603890048"/>
+<taskbegin task="NSE" time="1603890048"/>
+<taskend task="NSE" time="1603890048"/>
+<taskbegin task="NSE" time="1603890048"/>
+<taskend task="NSE" time="1603890048"/>
+<taskbegin task="NSE" time="1603890048"/>
+<taskend task="NSE" time="1603890048"/>
+<host starttime="1603890027" endtime="1603890048"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.212" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bucket.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="udp" portid="53"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="udp" portid="67"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="68"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="dhcpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="69"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="tftp" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="ntp" method="table" conf="3"/></port>
+<port protocol="udp" portid="135"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="137"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="udp" portid="138"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="udp" portid="139"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="udp" portid="161"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="snmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="162"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="445"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="514"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="syslog" method="table" conf="3"/></port>
+<port protocol="udp" portid="520"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="route" method="table" conf="3"/></port>
+<port protocol="udp" portid="631"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1434"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="ms-sql-m" method="table" conf="3"/></port>
+<port protocol="udp" portid="1900"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="49152"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="udp" portid="53"/>
+<osmatch name="Fortinet FortiGate 200B firewall" accuracy="91" line="25589">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="91"><cpe>cpe:/h:fortinet:fortigate_200b</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.91%E=4%D=10/28%OT=%CT=%CU=53%PV=Y%DS=2%DC=T%G=N%TM=5F996B80%P=x86_64-pc-linux-gnu)&#xa;SEQ(CI=RD%II=I)&#xa;T5(R=Y%DF=N%T=7B%W=2000%S=O%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=R%O=%RD=0%Q=)&#xa;T7(R=Y%DF=N%T=7B%W=2000%S=A%A=S%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=7B%IPL=164%UN=0%RIPL=G%RID=E9EE%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=7B%CD=S)&#xa;"/>
+</os>
+<distance value="2"/>
+<trace port="138" proto="udp">
+<hop ttl="2" ipaddr="10.10.10.212" rtt="51.12" host="bucket.htb"/>
+</trace>
+<times srtt="80804" rttvar="39875" to="240304"/>
+</host>
+<taskbegin task="NSE" time="1603890048"/>
+<taskend task="NSE" time="1603890048"/>
+<taskbegin task="NSE" time="1603890048"/>
+<taskend task="NSE" time="1603890048"/>
+<taskbegin task="NSE" time="1603890048"/>
+<taskend task="NSE" time="1603890048"/>
+<runstats><finished time="1603890048" timestr="Wed Oct 28 16:00:48 2020" summary="Nmap done at Wed Oct 28 16:00:48 2020; 1 IP address (1 host up) scanned in 24.38 seconds" elapsed="24.38" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,16 @@
+HTTP/1.1 302 Found
+Date: Wed, 28 Oct 2020 13:07:50 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Location: http://bucket.htb/
+Content-Length: 280
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://bucket.htb/">here</a>.</p>
+<hr>
+<address>Apache/2.4.41 (Ubuntu) Server at 10.10.10.212 Port 80</address>
+</body></html>

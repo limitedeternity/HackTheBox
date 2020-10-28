@@ -1,0 +1,17 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.10.212
++ Target Hostname:    10.10.10.212
++ Target Port:        80
++ Start Time:         2020-10-28 16:00:44 (GMT3)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.41 (Ubuntu)
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Root page / redirects to: http://bucket.htb/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ 7864 requests: 0 error(s) and 3 item(s) reported on remote host
++ End Time:           2020-10-28 16:09:15 (GMT3) (511 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
