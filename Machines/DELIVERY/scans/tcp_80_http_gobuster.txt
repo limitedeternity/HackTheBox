@@ -1,0 +1,5 @@
+/assets (Status: 301) [Size: 185]
+/error (Status: 301) [Size: 185]
+/images (Status: 301) [Size: 185]
+/index.html (Status: 200) [Size: 10850]
+/index.html (Status: 200) [Size: 10850]

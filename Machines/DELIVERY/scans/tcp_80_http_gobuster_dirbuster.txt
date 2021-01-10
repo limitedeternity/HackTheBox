@@ -1,0 +1,3 @@
+http://10.10.10.222:80/index.html (Status: 200) [Size: 10850]
+http://10.10.10.222:80/images (Status: 301) [Size: 185]
+http://10.10.10.222:80/assets (Status: 301) [Size: 185]

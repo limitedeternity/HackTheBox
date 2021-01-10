@@ -1,0 +1,1677 @@
+# Nmap 7.91 scan initiated Sun Jan 10 21:49:53 2021 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /media/psf/Home/Downloads/results/10.10.10.222/scans/tcp_80_http_nmap.txt -oX /media/psf/Home/Downloads/results/10.10.10.222/scans/xml/tcp_80_http_nmap.xml helpdesk.delivery.htb
+Nmap scan report for helpdesk.delivery.htb (10.10.10.222)
+Host is up, received user-set (0.052s latency).
+rDNS record for 10.10.10.222: delivery.htb
+Scanned at 2021-01-10 21:49:55 MSK for 171s
+
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack nginx 1.14.2
+|_http-chrono: Request times for /; avg: 2137.36ms; min: 1364.91ms; max: 2896.56ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=helpdesk.delivery.htb
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1349
+|     Comment: 
+|          // end looseParse
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1128
+|     Comment: 
+|          // Capture current annotations
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 941
+|     Comment: 
+|         /*
+|         			* remove following lines to force every changes in date picker to change the input value
+|         			* Bug descriptions: when an input field has a default value, and click on the field to pop up the date picker.
+|         			* If the user manually empty the value in the input field, the date picker will never change selected value.
+|         			*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2087
+|     Comment: 
+|          // excuse any iso8601, end up with "+1245"
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 537
+|     Comment: 
+|          // Process an upload, recursive
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1796
+|     Comment: 
+|          //self.opts.keydownCallback = this.keydown.bind(self);
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/select2.min.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /*! Select2 4.0.13 | https://github.com/select2/select2/blob/master/LICENSE.md */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2118
+|     Comment: 
+|         /**
+|         	 * Calls `timepicker()` on the `startTime` and `endTime` elements, and configures them to
+|         	 * enforce date range limits.
+|         	 * n.b. The input value must be correctly formatted (reformatting is not supported)
+|         	 * @param  {Element} startTime
+|         	 * @param  {Element} endTime
+|         	 * @param  {Object} options Options for the timepicker() call
+|         	 * @return {jQuery}
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-3.5.1.min.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v3.5.1 | (c) JS Foundation and other contributors | jquery.org/license */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 495
+|     Comment: 
+|          // end if grid > 0
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 588
+|     Comment: 
+|         /*
+|         		* This function tries to limit the ability to go outside the
+|         		* min/max date range
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1820
+|     Comment: 
+|         /*
+|         	* override options setter to add time to maxDate(Time) and minDate(Time). MaxDate
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 509
+|     Comment: 
+|         /* Additional style for the mighty Microsoft Office emails "standard" style */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1992
+|     Comment: 
+|          // Only fetch the context once for this redactor box
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1599
+|     Comment: 
+|          // Init selected[Year|Month|Day]
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2171
+|     Comment: 
+|          // max allowed interval in milliseconds
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1454
+|     Comment: 
+|         /*
+|         	* second bad hack :/ override datepicker so it triggers an event when changing the input field
+|         	* and does not redraw the datepicker on every selectDate event
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2265
+|     Comment: 
+|         /*
+|         	 * Add util object to allow access to private methods for testability.
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 352
+|     Comment: 
+|         /* TYPEAHEAD DATA-API
+|           * ================== */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 697
+|     Comment: 
+|          // Add to donequeue
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1572
+|     Comment: 
+|          // Use SHIFT to draw squares
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1733
+|     Comment: 
+|          // image is annotated again, it should be the original image with
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 488
+|     Comment: 
+|         /* Inline image hovering with download link */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2081
+|     Comment: 
+|         /**
+|         	 * Get the number in minutes that represents a timezone string
+|         	 * @param  {string} tzString formatted like "+0500", "-1245", "Z"
+|         	 * @return {number} the offset minutes or the original string if it doesn't match expectations
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1722
+|     Comment: 
+|          // This is called for all uploads, but we only care about the
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1287
+|     Comment: 
+|          // Color picker -- copied from `fontcolor` plugin
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2011
+|     Comment: 
+|         /*
+|         	* Internal function to parse datetime interval
+|         	* Returns: {date: Date, timeObj: Object}, where
+|         	*   date - parsed date without time (type Date)
+|         	*   timeObj = {hour: , minute: , second: , millisec: , microsec: } - parsed time. Optional
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1965
+|     Comment: 
+|         /*
+|         	* Converts 24 hour format into 12 hour
+|         	* Returns 12 hour without leading 0
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 546
+|     Comment: 
+|          // Check to see if are in queue mode
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1479
+|     Comment: 
+|         /*
+|         	* third bad hack :/ override datepicker so it allows spaces and colon in the input field
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1745
+|     Comment: 
+|          // the size and shape of the object is stretched.
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/css/typeahead.css?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /* FROM bootstrap.css - just what is needed for typeahead */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 111
+|     Comment: 
+|          // If the draft was created, a draft_id will be sent back \xE2\x80\x94 update
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 531
+|     Comment: 
+|          // for in process queue to complete
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 451
+|     Comment: 
+|         /* Styles or override ridiculous Microsoft Outlook list styles */
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 412
+|     Comment: 
+|         /* Avoid extra padding at the bottom of the thread body element */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1542
+|     Comment: 
+|          // Use SHIFT to draw circles
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 550
+|     Comment: 
+|          // Take first thing off work queue
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1679
+|     Comment: 
+|         /*
+|         	* override setDate() to allow setting time too within Date object
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 366
+|     Comment: 
+|         /*
+|         		* Handle callback option after injecting timepicker
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 391
+|     Comment: 
+|         /* Redactor consistency styles */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1880
+|     Comment: 
+|          //if min was set
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1172
+|     Comment: 
+|         /*
+|         	* Public Utility to parse date and time
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2099
+|     Comment: 
+|          // minutes
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 11
+|     Comment: 
+|         /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 42
+|     Comment: 
+|          // Available regional settings, indexed by language code
+|     
+|     Path: http://helpdesk.delivery.htb:80/view.php
+|     Line number: 24
+|     Comment: 
+|         <!-- Favicons -->
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2098
+|     Comment: 
+|          // hours (converted to minutes)
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2231
+|     Comment: 
+|          // Don't bubble the click event
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2180
+|     Comment: 
+|          // Preserve current text
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1961
+|     Comment: 
+|          // This is a bug in chrome, but I'm not sure how to adjust it
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2043
+|     Comment: 
+|         /*
+|         	* Internal function to set timezone_select to the local timezone
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 44
+|     Comment: 
+|          // This file is not allowed to be added to the list. It's over the
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 700
+|     Comment: 
+|          // Make sure the global progress is updated
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2145
+|     Comment: 
+|         /**
+|         	 * Calls `datepicker` on the `startTime` and `endTime` elements, and configures them to
+|         	 * enforce date range limits.
+|         	 * @param  {Element} startTime
+|         	 * @param  {Element} endTime
+|         	 * @param  {Object} options Options for the `timepicker()` call. Also supports `reformat`,
+|         	 *   a boolean value that can be used to reformat the input values to the `dateFormat`.
+|         	 * @return {jQuery}
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2053
+|     Comment: 
+|         /*
+|         	* Create a Singleton Instance
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 349
+|     Comment: 
+|          // TODO: Rewrite the entire <img> tag. Otherwise the @width
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1895
+|     Comment: 
+|          // Locate the position of the cursor and the number of characters back
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 189
+|     Comment: 
+|          // Nothing to delete
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1285
+|     Comment: 
+|          // 12am = 0 hour
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 145
+|     Comment: 
+|          // Check if the file is already in the list of files for this dropbox
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1288
+|     Comment: 
+|          // 12pm = 12 hour, any other pm = hour + 12
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2066
+|     Comment: 
+|          // Connect what's normally available in a service module
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 467
+|     Comment: 
+|          // Check if html_thread is enabled first
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 332
+|     Comment: 
+|         /*
+|         		* parse the time string from input value or _setTime
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 43
+|     Comment: 
+|          // Default regional settings
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2059
+|     Comment: 
+|          // a dialog
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1665
+|     Comment: 
+|          // Revert to previous state for CTRL+Z or CMD+Z
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 376
+|     Comment: 
+|         /*
+|         		* generate and inject html for timepicker into ui datepicker
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1802
+|     Comment: 
+|          // dialog. Also note, that both the width and height should be
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1854
+|     Comment: 
+|          //empty results in exiting function after overrides updated
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1035
+|     Comment: 
+|          // Monkey patch context bar to have ability to add a button
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2172
+|     Comment: 
+|          // options for start picker
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 472
+|     Comment: 
+|          // loses scope, so we use data-for
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 449
+|     Comment: 
+|          // KB per second
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1147
+|     Comment: 
+|         /*
+|         		* extend timepicker to datepicker
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1896
+|     Comment: 
+|          // to the `%{` symbols
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1710
+|     Comment: 
+|          // Fired from module.upload.send() after completion
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2035
+|     Comment: 
+|          // Set cursor at the end of the expanded text
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 305
+|     Comment: 
+|          // just in case you want to use another HTTP verb
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2030
+|     Comment: 
+|          // FIXME: ENTER will end up here, but current will be empty
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2027
+|     Comment: 
+|          // TODO: Consume immediately following `}` symbols
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2021
+|     Comment: 
+|          // Collapse multiple textNodes together
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 426
+|     Comment: 
+|          //reinitialize redactor
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 561
+|     Comment: 
+|          // fix for inline mode
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1618
+|     Comment: 
+|          // Could be disabled on page load
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 172
+|     Comment: 
+|         /*
+|         		* Create a new Timepicker instance
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1821
+|     Comment: 
+|          // Set default control appearance for all objects
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1906
+|     Comment: 
+|          // Insert a hidden text input to receive the typed text and add a
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1623
+|     Comment: 
+|         /*
+|         	* Create our own set time function
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1889
+|     Comment: 
+|          // No longer in a element \xE2\x80\x94 close typeahead
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1837
+|     Comment: 
+|          // Needed to position overlayImage at 0/0
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1907
+|     Comment: 
+|          // typeahead widget
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1662
+|     Comment: 
+|          // Check if [delete] was pressed with selected objects
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1804
+|     Comment: 
+|          // screen.
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2158
+|     Comment: 
+|         /**
+|         	 * Calls `method` on the `startTime` and `endTime` elements, and configures them to
+|         	 * enforce date range limits.
+|         	 * @param  {string} method Can be used to specify the type of picker to be added
+|         	 * @param  {Element} startTime
+|         	 * @param  {Element} endTime
+|         	 * @param  {Object} options Options for the `timepicker()` call. Also supports `reformat`,
+|         	 *   a boolean value that can be used to reformat the input values to the `dateFormat`.
+|         	 * @return {jQuery}
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 738
+|     Comment: 
+|          // Initiate the processing loop
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 14
+|     Comment: 
+|          // Monkey patch incorrect code in the inpection module
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 112
+|     Comment: 
+|          // the URL to send updates in the future
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1801
+|     Comment: 
+|          // Determine the scaling adjustment to fit the image in the modal
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 60
+|     Comment: 
+|          // Global defaults for all the datetime picker instances
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1797
+|     Comment: 
+|          //self.opts.keyupCallback = this.keydown.bind(self);
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1944
+|     Comment: 
+|         /*
+|         	* Determine by the time format which units are supported
+|         	* Returns an object of booleans for each unit
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /*
+|          * jQuery Timepicker Addon
+|          * By: Trent Richardson [http://trentrichardson.com]
+|          *
+|          * Copyright 2013 Trent Richardson
+|          * You may use this project under MIT license.
+|          * http://trentrichardson.com/Impromptu/MIT-LICENSE.txt
+|          */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor.min.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         <!--[\s\S]*?-->
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 9
+|     Comment: 
+|          // local
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1429
+|     Comment: 
+|         /*
+|         	* the bad hack :/ override datepicker so it doesn't close on select
+|         	// inspired: http://stackoverflow.com/questions/1252512/jquery-datepicker-prevent-closing-picker-when-clicking-a-date/1762378#1762378
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1728
+|     Comment: 
+|          // Transfer the annotation state to the new image for replay.
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 236
+|     Comment: 
+|          // position based on the `buttons` setting
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 345
+|     Comment: 
+|         /* Redactor richtext init */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 114
+|     Comment: 
+|          // HTTP 500
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1744
+|     Comment: 
+|          // Keep the scale at 1.0 so that the stroke size is not stretched when
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2093
+|     Comment: 
+|          // possibly a user defined tz, so just give it back
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 85
+|     Comment: 
+|          // Add [Delete Draft] button to the toolbar
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 473
+|     Comment: 
+|          // Respond to an upload
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2198
+|     Comment: 
+|          // max interval check
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor.min.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         <!--[\s\S]+?-->
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1739
+|     Comment: 
+|          // Out with the old
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1735
+|     Comment: 
+|          // being committed here will be discarded.
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1780
+|     Comment: 
+|          // Startup
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1950
+|     Comment: 
+|          // does the format contain the token?
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 492
+|     Comment: 
+|         /* Ensure image hovered is resized */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 478
+|     Comment: 
+|          // Tear down redactor editors on this page
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1730
+|     Comment: 
+|          // Transfer the annotation JSON data and drop the original image.
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1751
+|     Comment: 
+|         /**
+|         				 * in case the datetimepicker has been applied to a non-input tag for inline UI,
+|         				 * and the user has not configured the plugin to display only time in altInput,
+|         				 * pick current date time from the altInput (and hope for the best, for now, until "ER1" is applied)
+|         				 *
+|         				 * @todo ER1. Since altInput can have a totally difference format, convert it to standard format by reading input format from "altFormat" and "altTimeFormat" option values
+|         				 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 260
+|     Comment: 
+|          // enter
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1727
+|     Comment: 
+|          // After successful upload, replace the old image with the new one.
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 569
+|     Comment: 
+|          // Remove from queue
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2131
+|     Comment: 
+|         /**
+|         	 * Calls `datetimepicker` on the `startTime` and `endTime` elements, and configures them to
+|         	 * enforce date range limits.
+|         	 * @param  {Element} startTime
+|         	 * @param  {Element} endTime
+|         	 * @param  {Object} options Options for the `timepicker()` call. Also supports `reformat`,
+|         	 *   a boolean value that can be used to reformat the input values to the `dateFormat`.
+|         	 * @param  {string} method Can be used to specify the type of picker to be added
+|         	 * @return {jQuery}
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 265
+|     Comment: 
+|          // escape
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1129
+|     Comment: 
+|         /*
+|         		* shorthand just to use timepicker.
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1931
+|     Comment: 
+|         /*
+|         	* jQuery extend now ignores nulls!
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1548
+|     Comment: 
+|         /*
+|         	* Override key up event to sync manual input changes.
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2043
+|     Comment: 
+|          // Drop the remaining part of a variable block, if any
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 690
+|     Comment: 
+|          // Remove from processing queue
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 628
+|     Comment: 
+|          // Sometimes the index is not attached to the
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1684
+|     Comment: 
+|          // Upload the annotated image to server
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 35
+|     Comment: 
+|         /*
+|         	* Timepicker manager.
+|         	* Use the singleton instance of this class, $.timepicker, to interact with the time picker.
+|         	* Settings for (groups of) time pickers are maintained in an instance object,
+|         	* allowing multiple different settings on the same page.
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2058
+|     Comment: 
+|          // Make the toolbar a class rather than a service, so it can be reused in
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 26
+|     Comment: 
+|         /*
+|         	* Extend jQueryUI, get it started with our version number
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1693
+|     Comment: 
+|          // Fallback to the data URL \xE2\x80\x94 show while the image is being uploaded
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 224
+|     Comment: 
+|          // add timepicker as a property of datepicker: $.datepicker._get(dp_inst, 'timepicker');
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 848
+|     Comment: 
+|          // could be numeric or "EST" format, so use toString()
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 598
+|     Comment: 
+|          // No time so nothing to check here
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1732
+|     Comment: 
+|          // Record the image that was originally annotated. If the committed
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1734
+|     Comment: 
+|          // the annotations placed live on the original image. The image
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1425
+|     Comment: 
+|          // Ensure double presses of same button are squelched
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1252
+|     Comment: 
+|          // literal escaped in quotes
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1384
+|     Comment: 
+|          // @see http://jsfiddle.net/URWru/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1382
+|     Comment: 
+|          // Shapes
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1888
+|     Comment: 
+|          //if max was set
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 901
+|     Comment: 
+|          // may automatically open the picker on setDate
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2279
+|     Comment: 
+|         /*
+|         	* Microsecond support
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 905
+|     Comment: 
+|         /*
+|         		* call custom onSelect.
+|         		* bind to sliders slidestop, and grid click.
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 466
+|     Comment: 
+|         /* Styles to keep the thread-entry sizing sane */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1522
+|     Comment: 
+|          // update alternate field too
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1132
+|     Comment: 
+|          // limit precision of floats
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 527
+|     Comment: 
+|          // init
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1983
+|     Comment: 
+|         /*
+|         	* Splits datetime string into date and time substrings.
+|         	* Throws exception when date can't be parsed
+|         	* Returns {dateString: dateString, timeString: timeString}
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1118
+|     Comment: 
+|          // Await loading of Fabric framework
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /* =============================================================
+|          * bootstrap-typeahead.js v2.0.0
+|          * http://twitter.github.com/bootstrap/javascript.html#typeahead
+|          * =============================================================
+|          * Copyright 2012 Twitter, Inc.
+|          *
+|          * Licensed under the Apache License, Version 2.0 (the "License");
+|          * you may not use this file except in compliance with the License.
+|          * You may obtain a copy of the License at
+|          *
+|          * http://www.apache.org/licenses/LICENSE-2.0
+|          *
+|          * Unless required by applicable law or agreed to in writing, software
+|          * distributed under the License is distributed on an "AS IS" BASIS,
+|          * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+|          * See the License for the specific language governing permissions and
+|          * limitations under the License.
+|          * ============================================================ */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 442
+|     Comment: 
+|          // XXX: Add this to SCP only
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1124
+|     Comment: 
+|          // end _controls
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 59
+|     Comment: 
+|          // and will be configured locally in the afterUpateDraft()
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 935
+|     Comment: 
+|          // inserting
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2102
+|     Comment: 
+|         /**
+|         	 * No way to set timezone in js Date, so we must adjust the minutes to compensate. (think setDate, getDate)
+|         	 * @param  {Date} date
+|         	 * @param  {string} fromTimezone formatted like "+0500", "-1245"
+|         	 * @param  {string} toTimezone formatted like "+0500", "-1245"
+|         	 * @return {Date}
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 933
+|     Comment: 
+|          // parsing
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 788
+|     Comment: 
+|          // fix bootstrap modal focus
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 842
+|     Comment: 
+|          // sliders should all be numeric
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2155
+|     Comment: 
+|          // Flip back to primary language before submitting
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 731
+|     Comment: 
+|          // Pass any errors to the error option
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 259
+|     Comment: 
+|          // tab
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1723
+|     Comment: 
+|          // ones initiated from this plugin
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2058
+|     Comment: 
+|         /**
+|         	 * Get the timezone offset as string from a date object (eg '+0530' for UTC+5.5)
+|         	 * @param {number} tzMinutes if not a number, less than -720 (-1200), or greater than 840 (+1400) this value is returned
+|         	 * @param {boolean} iso8601 if true formats in accordance to iso8601 "+12:45"
+|         	 * @return {string}
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 403
+|     Comment: 
+|          // Fixup class for
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 629
+|     Comment: 
+|          // event object. Find it by size. Hack for sure.
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 323
+|     Comment: 
+|         /* TYPEAHEAD PLUGIN DEFINITION
+|            * =========================== */
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 94
+|     Comment: 
+|         /*Check if we have a match on the current source?? */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 23
+|     Comment: 
+|          // private
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1611
+|     Comment: 
+|          // Action buttons
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 133
+|     Comment: 
+|          // Cancel autosave
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 311
+|     Comment: 
+|          // Queue wait time if full
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 665
+|     Comment: 
+|          // Allow url to be a method
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 618
+|     Comment: 
+|          // If we still have work to do,
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 12
+|     Comment: 
+|          // messages
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2173
+|     Comment: 
+|          // options for end picker
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1803
+|     Comment: 
+|          // considered to ensure very tall images do not float off the
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 404
+|     Comment: 
+|         /* Adjust plain/text messages posted as <pre> in the thread body to show in
+|          * a more normal font. Other <pre> elements in the ticket thread body should
+|          * be shown with the ususal monospace font
+|          */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2253
+|     Comment: 
+|         /**
+|         	 * Log error or data to the console during error or debugging
+|         	 * @param  {Object} err pass any type object to log to the console during error or debugging
+|         	 * @return {void}
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 530
+|     Comment: 
+|          // Helper function to enable pause of processing to wait
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1021
+|     Comment: 
+|          // if rtl go -60->0 instead of 0->60
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 520
+|     Comment: 
+|          // Define queues to manage upload process
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1842
+|     Comment: 
+|          // if min/max was set with the string
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 310
+|     Comment: 
+|          // Max files before queueing (for large volume uploads)
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 309
+|     Comment: 
+|          // MB file size limit
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 255
+|     Comment: 
+|          // down arrow
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2152
+|     Comment: 
+|          // Add the button to the toolbar
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2097
+|     Comment: 
+|          // plus or minus
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1509
+|     Comment: 
+|          // Mess with the next two lines and you *will* be sorry!
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1856
+|     Comment: 
+|          //if min/max was set with the JSON
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 113
+|     Comment: 
+|          // Upload failed. TODO: Add a button to the UI to retry on
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1725
+|     Comment: 
+|         /*
+|         	* override getDate() to allow getting time too within Date object
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 272
+|     Comment: 
+|         /*
+|          * Default text - jQuery plugin for html5 dragging files from desktop to browser
+|          *
+|          * Author: Weixi Yen
+|          *
+|          * Email: [Firstname][Lastname]@gmail.com
+|          *
+|          * Copyright (c) 2010 Resopollution
+|          *
+|          * Licensed under the MIT license:
+|          *   http://www.opensource.org/licenses/mit-license.php
+|          *
+|          * Project home:
+|          *   http://www.github.com/weixiyen/jquery-filedrop
+|          *
+|          * Version:  0.1.0
+|          *
+|          * Features:
+|          *      Allows sending of extra parameters with file.
+|          *      Works with Firefox 3.6+
+|          *      Future-compliant with HTML5 spec (will work with Webkit browsers and IE9)
+|          * Usage:
+|          *  See README at project homepage
+|          *
+|          */
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/osticket.css?fe1d1f8
+|     Line number: 59
+|     Comment: 
+|         /* Custom css for datepicker */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 58
+|     Comment: 
+|          // Just upload the file. A draft will be created automatically
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1513
+|     Comment: 
+|         /*
+|         	* Fourth bad hack :/ override _updateAlternate function used in inline mode to init altField
+|         	* Update any alternate field to synchronise with the main field.
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1646
+|     Comment: 
+|         /*
+|         	* Create new public method to set only time, callable as $().datepicker('setTime', date)
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/osticket.css?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /* Overlay */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 1795
+|     Comment: 
+|          // Catch [delete] key and map to delete object
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 45
+|     Comment: 
+|          // limit
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /* Generic draft support for osTicket. The plugins supports draft retrieval
+|          * automatically, along with draft autosave, and image uploading.
+|          *
+|          * Configuration:
+|          * draftNamespace: namespace for the draft retrieval
+|          * draftObjectId: extension to the namespace for draft retrieval
+|          *
+|          * Caveats:
+|          * Login (staff only currently) is required server-side for drafts and image
+|          * uploads. Furthermore, the id of the staff is considered for the drafts,
+|          * so one user will not retrieve drafts for another user.
+|          */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 18
+|     Comment: 
+|         /*
+|         	* Lets not redefine timepicker, Prevent "Uncaught RangeError: Maximum call stack size exceeded"
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 2074
+|     Comment: 
+|          // Start immediately
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 210
+|     Comment: 
+|          // and an delay option to limit calls to the backend.
+|     
+|     Path: http://helpdesk.delivery.htb:80/scp/js/bootstrap-typeahead.js?fe1d1f8
+|     Line number: 256
+|     Comment: 
+|          // up arrow
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 308
+|     Comment: 
+|          // Ignored if queuefiles is set > 0
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1949
+|     Comment: 
+|          // removes literals
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 350
+|     Comment: 
+|          // and @height attributes will begin to accumulate
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1784
+|     Comment: 
+|         /*
+|         	* override parseDate() because UI 1.8.14 throws an error about "Extra characters"
+|         	* An option in datapicker to ignore extra format characters would be nicer.
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1186
+|     Comment: 
+|         /*
+|         	* Public utility to parse time
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 235
+|     Comment: 
+|          // Monkey patch the toolbar server to support adding buttons in an automatic
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 209
+|     Comment: 
+|          // Monkey patch the autosave module to include an `autosaveBefore` signal
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Line number: 106
+|     Comment: 
+|          // public
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 286
+|     Comment: 
+|          // Expand on hover
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2089
+|     Comment: 
+|          // if iso8601 with Z, its 0 minute offset
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 320
+|     Comment: 
+|         /*
+|         		* add our sliders to the calendar
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 917
+|     Comment: 
+|         /*
+|         		* update our input with the new date time..
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 496
+|     Comment: 
+|          // end for loop
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1360
+|     Comment: 
+|         /**
+|         	 * Public utility to format the time
+|         	 * @param {string} format format of the time
+|         	 * @param {Object} time Object not a Date for timezones
+|         	 * @param {Object} [options] essentially the regional[].. amNames, pmNames, ampm
+|         	 * @returns {string} the formatted time
+|         	 */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2170
+|     Comment: 
+|          // min allowed interval in milliseconds
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 215
+|     Comment: 
+|          // Don't send to backend if empty
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 525
+|     Comment: 
+|          // Add everything to the workQueue
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1589
+|     Comment: 
+|         /*
+|         	* Disable & enable the Time in the datetimepicker
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1993
+|     Comment: 
+|          // how many occurrences of separator may be in our format?
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 162
+|     Comment: 
+|         /*
+|         		* Override the default settings for all instances of the time picker.
+|         		* @param  {Object} settings  object - the new settings to use as defaults (anonymous object)
+|         		* @return {Object} the manager object
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 675
+|     Comment: 
+|          // Add headers
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 129
+|     Comment: 
+|          // Unprocessable request (Empty message)
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1013
+|     Comment: 
+|         /*
+|         		* Small abstraction to control types
+|         		* We can add more, just be sure to follow the pattern: create, options, value
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/filedrop.field.js?fe1d1f8
+|     Line number: 554
+|     Comment: 
+|          // Add to processing queue
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-1.12.1.custom.min.js?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery UI - v1.12.1 - 2019-01-22
+|         * http://jqueryui.com
+|         * Includes: widget.js, position.js, data.js, disable-selection.js, focusable.js, form-reset-mixin.js, jquery-1-7.js, keycode.js, labels.js, scroll-parent.js, tabbable.js, unique-id.js, widgets/draggable.js, widgets/droppable.js, widgets/resizable.js, widgets/selectable.js, widgets/sortable.js, widgets/accordion.js, widgets/autocomplete.js, widgets/button.js, widgets/checkboxradio.js, widgets/controlgroup.js, widgets/datepicker.js, widgets/dialog.js, widgets/menu.js, widgets/mouse.js, widgets/progressbar.js, widgets/selectmenu.js, widgets/slider.js, widgets/spinner.js, widgets/tabs.js, widgets/tooltip.js, effect.js, effects/effect-blind.js, effects/effect-bounce.js, effects/effect-clip.js, effects/effect-drop.js, effects/effect-explode.js, effects/effect-fade.js, effects/effect-fold.js, effects/effect-highlight.js, effects/effect-pulsate.js, effects/effect-scale.js, effects/effect-shake.js, effects/effect-size.js, effects/effect-slide.js, effects/effect-transfer.js
+|         * Copyright jQuery Foundation and other contributors; Licensed MIT */
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1807
+|     Comment: 
+|         /*
+|         	* override formatDate to set date with time to the input
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1569
+|     Comment: 
+|         /*
+|         	* override "Today" button to also grab the time and set it to input field.
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2292
+|     Comment: 
+|         /*
+|         	* Keep up with the version
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 2195
+|     Comment: 
+|          // minInterval check
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 781
+|     Comment: 
+|         /*
+|         		* when a slider moves, set the internal time...
+|         		* on time change is also called when the time is updated in the text field
+|         		*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/jquery-ui-timepicker-addon.js?fe1d1f8
+|     Line number: 1917
+|     Comment: 
+|         /*
+|         	* jQuery isEmptyObject does not check hasOwnProperty - if someone has added to the object prototype,
+|         	* it will return false for all objects
+|         	*/
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 473
+|     Comment: 
+|          // Make a rich text editor immediately
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-osticket.js?fe1d1f8
+|     Line number: 98
+|     Comment: 
+|          // Add [Save Draft] button to the toolbar
+|     
+|     Path: http://helpdesk.delivery.htb:80/css/thread.css?fe1d1f8
+|     Line number: 1
+|     Comment: 
+|         /*!
+|          * Bootstrap v3.0.0
+|          *
+|          * Copyright 2013 Twitter, Inc
+|          * Licensed under the Apache License v2.0
+|          * http://www.apache.org/licenses/LICENSE-2.0
+|          *
+|          * Designed and built with all the love in the world @twitter by @mdo and @fat.
+|_         */
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=helpdesk.delivery.htb
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor.min.js?fe1d1f8
+|     Form id: modal-link-url
+|     Form action: 
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor.min.js?fe1d1f8
+|     Form id: 
+|     Form action: 
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor.min.js?fe1d1f8
+|     Form id: modal-image-title
+|     Form action: 
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor.min.js?fe1d1f8
+|     Form id: modal-file-title
+|     Form action: 
+|     
+|     Path: http://helpdesk.delivery.htb:80/js/redactor-plugins.js?fe1d1f8
+|     Form id: modal-video-input
+|_    Form action: 
+|_http-date: Sun, 10 Jan 2021 18:58:55 GMT; +8m48s from local time.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-enum: 
+|_  /account.php: Possible admin folder
+| http-errors: 
+| Spidering limited to: maxpagecount=40; withinhost=helpdesk.delivery.htb
+|   Found the following error pages: 
+|   
+|   Error Code: 404
+|   	http://helpdesk.delivery.htb:80/scp/json.redirect;
+|   
+|   Error Code: 422
+|   	http://helpdesk.delivery.htb:80/scp/pwreset.php
+|   
+|   Error Code: 422
+|   	http://helpdesk.delivery.htb:80/scp/login.php
+|   
+|   Error Code: 422
+|   	http://helpdesk.delivery.htb:80/scp/index.php
+|   
+|   Error Code: 422
+|   	http://helpdesk.delivery.htb:80/scp/
+|   
+|   Error Code: 422
+|_  	http://helpdesk.delivery.htb:80/login.php
+|_http-favicon: Unknown favicon MD5: D84666B7F0C1CEF1E20892E33308C913
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-fileupload-exploiter: 
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|     Failed to upload and execute a payload.
+|   
+|_    Failed to upload and execute a payload.
+| http-grep: 
+|   (1) http://helpdesk.delivery.htb:80/view.php: 
+|     (1) email: 
+|_      + john.doe@osticket.com
+| http-headers: 
+|   Server: nginx/1.14.2
+|   Date: Sun, 10 Jan 2021 18:58:54 GMT
+|   Content-Type: text/html; charset=UTF-8
+|   Connection: close
+|   Set-Cookie: OSTSESSID=tvdt83529fjbgdp5vl12klhqik; expires=Mon, 11-Jan-2021 18:58:54 GMT; Max-Age=86400; path=/; domain=helpdesk.delivery.htb; HttpOnly
+|   Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|   Cache-Control: no-store, no-cache, must-revalidate
+|   Pragma: no-cache
+|   Content-Security-Policy: frame-ancestors 'self';
+|   Content-Language: en-US
+|   
+|_  (Request type: HEAD)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash c865569f62483de3d175f8b40c80b5b9
+|_Credits query returned unknown hash 09148214ee752ba33fd619bc788fae0b
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-security-headers: 
+|   Content_Security_Policy: 
+|     Header: Content-Security-Policy: frame-ancestors 'self';
+|     Description: Define from where the protected resource can be embedded in frames.
+|   Cache_Control: 
+|     Header: Cache-Control: no-store, no-cache, must-revalidate
+|   Pragma: 
+|     Header: Pragma: no-cache
+|   Expires: 
+|_    Header: Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|_http-server-header: nginx/1.14.2
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; php: 2; png: 1
+|     /assets/default/css/
+|       css: 1
+|     /css/
+|       css: 4
+|     /css/ui-lightness/
+|       css: 1
+|     /images/
+|       png: 1
+|     /js/
+|       js: 7
+|     /scp/css/
+|       css: 1
+|     /scp/js/
+|       js: 1
+|   Longest directory structure:
+|     Depth: 3
+|     Dir: /assets/default/css/
+|   Total files found (by extension):
+|_    Other: 1; css: 7; js: 8; php: 2; png: 2
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: delivery
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vhosts: 
+|_128 names had status 200
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 10 21:52:46 2021 -- 1 IP address (1 host up) scanned in 173.22 seconds
